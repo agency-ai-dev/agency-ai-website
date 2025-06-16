@@ -3,7 +3,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css"
 import "./homestyles.css"
 import agencyailogo from './../images/agencyailogo.png';
 
-const IndexPage = () => {
+const HomePage = () => {
     return (
         <div class="pdf-container">
             <nav class="px-6 py-4 flex justify-between items-center border-b border-opacity-20 border-purple-500">
@@ -553,4 +553,4 @@ const IndexPage = () => {
     )
 }
 
-export default IndexPage;
+export default HomePage;

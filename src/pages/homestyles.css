@@ -1,0 +1,108 @@
+
+:root {
+            --primary: #00e6b4;
+            --secondary: #7b68ee;
+            --dark: #0e0e1a;
+            --darker: #080814;
+            --light: #ffffff;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, var(--dark), #1a1a2e);
+            color: var(--light);
+            min-height: 100vh;
+        }
+        
+        .bg-gradient-dark {
+            background: linear-gradient(135deg, #0e0e1a, #1a1a2e);
+        }
+        
+        .card {
+            background: rgba(30, 30, 50, 0.7);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+        
+        .primary-btn {
+            background-color: var(--primary);
+            color: var(--dark);
+            transition: all 0.3s ease;
+        }
+        
+        .primary-btn:hover {
+            background-color: #00c49c;
+            transform: translateY(-2px);
+        }
+        
+        .secondary-btn {
+            background-color: var(--secondary);
+            transition: all 0.3s ease;
+        }
+        
+        .secondary-btn:hover {
+            background-color: #6a59d1;
+            transform: translateY(-2px);
+        }
+        
+        .highlight {
+            color: var(--primary);
+        }
+        
+        .highlight-purple {
+            color: var(--secondary);
+        }
+        
+        .form-input {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .form-input:focus {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: var(--primary);
+            outline: none;
+        }
+        
+        .referral-card {
+            background: rgba(20, 20, 40, 0.8);
+            border: 1px solid rgba(123, 104, 238, 0.3);
+        }
+        
+        .feature-icon {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .phone-mockup {
+            position: relative;
+            z-index: 10;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+        
+        .glow {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, rgba(123, 104, 238, 0.2), transparent 70%);
+            top: 0;
+            left: 0;
+            filter: blur(20px);
+            z-index: 1;
+        }
+        
+        /* Additional styles for PDF optimization */
+        .pdf-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow-x: hidden;
+        }
