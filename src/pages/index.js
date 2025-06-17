@@ -4,6 +4,9 @@ import "./homestyles.css"
 import agencyailogo from './../images/agencyailogo.png';
 
 const IndexPage = () => {
+
+    const [menuOpen, setMenuOpen] = React.useState(false);
+
     return (
         <div class="pdf-container">
             <nav class="px-6 py-4 flex justify-between items-center border-b border-opacity-20 border-purple-500">
@@ -17,9 +20,22 @@ const IndexPage = () => {
                     <a href="#about" class="text-gray-300 hover:text-white transition-colors">About</a>
                     <button class="primary-btn px-6 py-2 rounded-lg font-semibold shadow-lg">Book a Demo</button>
                 </div>
-                <button class="md:hidden text-white text-2xl">
+                <button class="md:hidden text-white text-2xl" onClick={() => setMenuOpen(!menuOpen)}>
                     <i class="fas fa-bars"></i>
                 </button>
+                <>
+                    {menuOpen && (
+                        <div className="absolute top-full left-0 w-full bg-black text-white flex flex-col space-y-4 px-6 py-4 z-50 md:hidden top-[120px]">
+                            <a href="#features" className="hover:text-purple-300" onClick={() => setMenuOpen(!menuOpen)}>Features</a>
+                            <a href="#benefits" className="hover:text-purple-300" onClick={() => setMenuOpen(!menuOpen)}>Benefits</a>
+                            <a href="#referrals" className="hover:text-purple-300" onClick={() => setMenuOpen(!menuOpen)}>Referrals</a>
+                            <a href="#about" className="hover:text-purple-300" onClick={() => setMenuOpen(!menuOpen)}>About</a>
+                            <button className="primary-btn px-4 py-2 rounded-lg font-semibold shadow">
+                                Book a Demo
+                            </button>
+                        </div>
+                    )}
+                </>
             </nav>
 
             <section class="relative py-20 px-6 overflow-hidden">
@@ -35,7 +51,7 @@ const IndexPage = () => {
                             </p>
                             <div class="mt-8 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                                 <button class="secondary-btn px-8 py-3 rounded-lg font-semibold shadow-lg text-white text-lg m-auto">
-                                    Book a demo
+                                    Start Free Trial
                                 </button>
                             </div>
                         </div>
@@ -103,7 +119,7 @@ const IndexPage = () => {
                             </div>
                             <h3 class="text-xl font-bold mb-3">Quick, Guided Setup</h3>
                             <p class="text-gray-300 mb-6">Connect your store, chat with your onboarding manager, and start building campaigns in minutes. Agency AI handles the setup and recommends best practices.</p>
-                            <a href="#" class="flex items-center text-primary font-medium hover:underline">
+                            <a href="#" class="flex items-center text-primary font-medium hover:underline absolute bottom-[22px]">
                                 Learn More <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
@@ -114,7 +130,7 @@ const IndexPage = () => {
                             </div>
                             <h3 class="text-xl font-bold mb-3">Multi-Channel Management</h3>
                             <p class="text-gray-300 mb-6">Run ads across Meta and Google + send emails, all from one dashboard. Agency AI keeps your message aligned across platforms.</p>
-                            <a href="#" class="flex items-center text-primary font-medium hover:underline">
+                            <a href="#" class="flex items-center text-primary font-medium hover:underline absolute bottom-[22px]">
                                 Learn More <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
@@ -125,7 +141,7 @@ const IndexPage = () => {
                             </div>
                             <h3 class="text-xl font-bold mb-3">Built-In Email Provider</h3>
                             <p class="text-gray-300 mb-6">Send and automate marketing emails directly within Agency AI. No extra software needed for data-driven, on-brand messaging.</p>
-                            <a href="#" class="flex items-center text-primary font-medium hover:underline">
+                            <a href="#" class="flex items-center text-primary font-medium hover:underline absolute bottom-[22px]">
                                 Learn More <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
@@ -136,7 +152,7 @@ const IndexPage = () => {
                             </div>
                             <h3 class="text-xl font-bold mb-3">Full-Stack Agency Experience</h3>
                             <p class="text-gray-300 mb-6">Get the expertise of a full-service agency: campaign strategy, automation, and optimization. All without the overhead costs.</p>
-                            <a href="#" class="flex items-center text-primary font-medium hover:underline">
+                            <a href="#" class="flex items-center text-primary font-medium hover:underline absolute bottom-[22px]">
                                 Learn More <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
@@ -147,7 +163,7 @@ const IndexPage = () => {
                             </div>
                             <h3 class="text-xl font-bold mb-3">Insightful Data Tracking</h3>
                             <p class="text-gray-300 mb-6">Track campaign data and get insights and recommendations. See the performance of your campaigns in real-time dashboards.</p>
-                            <a href="#" class="flex items-center text-primary font-medium hover:underline">
+                            <a href="#" class="flex items-center text-primary font-medium hover:underline absolute bottom-[22px]">
                                 Learn More <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
@@ -158,7 +174,7 @@ const IndexPage = () => {
                             </div>
                             <h3 class="text-xl font-bold mb-3">Created by Experts</h3>
                             <p class="text-gray-300 mb-6">The team behind Agency AI has years of experience scaling e-commerce stores + building Shopify apps and automated solutions.</p>
-                            <a href="#" class="flex items-center text-primary font-medium hover:underline">
+                            <a href="#" class="flex items-center text-primary font-medium hover:underline absolute bottom-[22px]">
                                 Learn More <i class="fas fa-arrow-right ml-2"></i>
                             </a>
                         </div>
@@ -489,7 +505,7 @@ const IndexPage = () => {
                 </div>
             </section>
 
-            <footer class="py-12 px-6 bg-gradient-dark border-t border-gray-800">
+            {/* <footer class="py-12 px-6 bg-gradient-dark border-t border-gray-800">
                 <div class="max-w-7xl mx-auto">
                     <div class="grid md:grid-cols-4 gap-8">
                         <div>
@@ -547,7 +563,7 @@ const IndexPage = () => {
                         <p>&copy; 2023 Agency AI. All rights reserved.</p>
                     </div>
                 </div>
-            </footer>
+            </footer> */}
         </div>
 
     )

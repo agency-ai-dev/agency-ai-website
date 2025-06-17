@@ -3,30 +3,40 @@ import "@fortawesome/fontawesome-free/css/all.min.css"
 import "./pricingstyles.css";
 
 const PricingPage = () => {
+
+    const [isAnnual, setIsAnnual] = React.useState(false);
+
     return (
         <>
             <div class="container">
                 <h1 class="section-title">Choose Your Plan</h1>
                 <p class="section-subtitle">Select the perfect plan for your marketing needs</p>
 
-                <div class="pricing-toggle">
-                    <span class="toggle-label monthly active">Monthly</span>
-                    <label class="switch">
-                        <input type="checkbox" id="pricing-toggle" />
-                        <span class="slider"></span>
+                <div className="pricing-toggle">
+                    <span className={`toggle-label monthly ${!isAnnual ? "active" : ""}`}>Monthly</span>
+
+                    <label className="switch">
+                        <input
+                            type="checkbox"
+                            id="pricing-toggle"
+                            checked={isAnnual}
+                            onChange={(e) => setIsAnnual(e.target.checked)}
+                        />
+                        <span className="slider"></span>
                     </label>
-                    <span class="toggle-label annual">Annual</span>
-                    <span class="savings-badge">Save 30%</span>
+
+                    <span className={`toggle-label annual ${isAnnual ? "active" : ""}`}>Annual</span>
+                    <span className="savings-badge">Save 30%</span>
                 </div>
 
                 <div class="pricing-grid">
 
                     <div class="pricing-card" id="essentials-plan">
                         <h2 class="plan-name">Essentials</h2>
-                        <div class="plan-price monthly">$99</div>
-                        <div class="plan-price annual" style={{display: 'none'}}>$69</div>
-                        <div class="plan-billing monthly">per month</div>
-                        <div class="plan-billing annual" style={{display: 'none'}}>per month, billed annually ($831/year)</div>
+                        {!isAnnual && <div class="plan-price monthly">$99</div>}
+                        {isAnnual && <div class="plan-price annual" >$69</div>}
+                        {!isAnnual && <div class="plan-billing monthly">per month</div>}
+                        {isAnnual && <div class="plan-billing annual" >per month, billed annually ($831/year)</div>}
                         <div class="plan-limit">Up to $1,000 ad spend/month</div>
 
                         <div class="feature-list">
@@ -67,13 +77,12 @@ const PricingPage = () => {
                         <a href="#" class="cta-button">Get Started</a>
                     </div>
 
-                    <div class="pricing-card recommended" id="growth-plan">
-                        <div class="recommended-badge">Recommended</div>
+                    <div class="pricing-card" id="growth-plan">
                         <h2 class="plan-name">Growth</h2>
-                        <div class="plan-price monthly">$199</div>
-                        <div class="plan-price annual" style={{display: 'none'}}>$139</div>
-                        <div class="plan-billing monthly">per month</div>
-                        <div class="plan-billing annual" style={{display: 'none'}}>per month, billed annually ($1,671/year)</div>
+                        {!isAnnual && <div class="plan-price monthly">$199</div>}
+                        {isAnnual && <div class="plan-price annual" >$139</div>}
+                        {!isAnnual && <div class="plan-billing monthly">per month</div>}
+                        {isAnnual && <div class="plan-billing annual" >per month, billed annually ($1,671/year)</div>}
                         <div class="plan-limit">Up to $4,000 ad spend/month</div>
 
                         <div class="feature-list">
@@ -122,12 +131,13 @@ const PricingPage = () => {
                         <a href="#" class="cta-button">Get Started</a>
                     </div>
 
-                    <div class="pricing-card" id="pro-plan">
+                    <div class="pricing-card recommended" id="pro-plan">
+                        <div class="recommended-badge">Recommended</div>
                         <h2 class="plan-name">Pro</h2>
-                        <div class="plan-price monthly">$299</div>
-                        <div class="plan-price annual" style={{display: 'none'}}>$209</div>
-                        <div class="plan-billing monthly">per month</div>
-                        <div class="plan-billing annual" style={{display: 'none'}}>per month, billed annually ($2,511/year)</div>
+                        {!isAnnual && <div class="plan-price monthly">$299</div>}
+                        {isAnnual && <div class="plan-price annual" >$209</div>}
+                        {!isAnnual && <div class="plan-billing monthly">per month</div>}
+                        {isAnnual && <div class="plan-billing annual" >per month, billed annually ($2,511/year)</div>}
                         <div class="plan-limit">Up to $7,000 ad spend/month</div>
 
                         <div class="feature-list">
@@ -182,10 +192,10 @@ const PricingPage = () => {
 
                     <div class="pricing-card" id="premium-plan">
                         <h2 class="plan-name">Premium</h2>
-                        <div class="plan-price monthly">$499</div>
-                        <div class="plan-price annual" style={{display: 'none'}}>$349</div>
-                        <div class="plan-billing monthly">per month</div>
-                        <div class="plan-billing annual" style={{display: 'none'}}>per month, billed annually ($4,191/year)</div>
+                        {!isAnnual && <div class="plan-price monthly">$499</div>}
+                        {isAnnual && <div class="plan-price annual" >$349</div>}
+                        {!isAnnual && <div class="plan-billing monthly">per month</div>}
+                        {isAnnual && <div class="plan-billing annual" >per month, billed annually ($4,191/year)</div>}
                         <div class="plan-limit">Up to $15,000 ad spend/month</div>
 
                         <div class="feature-list">

@@ -1,25 +1,41 @@
 import * as React from "react"
 import "@fortawesome/fontawesome-free/css/all.min.css"
 import "./aboutstyles.css";
+import agencyailogo from './../images/agencyailogo.png';
 
 const ContactUsPage = () => {
+
+    const [menuOpen, setMenuOpen] = React.useState(false);
+
     return (
         <div class="min-h-screen">
-            <nav class="py-4 px-6 md:px-12 lg:px-24 flex justify-between items-center">
+            <nav class="px-6 py-4 flex justify-between items-center border-b border-opacity-20 border-purple-500">
                 <div class="flex items-center">
-                    <h1 class="text-xl font-bold">Agency AI</h1>
+                    <img src={agencyailogo} style={{ width: '100px', marginBottom: '0' }} />
                 </div>
                 <div class="hidden md:flex space-x-8 items-center">
-                    <a href="/" class="nav-link">Features</a>
-                    <a href="/about" class="nav-link active">About</a>
-                    <a href="/contact" class="nav-link">Contact</a>
-                    <a href="#" class="btn-primary px-6 py-2 rounded-md font-semibold">Book a demo</a>
+                    <a href="#features" class="text-gray-300 hover:text-white transition-colors">Features</a>
+                    <a href="#benefits" class="text-gray-300 hover:text-white transition-colors">Benefits</a>
+                    <a href="#referrals" class="text-gray-300 hover:text-white transition-colors">Referrals</a>
+                    <a href="#about" class="text-gray-300 hover:text-white transition-colors">About</a>
+                    <button class="primary-btn px-6 py-2 rounded-lg font-semibold shadow-lg">Book a Demo</button>
                 </div>
-                <div class="md:hidden">
-                    <button class="text-white">
-                        <i class="fas fa-bars text-2xl"></i>
-                    </button>
-                </div>
+                <button class="md:hidden text-white text-2xl" onClick={() => setMenuOpen(!menuOpen)}>
+                    <i class="fas fa-bars"></i>
+                </button>
+                <>
+                    {menuOpen && (
+                        <div className="absolute top-full left-0 w-full bg-black text-white flex flex-col space-y-4 px-6 py-4 z-50 md:hidden top-[120px]">
+                            <a href="#features" className="hover:text-purple-300" onClick={() => setMenuOpen(!menuOpen)}>Features</a>
+                            <a href="#benefits" className="hover:text-purple-300" onClick={() => setMenuOpen(!menuOpen)}>Benefits</a>
+                            <a href="#referrals" className="hover:text-purple-300" onClick={() => setMenuOpen(!menuOpen)}>Referrals</a>
+                            <a href="#about" className="hover:text-purple-300" onClick={() => setMenuOpen(!menuOpen)}>About</a>
+                            <button className="primary-btn px-4 py-2 rounded-lg font-semibold shadow">
+                                Book a Demo
+                            </button>
+                        </div>
+                    )}
+                </>
             </nav>
 
             <section class="py-16 px-6 md:px-12 lg:px-24 md:pt-24 max-w-7xl mx-auto">

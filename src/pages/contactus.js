@@ -1,29 +1,43 @@
 import * as React from "react"
 import "@fortawesome/fontawesome-free/css/all.min.css"
 import "./contactstyles.css";
+import agencyailogo from './../images/agencyailogo.png';
 
 const ContactUsPage = () => {
+
+    const [menuOpen, setMenuOpen] = React.useState(false);
+
     return (
         <>
             <div class="antialiased">
-                <header class="py-4 px-4 sm:px-6 lg:px-8 border-b border-gray-800">
-                    <div class="container mx-auto">
-                        <div class="flex flex-col sm:flex-row items-center justify-between">
-                            <div class="flex items-center mb-4 sm:mb-0">
-                                <h1 class="text-xl sm:text-2xl font-bold">
-                                    <span class="text-white">Agency</span>
-                                    <span class="text-teal-400">AI</span>
-                                </h1>
-                            </div>
-                            <nav class="flex space-x-6 text-sm sm:text-base">
-                                <a href="#" class="text-gray-300 hover:text-white transition">Features</a>
-                                <a href="#" class="text-gray-300 hover:text-white transition">About</a>
-                                <a href="#" class="text-white gradient-border pb-1">Contact</a>
-                                <a href="#" class="bg-teal-500 hover:bg-teal-400 text-black font-medium py-1 px-4 rounded-md transition">Book a demo</a>
-                            </nav>
-                        </div>
+                <nav class="px-6 py-4 flex justify-between items-center border-b border-opacity-20 border-purple-500">
+                    <div class="flex items-center">
+                        <img src={agencyailogo} style={{ width: '100px', marginBottom: '0' }} />
                     </div>
-                </header>
+                    <div class="hidden md:flex space-x-8 items-center">
+                        <a href="#features" class="text-gray-300 hover:text-white transition-colors">Features</a>
+                        <a href="#benefits" class="text-gray-300 hover:text-white transition-colors">Benefits</a>
+                        <a href="#referrals" class="text-gray-300 hover:text-white transition-colors">Referrals</a>
+                        <a href="#about" class="text-gray-300 hover:text-white transition-colors">About</a>
+                        <button class="primary-btn px-6 py-2 rounded-lg font-semibold shadow-lg">Book a Demo</button>
+                    </div>
+                    <button class="md:hidden text-white text-2xl" onClick={() => setMenuOpen(!menuOpen)}>
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <>
+                        {menuOpen && (
+                            <div className="absolute top-full left-0 w-full bg-black text-white flex flex-col space-y-4 px-6 py-4 z-50 md:hidden top-[120px]">
+                                <a href="#features" className="hover:text-purple-300" onClick={() => setMenuOpen(!menuOpen)}>Features</a>
+                                <a href="#benefits" className="hover:text-purple-300" onClick={() => setMenuOpen(!menuOpen)}>Benefits</a>
+                                <a href="#referrals" className="hover:text-purple-300" onClick={() => setMenuOpen(!menuOpen)}>Referrals</a>
+                                <a href="#about" className="hover:text-purple-300" onClick={() => setMenuOpen(!menuOpen)}>About</a>
+                                <button className="primary-btn px-4 py-2 rounded-lg font-semibold shadow">
+                                    Book a Demo
+                                </button>
+                            </div>
+                        )}
+                    </>
+                </nav>
 
                 <main class="container mx-auto px-4 py-8 sm:py-12 desktop-container">
                     <section class="text-center mb-12">
