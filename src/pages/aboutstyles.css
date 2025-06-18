@@ -84,3 +84,10 @@ body {
 .nav-link.active {
     color: #00e6b4;
 }
+
+.pdf-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: hidden;
+}

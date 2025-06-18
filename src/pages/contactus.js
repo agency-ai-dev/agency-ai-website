@@ -8,7 +8,7 @@ const ContactUsPage = () => {
     const [menuOpen, setMenuOpen] = React.useState(false);
 
     return (
-        <>
+        <div class="pdf-container">
             <div class="antialiased">
                 <nav class="px-6 py-4 flex justify-between items-center border-b border-opacity-20 border-purple-500">
                     <div class="flex items-center">
@@ -26,11 +26,11 @@ const ContactUsPage = () => {
                     </button>
                     <>
                         {menuOpen && (
-                            <div className="absolute top-full left-0 w-full bg-black text-white flex flex-col space-y-4 px-6 py-4 z-50 md:hidden !top-[120px]">
-                                <a href="#features" className="hover:text-purple-300" onClick={() => setMenuOpen(!menuOpen)}>Features</a>
-                                <a href="#benefits" className="hover:text-purple-300" onClick={() => setMenuOpen(!menuOpen)}>Benefits</a>
-                                <a href="#referrals" className="hover:text-purple-300" onClick={() => setMenuOpen(!menuOpen)}>Referrals</a>
-                                <a href="#about" className="hover:text-purple-300" onClick={() => setMenuOpen(!menuOpen)}>About</a>
+                            <div className="absolute top-full left-0 w-full bg-black text-white flex flex-col space-y-4 px-6 py-4 z-50 md:hidden !top-[120px] text-white">
+                                <a href="#features" className="text-white hover:text-purple-300" onClick={() => setMenuOpen(!menuOpen)}>Features</a>
+                                <a href="#benefits" className="text-white hover:text-purple-300" onClick={() => setMenuOpen(!menuOpen)}>Benefits</a>
+                                <a href="#referrals" className="text-white hover:text-purple-300" onClick={() => setMenuOpen(!menuOpen)}>Referrals</a>
+                                <a href="#about" className="text-white hover:text-purple-300" onClick={() => setMenuOpen(!menuOpen)}>About</a>
                                 <button className="primary-btn px-4 py-2 rounded-lg font-semibold shadow">
                                     Book a Demo
                                 </button>
@@ -149,7 +149,7 @@ const ContactUsPage = () => {
                     </div>
                 </footer>
             </div>
-        </>
+        </div>
     )
 }
 

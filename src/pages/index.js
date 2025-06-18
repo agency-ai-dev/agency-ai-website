@@ -25,11 +25,11 @@ const IndexPage = () => {
                 </button>
                 <>
                     {menuOpen && (
-                        <div className="absolute top-full left-0 w-full bg-black text-white flex flex-col space-y-4 px-6 py-4 z-50 md:hidden !top-[120px]">
-                            <a href="#features" className="hover:text-purple-300" onClick={() => setMenuOpen(!menuOpen)}>Features</a>
-                            <a href="#benefits" className="hover:text-purple-300" onClick={() => setMenuOpen(!menuOpen)}>Benefits</a>
-                            <a href="#referrals" className="hover:text-purple-300" onClick={() => setMenuOpen(!menuOpen)}>Referrals</a>
-                            <a href="#about" className="hover:text-purple-300" onClick={() => setMenuOpen(!menuOpen)}>About</a>
+                        <div className="absolute top-full left-0 w-full bg-black text-white flex flex-col space-y-4 px-6 py-4 z-50 md:hidden !top-[120px] text-white">
+                            <a href="#features" className="text-white hover:text-purple-300" onClick={() => setMenuOpen(!menuOpen)}>Features</a>
+                            <a href="#benefits" className="text-white hover:text-purple-300" onClick={() => setMenuOpen(!menuOpen)}>Benefits</a>
+                            <a href="#referrals" className="text-white hover:text-purple-300" onClick={() => setMenuOpen(!menuOpen)}>Referrals</a>
+                            <a href="#about" className="text-white hover:text-purple-300" onClick={() => setMenuOpen(!menuOpen)}>About</a>
                             <button className="primary-btn px-4 py-2 rounded-lg font-semibold shadow">
                                 Book a Demo
                             </button>
@@ -564,6 +564,20 @@ const IndexPage = () => {
                     </div>
                 </div>
             </footer> */}
+            <footer className="bg-opacity-20 bg-purple-900  text-gray-500 text-sm py-6 mt-12 border-t">
+                <div className="max-w-7xl mx-auto px-4 flex flex-col items-center justify-between space-y-4 md:space-y-0 md:flex-row">
+                    {/* Left Links */}
+                    <div className="flex space-x-6">
+                        <a href="/" className="hover:underline text-white">Home</a>
+                        <a href="/privacy" className="hover:underline text-white" text-white>Privacy</a>
+                    </div>
+
+                    {/* Copyright */}
+                    <div className="text-center md:text-right text-white">
+                        Copyright © 2025 Agency AI, LLC
+                    </div>
+                </div>
+            </footer>
         </div>
 
     )
