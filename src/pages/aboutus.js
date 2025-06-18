@@ -15,10 +15,10 @@ const ContactUsPage = () => {
                         <img src={agencyailogo} style={{ width: '100px', marginBottom: '0' }} />
                     </div>
                     <div class="hidden md:flex space-x-8 items-center">
-                        <a href="#features" class="text-gray-300 hover:text-white transition-colors">Features</a>
-                        <a href="#benefits" class="text-gray-300 hover:text-white transition-colors">Benefits</a>
-                        <a href="#referrals" class="text-gray-300 hover:text-white transition-colors">Referrals</a>
-                        <a href="#about" class="text-gray-300 hover:text-white transition-colors">About</a>
+                        <a href="/" class="text-gray-400 hover:text-white transition-colors">Home</a>
+                        <a href="/aboutus" class="text-white hover:text-white transition-colors">About</a>
+                        <a href="/contactus" class="text-gray-400 hover:text-white transition-colors">Contact</a>
+                        <a href="/pricing" class="text-gray-400 hover:text-white transition-colors">Pricing</a>
                         <button class="primary-btn px-6 py-2 rounded-lg font-semibold shadow-lg">Book a Demo</button>
                     </div>
                     <button class="md:hidden text-white text-2xl" onClick={() => setMenuOpen(!menuOpen)}>
@@ -27,10 +27,10 @@ const ContactUsPage = () => {
                     <>
                         {menuOpen && (
                             <div className="absolute top-full left-0 w-full bg-black text-white flex flex-col space-y-4 px-6 py-4 z-50 md:hidden !top-[120px] text-white">
-                                <a href="#features" className="text-white hover:text-purple-300" onClick={() => setMenuOpen(!menuOpen)}>Features</a>
-                                <a href="#benefits" className="text-white hover:text-purple-300" onClick={() => setMenuOpen(!menuOpen)}>Benefits</a>
-                                <a href="#referrals" className="text-white hover:text-purple-300" onClick={() => setMenuOpen(!menuOpen)}>Referrals</a>
-                                <a href="#about" className="text-white hover:text-purple-300" onClick={() => setMenuOpen(!menuOpen)}>About</a>
+                                <a href="/" className="text-white hover:text-purple-300">Home</a>
+                                <a href="/aboutus" className="text-white hover:text-purple-300">About</a>
+                                <a href="/contactus" className="text-white hover:text-purple-300">Contact</a>
+                                <a href="/pricing" className="text-white hover:text-purple-300">Pricing</a>
                                 <button className="primary-btn px-4 py-2 rounded-lg font-semibold shadow">
                                     Book a Demo
                                 </button>
@@ -128,26 +128,25 @@ const ContactUsPage = () => {
                         Start using Agency AI today to simplify + automate your marketing workflow.
                     </p>
                     <div class="flex flex-col sm:flex-row justify-center gap-4 mb-16">
-                        <a href="#" class="btn-primary px-8 py-3 rounded-md font-semibold text-lg">Book a Demo</a>
-                        <a href="#" class="btn-secondary px-8 py-3 rounded-md font-semibold text-lg text-white">Start Free Trial</a>
+                        <a href="#" class="btn-primary px-8 py-3 rounded-md font-semibold text-lg no-underline">Book a Demo</a>
+                        <a href="#" class="btn-secondary px-8 py-3 rounded-md font-semibold text-lg text-white no-underline">Start Free Trial</a>
                     </div>
                 </section>
 
                 <footer class="py-12 px-6 md:px-12 lg:px-24 border-t border-gray-800">
-                    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
-                        <div class="mb-8 md:mb-0">
-                            <h2 class="text-xl font-bold mb-2">Agency AI</h2>
-                            <p class="opacity-70">© 2024 Agency AI. All rights reserved.</p>
-                        </div>
-                        <div class="flex flex-col md:flex-row gap-8">
-                            <a href="/" class="hover:text-teal-400 transition-colors">Features</a>
-                            <a href="/about" class="text-teal-400 transition-colors">About</a>
-                            <a href="/contact" class="hover:text-teal-400 transition-colors">Contact</a>
-                            <a href="/privacy" class="hover:text-teal-400 transition-colors">Privacy</a>
-                            <a href="/terms" class="hover:text-teal-400 transition-colors">Terms</a>
-                        </div>
+                <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-8 md:mb-0">
+                        <h2 class="text-xl font-bold mb-2">Agency AI</h2>
+                        <p class="opacity-70">© 2025 Agency AI. All rights reserved.</p>
                     </div>
-                </footer>
+                    <div class="flex flex-col md:flex-row gap-8">
+                        <a href="/" class="text-white hover:text-teal-400 transition-colors">Home</a>
+                        <a href="/aboutus" class="text-teal-400 transition-colors">About</a>
+                        <a href="/contactus" class="text-white hover:text-teal-400 transition-colors">Contact</a>
+                        <a href="/pricing" class="text-white hover:text-teal-400 transition-colors">Pricing</a>
+                    </div>
+                </div>
+            </footer>
             </div>
         </div>
     )
