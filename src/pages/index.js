@@ -117,8 +117,8 @@ const IndexPage = () => {
                             <div class="w-14 h-14 bg-opacity-20 bg-purple-500 rounded-lg flex items-center justify-center mb-4">
                                 <i class="fas fa-magic text-3xl feature-icon"></i>
                             </div>
-                            <h3 class="text-xl font-bold mb-3">Quick, Guided Setup</h3>
-                            <p class="text-gray-300 mb-6">Connect your store, chat with your onboarding manager, and start building campaigns in minutes. Agency AI handles the setup and recommends best practices.</p>
+                            <h3 class="text-xl font-bold mb-3">Fast Full Service Setup</h3>
+                            <p class="text-gray-300 mb-6">Connect your store, complete a quick onboarding questionnaire. AGEN-AI handles the setup and launch of your ad campaigns.  </p>
                             <a href="#" class="flex items-center text-primary font-medium hover:underline absolute bottom-[22px]">
                                 Learn More <i class="fas fa-arrow-right ml-2"></i>
                             </a>
@@ -129,7 +129,7 @@ const IndexPage = () => {
                                 <i class="fas fa-chart-line text-3xl feature-icon"></i>
                             </div>
                             <h3 class="text-xl font-bold mb-3">Multi-Channel Management</h3>
-                            <p class="text-gray-300 mb-6">Run ads across Meta and Google + send emails, all from one dashboard. Agency AI keeps your message aligned across platforms.</p>
+                            <p class="text-gray-300 mb-6">Run ads across Meta and Google, send emails, all from one AI powered dashboard. Unify your messaging with the power of AGEN-AI.</p>
                             <a href="#" class="flex items-center text-primary font-medium hover:underline absolute bottom-[22px]">
                                 Learn More <i class="fas fa-arrow-right ml-2"></i>
                             </a>
@@ -140,7 +140,7 @@ const IndexPage = () => {
                                 <i class="fas fa-envelope text-3xl feature-icon"></i>
                             </div>
                             <h3 class="text-xl font-bold mb-3">Built-In Email Provider</h3>
-                            <p class="text-gray-300 mb-6">Send and automate marketing emails directly within Agency AI. No extra software needed for data-driven, on-brand messaging.</p>
+                            <p class="text-gray-300 mb-6">Send and automate email marketing directly within Agency. Use AI driven funnels to capture the business you’re losing out on.</p>
                             <a href="#" class="flex items-center text-primary font-medium hover:underline absolute bottom-[22px]">
                                 Learn More <i class="fas fa-arrow-right ml-2"></i>
                             </a>
@@ -162,7 +162,7 @@ const IndexPage = () => {
                                 <i class="fas fa-chart-pie text-3xl feature-icon"></i>
                             </div>
                             <h3 class="text-xl font-bold mb-3">Insightful Data Tracking</h3>
-                            <p class="text-gray-300 mb-6">Track campaign data and get insights and recommendations. See the performance of your campaigns in real-time dashboards.</p>
+                            <p class="text-gray-300 mb-6">Track campaign data, get insights and recommendations. See the performance of your campaigns in real-time dashboards.</p>
                             <a href="#" class="flex items-center text-primary font-medium hover:underline absolute bottom-[22px]">
                                 Learn More <i class="fas fa-arrow-right ml-2"></i>
                             </a>
@@ -172,8 +172,8 @@ const IndexPage = () => {
                             <div class="w-14 h-14 bg-opacity-20 bg-purple-500 rounded-lg flex items-center justify-center mb-4">
                                 <i class="fas fa-brain text-3xl feature-icon"></i>
                             </div>
-                            <h3 class="text-xl font-bold mb-3">Created by Experts</h3>
-                            <p class="text-gray-300 mb-6">The team behind Agency AI has years of experience scaling e-commerce stores + building Shopify apps and automated solutions.</p>
+                            <h3 class="text-xl font-bold mb-3">Leverage our Experience</h3>
+                            <p class="text-gray-300 mb-6">The team behind Agency has years of experience scaling e-commerce stores, building Shopify apps, and developing automated solutions.</p>
                             <a href="#" class="flex items-center text-primary font-medium hover:underline absolute bottom-[22px]">
                                 Learn More <i class="fas fa-arrow-right ml-2"></i>
                             </a>
@@ -182,123 +182,14 @@ const IndexPage = () => {
                 </div>
             </section>
 
-            {/* <section id="benefits" class="py-20 px-6 bg-gradient-dark">
+            <section id="benefits" class="py-20 px-6 bg-gradient-dark">
                 <div class="max-w-7xl mx-auto">
                     <div class="text-center mb-16">
                         <h2 class="text-4xl font-bold mb-4">GROW YOUR BUSINESS <span class="highlight">FASTER</span></h2>
-                        <p class="text-xl text-gray-300 max-w-3xl mx-auto">Our customers see an average of 30% increase in ROAS after just 60 days using Agency AI.</p>
-                    </div>
-
-                    <div class="grid md:grid-cols-2 gap-12 items-center">
-                        <div class="phone-mockup rounded-2xl overflow-hidden bg-gray-900 border border-gray-700">
-                            <div class="p-2 bg-gray-800 flex items-center space-x-2">
-                                <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                                <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                                <div class="ml-4 text-xs text-gray-400">Campaign Creator</div>
-                            </div>
-                            <div class="p-4 space-y-4">
-                                <div class="bg-gray-800 p-4 rounded-lg">
-                                    <h3 class="text-white font-bold mb-3">Create New Campaign</h3>
-                                    <div class="space-y-3">
-                                        <div>
-                                            <label class="block text-sm text-gray-400 mb-1">Campaign Name</label>
-                                            <input type="text" class="form-input w-full px-3 py-2 rounded-lg bg-gray-700 border border-gray-600" value="Fall Collection Launch" />
-                                        </div>
-                                        <div>
-                                            <label class="block text-sm text-gray-400 mb-1">Campaign Goal</label>
-                                            <select class="form-input w-full px-3 py-2 rounded-lg bg-gray-700 border border-gray-600">
-                                                <option>Increase Sales</option>
-                                                <option>Brand Awareness</option>
-                                                <option>Lead Generation</option>
-                                            </select>
-                                        </div>
-                                        <div>
-                                            <label class="block text-sm text-gray-400 mb-1">Budget</label>
-                                            <input type="text" class="form-input w-full px-3 py-2 rounded-lg bg-gray-700 border border-gray-600" value="$1,500" />
-                                        </div>
-                                        <div>
-                                            <label class="block text-sm text-gray-400 mb-1">Channels</label>
-                                            <div class="flex space-x-2">
-                                                <div class="bg-blue-600 text-white px-3 py-1 rounded-full text-xs flex items-center">
-                                                    <i class="fab fa-facebook-f mr-1"></i> Facebook
-                                                    <i class="fas fa-times ml-1"></i>
-                                                </div>
-                                                <div class="bg-pink-600 text-white px-3 py-1 rounded-full text-xs flex items-center">
-                                                    <i class="fab fa-instagram mr-1"></i> Instagram
-                                                    <i class="fas fa-times ml-1"></i>
-                                                </div>
-                                                <div class="bg-red-600 text-white px-3 py-1 rounded-full text-xs flex items-center">
-                                                    <i class="fab fa-google mr-1"></i> Google
-                                                    <i class="fas fa-times ml-1"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <label class="block text-sm text-gray-400 mb-1">AI Copy Suggestions</label>
-                                            <div class="bg-gray-700 p-3 rounded-lg border border-indigo-500 text-sm">
-                                                "Discover our new Fall Collection. Cozy styles that transition perfectly from summer to fall. Shop now and get 15% off your first order."
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <button class="bg-indigo-600 text-white w-full py-2 rounded-lg mt-4 font-medium">Generate Campaign</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="mb-8">
-                                <div class="flex items-start mb-3">
-                                    <div class="w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center mr-4 mt-1 flex-shrink-0">
-                                        <i class="fas fa-rocket text-white"></i>
-                                    </div>
-                                    <div>
-                                        <h3 class="text-xl font-bold mb-2">Launch Campaigns in Minutes</h3>
-                                        <p class="text-gray-300">Our AI helps you create high-converting ad campaigns across multiple platforms with just a few clicks. No design or copywriting skills needed.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mb-8">
-                                <div class="flex items-start mb-3">
-                                    <div class="w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center mr-4 mt-1 flex-shrink-0">
-                                        <i class="fas fa-robot text-white"></i>
-                                    </div>
-                                    <div>
-                                        <h3 class="text-xl font-bold mb-2">AI-Powered Optimization</h3>
-                                        <p class="text-gray-300">Our algorithms continuously monitor and optimize your campaigns for maximum performance, automatically shifting budget to your most successful ads.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mb-8">
-                                <div class="flex items-start mb-3">
-                                    <div class="w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center mr-4 mt-1 flex-shrink-0">
-                                        <i class="fas fa-dollar-sign text-white"></i>
-                                    </div>
-                                    <div>
-                                        <h3 class="text-xl font-bold mb-2">Increase ROAS</h3>
-                                        <p class="text-gray-300">Our customers typically see a 30-50% increase in their Return on Ad Spend within the first 60 days of using Agency AI's platform.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="flex items-start mb-3">
-                                    <div class="w-10 h-10 rounded-full bg-indigo-600 flex items-center justify-center mr-4 mt-1 flex-shrink-0">
-                                        <i class="fas fa-clock text-white"></i>
-                                    </div>
-                                    <div>
-                                        <h3 class="text-xl font-bold mb-2">Save 20+ Hours Per Week</h3>
-                                        <p class="text-gray-300">Stop spending hours managing campaigns across multiple platforms. Agency AI automates the process, letting you focus on growing your business.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mt-10">
-                                <button class="primary-btn px-8 py-3 rounded-lg font-semibold shadow-lg text-lg">
-                                    See How It Works
-                                </button>
-                            </div>
-                        </div>
+                        <p class="text-xl text-gray-300 max-w-3xl mx-auto">Cut costs, increase margins, scale effortlessly. Welcome to a new era in digital marketing.</p>
                     </div>
                 </div>
-            </section> */}
+            </section>
 
             {/* <section id="referrals" class="py-20 px-6">
                 <div class="max-w-7xl mx-auto">
@@ -432,14 +323,14 @@ const IndexPage = () => {
                                 <i class="fas fa-star text-yellow-400"></i>
                                 <i class="fas fa-star text-yellow-400"></i>
                             </div>
-                            <p class="text-gray-300 mb-6">"Since implementing Agency AI, our ROAS has improved by 42%. The platform makes it so easy to manage campaigns across multiple channels, and the AI recommendations are spot on."</p>
+                            <p class="text-gray-300 mb-12">"Since implementing Agency AI, our ROAS has improved by 42%. The platform makes it so easy to manage campaigns across multiple channels, and the AI recommendations are spot on."</p>
                             <div class="flex items-center">
                                 <div class="w-12 h-12 rounded-full bg-indigo-600 flex items-center justify-center mr-4">
                                     <span class="font-bold">SB</span>
                                 </div>
                                 <div>
                                     <h4 class="font-bold">Sarah B.</h4>
-                                    <p class="text-sm text-gray-400">Fashion Boutique Owner</p>
+                                    <p class="text-sm text-gray-400 mb-1">Fashion Boutique Owner</p>
                                 </div>
                             </div>
                         </div>
@@ -459,7 +350,7 @@ const IndexPage = () => {
                                 </div>
                                 <div>
                                     <h4 class="font-bold">Michael K.</h4>
-                                    <p class="text-sm text-gray-400">Electronics Store Owner</p>
+                                    <p class="text-sm text-gray-400 mb-1">Electronics Store Owner</p>
                                 </div>
                             </div>
                         </div>
@@ -472,14 +363,14 @@ const IndexPage = () => {
                                 <i class="fas fa-star text-yellow-400"></i>
                                 <i class="fas fa-star text-yellow-400"></i>
                             </div>
-                            <p class="text-gray-300 mb-6">"The email marketing functionality alone is worth the investment. Our abandoned cart recovery rate has increased by 35% since switching to Agency AI. The setup was incredibly simple too."</p>
+                            <p class="text-gray-300 mb-12">"The email marketing functionality alone is worth the investment. Our abandoned cart recovery rate has increased by 35% since switching to Agency AI. The setup was incredibly simple too."</p>
                             <div class="flex items-center">
                                 <div class="w-12 h-12 rounded-full bg-green-600 flex items-center justify-center mr-4">
                                     <span class="font-bold">JT</span>
                                 </div>
                                 <div>
                                     <h4 class="font-bold">Jessica T.</h4>
-                                    <p class="text-sm text-gray-400">Beauty Brand Founder</p>
+                                    <p class="text-sm text-gray-400 mb-1">Beauty Brand Founder</p>
                                 </div>
                             </div>
                         </div>
@@ -496,11 +387,11 @@ const IndexPage = () => {
                             <button class="primary-btn px-8 py-4 rounded-lg font-semibold shadow-lg text-lg">
                                 Start 14-Day Free Trial
                             </button>
-                            <button class="bg-white text-gray-900 px-8 py-4 rounded-lg font-semibold shadow-lg text-lg">
+                            <button class="bg-white text-gray-900 px-8 py-4 rounded-lg font-semibold shadow-lg text-lg !w-[275px]">
                                 Contact Us
                             </button>
                         </div>
-                        <p class="text-gray-400 mt-6">No credit card required. Cancel anytime.</p>
+                        <p class="text-gray-400 mt-6 !min-w-[100%]">No credit card required. Cancel anytime.</p>
                     </div>
                 </div>
             </section>

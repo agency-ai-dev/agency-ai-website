@@ -7,6 +7,31 @@ const ContactUsPage = () => {
 
     const [menuOpen, setMenuOpen] = React.useState(false);
 
+    const [openIndex, setOpenIndex] = React.useState(null);
+
+
+    const toggleAccordion = (index) => {
+        setOpenIndex(openIndex === index ? null : index);
+    };
+
+    const faqs = [
+        {
+            question: "How quickly can I get started with Agency AI?",
+            answer:
+                "You can get started with Agency AI in minutes. After connecting your store, our onboarding manager will help you set up your first campaigns quickly.",
+        },
+        {
+            question: "What platforms does Agency AI integrate with?",
+            answer:
+                "Agency AI integrates seamlessly with Shopify, Meta (Facebook & Instagram), and Google Ads platforms with more integrations coming soon.",
+        },
+        {
+            question: "How does pricing work?",
+            answer:
+                "Agency AI offers flexible pricing plans based on your store's needs. Contact us for a custom quote tailored to your business size and requirements.",
+        },
+    ];
+
     return (
         <div class="pdf-container">
             <div class="antialiased">
@@ -95,35 +120,25 @@ const ContactUsPage = () => {
                                 <h2 class="text-2xl font-bold mb-6 text-center">Frequently Asked Questions</h2>
 
                                 <div class="space-y-4">
-                                    <div class="card p-4 sm:p-6">
-                                        <button class="accordion-trigger w-full flex justify-between items-center" onclick="toggleAccordion(this)">
-                                            <span class="font-medium">How quickly can I get started with Agency AI?</span>
-                                            <i class="fas fa-chevron-down text-teal-400 transition-transform"></i>
-                                        </button>
-                                        <div class="accordion-content pt-4 text-gray-300">
-                                            <p>You can get started with Agency AI in minutes. After connecting your store, our onboarding manager will help you set up your first campaigns quickly.</p>
+                                    {faqs.map((faq, index) => (
+                                        <div key={index} className="card p-4 sm:p-6">
+                                            <button
+                                                className="accordion-trigger w-full flex justify-between items-center"
+                                                onClick={() => toggleAccordion(index)}
+                                            >
+                                                <span className="font-medium">{faq.question}</span>
+                                                <i
+                                                    className={`fas fa-chevron-down text-teal-400 transition-transform duration-300 ${openIndex === index ? "rotate-180" : ""
+                                                        }`}
+                                                ></i>
+                                            </button>
+                                            {openIndex === index && (
+                                                <div className="pt-4 text-gray-300">
+                                                    <p>{faq.answer}</p>
+                                                </div>
+                                            )}
                                         </div>
-                                    </div>
-
-                                    <div class="card p-4 sm:p-6">
-                                        <button class="accordion-trigger w-full flex justify-between items-center" onclick="toggleAccordion(this)">
-                                            <span class="font-medium">What platforms does Agency AI integrate with?</span>
-                                            <i class="fas fa-chevron-down text-teal-400 transition-transform"></i>
-                                        </button>
-                                        <div class="accordion-content pt-4 text-gray-300">
-                                            <p>Agency AI integrates seamlessly with Shopify, Meta (Facebook & Instagram), and Google Ads platforms with more integrations coming soon.</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="card p-4 sm:p-6">
-                                        <button class="accordion-trigger w-full flex justify-between items-center" onclick="toggleAccordion(this)">
-                                            <span class="font-medium">How does pricing work?</span>
-                                            <i class="fas fa-chevron-down text-teal-400 transition-transform"></i>
-                                        </button>
-                                        <div class="accordion-content pt-4 text-gray-300">
-                                            <p>Agency AI offers flexible pricing plans based on your store's needs. Contact us for a custom quote tailored to your business size and requirements.</p>
-                                        </div>
-                                    </div>
+                                    ))}
                                 </div>
                             </div>
                         </section>

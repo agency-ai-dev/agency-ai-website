@@ -44,36 +44,28 @@ const ContactUsPage = () => {
                         ABOUT <span class="highlight-purple">AGENCY AI</span>
                     </h1>
                     <p class="text-lg md:text-xl max-w-4xl opacity-90 mb-12">
-                        Our mission is to help Shopify store owners and their teams simplify marketing and grow faster using AI technology.
+                        Our mission is to help Shopify store owners and their teams simplify marketing and grow faster by leveraging AI technology.
                     </p>
                 </section>
 
                 <section class="py-8 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
                     <div class="card p-8 mb-16">
-                        <h2 class="text-2xl md:text-3xl font-bold mb-6">Our Mission</h2>
+                        <h2 class="text-2xl md:text-3xl font-bold mb-6">From Our Store to Yours: Marketing Reimagined.</h2>
                         <p class="mb-6 text-lg opacity-90">
-                            We have years of first hand experience managing and marketing for eCommerce businesses, and building technical solutions for Shopify stores.
-                        </p>
-                        <h2 class="text-2xl md:text-3xl font-bold mb-6 mt-12">The Solution</h2>
+                            Ever feel like you need a full-scale marketing agency, but it's just not in the budget or you're tired of explaining your vision? We've been there. In fact, we built an 8-figure Shopify brand from the ground up, experiencing every triumph and frustration that comes with scaling an eCommerce business.
+                            That journey, filled with countless hours of marketing strategy, campaign management, and a relentless pursuit of efficiency, led us to a powerful realization: <b>there had to be a better way.  </b></p>
+                        <h2 class="text-2xl md:text-3xl font-bold mb-6 mt-12">Introducing Agency: The Shopify App Born from Real-World Success & AI Innovation</h2>
                         <p class="mb-6 text-lg opacity-90">
-                            Agency AI is the future of digital marketing.
+                            Agency isn't just another app; it's the culmination of our <b>20+ years of collective experience</b> at the forefront of eCommerce. We've not only built successful Shopify apps relied upon by thousands of merchants daily, but we've also walked in your shoes, scaling multiple Shopify stores into thriving businesses. We're even Shopify-recognized Experts, having developed groundbreaking solutions like the platform's first-ever performance analysis tool.
                         </p>
-                        <p class="mb-6 text-lg opacity-90">
-                            The Shopify app is closely integrated with AI technology to create and optimize multi channel marketing based on your specific industry, products, and goals.
-                        </p>
-                        <p class="mb-6 text-lg opacity-90">
-                            We built it to think like a marketing agency and are constantly improving and adding functionality.
-                        </p>
-                        <h3 class="text-xl font-semibold mb-4 mt-8">Our team collectively has:</h3>
+                        <h3 class="text-xl font-semibold mb-4 mt-8">Why Does This Matter For You?</h3>
                         <ul class="list-disc pl-6 mb-12 space-y-2 text-lg opacity-90">
-                            <li>20+ years experience in eCommerce</li>
-                            <li>Built successful Shopify apps that are used daily by thousands of shops</li>
-                            <li>Created and scaled multiple Shopify stores from scratch into successful businesses</li>
-                            <li>Built countless solutions for Shopify stores, including the first ever Shopify performance analysis tool</li>
-                            <li>Been declared a Shopify Expert by Shopify + recommended by Shopify support and the community</li>
+                            <li><b>Benefit from Our Blueprint:</b> We've poured our hard-earned knowledge – the strategies that built our 8-figure brand – into Agency. It's designed to think like a strategic marketing agency, creating and optimizing multi-channel campaigns based on your unique industry, products, and goals.</li>
+                            <li><b>AI-Powered, Human-Perfected:</b> We combine the raw power of cutting-edge AI with the nuanced understanding that only comes from years of in-the-trenches eCommerce marketing. This means smarter campaigns, better results, and continuous improvement.</li>
+                            <li><b>Your Growth Partner:</b> As entrepreneurs who have navigated the startup world and scaled businesses, we're passionate about empowering others. Agency is built to help businesses of all sizes operate more efficiently and effectively, giving you back time and resources to focus on what you do best.</li>
                         </ul>
-                        <p class="mb-6 text-lg opacity-90">
-                            Having years of experience as business owners and being a part of startups, we're excited about AI technology to help businesses of all size operate more efficiently and effectively.
+                        <p class="mb-6 text-lg opacity-90"><b>
+                            Agency is more than just software; it's a strategic advantage, built by Shopify veterans for Shopify visionaries.</b>
                         </p>
                     </div>
                 </section>
@@ -134,19 +126,19 @@ const ContactUsPage = () => {
                 </section>
 
                 <footer class="py-12 px-6 md:px-12 lg:px-24 border-t border-gray-800">
-                <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
-                    <div class="mb-8 md:mb-0">
-                        <h2 class="text-xl font-bold mb-2">Agency AI</h2>
-                        <p class="opacity-70">© 2025 Agency AI. All rights reserved.</p>
+                    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+                        <div class="mb-8 md:mb-0">
+                            <h2 class="text-xl font-bold mb-2">Agency AI</h2>
+                            <p class="opacity-70">© 2025 Agency AI. All rights reserved.</p>
+                        </div>
+                        <div class="flex flex-col md:flex-row gap-8">
+                            <a href="/" class="text-white hover:text-teal-400 transition-colors">Home</a>
+                            <a href="/aboutus" class="text-teal-400 transition-colors">About</a>
+                            <a href="/contactus" class="text-white hover:text-teal-400 transition-colors">Contact</a>
+                            <a href="/pricing" class="text-white hover:text-teal-400 transition-colors">Pricing</a>
+                        </div>
                     </div>
-                    <div class="flex flex-col md:flex-row gap-8">
-                        <a href="/" class="text-white hover:text-teal-400 transition-colors">Home</a>
-                        <a href="/aboutus" class="text-teal-400 transition-colors">About</a>
-                        <a href="/contactus" class="text-white hover:text-teal-400 transition-colors">Contact</a>
-                        <a href="/pricing" class="text-white hover:text-teal-400 transition-colors">Pricing</a>
-                    </div>
-                </div>
-            </footer>
+                </footer>
             </div>
         </div>
     )
