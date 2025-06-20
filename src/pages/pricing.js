@@ -16,10 +16,10 @@ const PricingPage = () => {
                     <img src={agencyailogo} style={{ width: '100px', marginBottom: '0' }} />
                 </div>
                 <div class="hidden md:flex space-x-8 items-center">
-                    <a href="/" class="text-gray-400 hover:text-white transition-colors">Home</a>
-                    <a href="/aboutus" class="text-gray-400 hover:text-white transition-colors">About</a>
-                    <a href="/contactus" class="text-gray-400 hover:text-white transition-colors">Contact</a>
-                    <a href="/pricing" class="text-white hover:text-white transition-colors">Pricing</a>
+                    <a href="/" class="text-white hover:text-teal-400 hover:text-teal-400 transition-colors no-underline">Home</a>
+                    <a href="/aboutus" class="text-white hover:text-teal-400 transition-colors no-underline">About</a>
+                    <a href="/contactus" class="text-white hover:text-teal-400 transition-colors no-underline">Contact</a>
+                    <a href="/pricing" class="text-teal-400 transition-colors no-underline">Pricing</a>
                     <button class="primary-btn px-6 py-2 rounded-lg font-semibold shadow-lg">Book a Demo</button>
                 </div>
                 <button class="md:hidden text-white text-2xl" onClick={() => setMenuOpen(!menuOpen)}>
@@ -28,10 +28,10 @@ const PricingPage = () => {
                 <>
                     {menuOpen && (
                         <div className="absolute top-full left-0 w-full bg-black text-white flex flex-col space-y-4 px-6 py-4 z-50 md:hidden !top-[120px] text-white">
-                            <a href="/" className="text-white hover:text-purple-300">Home</a>
-                            <a href="/aboutus" className="text-white hover:text-purple-300">About</a>
-                            <a href="/contactus" className="text-white hover:text-purple-300">Contact</a>
-                            <a href="/pricing" className="text-white hover:text-purple-300">Pricing</a>
+                            <a href="/" className="text-white hover:text-teal-400 no-underline">Home</a>
+                            <a href="/aboutus" className="text-white hover:text-teal-400 no-underline">About</a>
+                            <a href="/contactus" className="text-white hover:text-teal-400 no-underline">Contact</a>
+                            <a href="/pricing" className="text-teal-400 no-underline">Pricing</a>
                             <button className="primary-btn px-4 py-2 rounded-lg font-semibold shadow">
                                 Book a Demo
                             </button>
@@ -294,10 +294,10 @@ const PricingPage = () => {
                         <p class="opacity-70">© 2025 Agency AI. All rights reserved.</p>
                     </div>
                     <div class="flex flex-col md:flex-row gap-8">
-                        <a href="/" class="text-white hover:text-teal-400 transition-colors">Home</a>
-                        <a href="/aboutus" class="text-white text-teal-400 transition-colors">About</a>
-                        <a href="/contactus" class="text-white hover:text-teal-400 transition-colors">Contact</a>
-                        <a href="/pricing" class="text-teal-400 hover:text-teal-400 transition-colors">Pricing</a>
+                        <a href="/" class="text-white hover:text-teal-400 transition-colors no-underline">Home</a>
+                        <a href="/aboutus" class="text-white hover:text-teal-400 transition-colors no-underline">About</a>
+                        <a href="/contactus" class="text-white hover:text-teal-400 transition-colors no-underline">Contact</a>
+                        <a href="/pricing" class="text-teal-400 transition-colors no-underline">Pricing</a>
                     </div>
                 </div>
             </footer>
