@@ -43,7 +43,7 @@ const Header = ({ siteTitle }) => {
           </a>
           <button className="primary-btn px-6 py-2 rounded-lg font-semibold shadow-lg">
             <a
-              className="decoration-none text-white no-underline"
+              className="decoration-none text-gray-900 no-underline"
               target="_blank"
               href="http://calendly.com/agency-demo"
             >
@@ -97,7 +97,7 @@ const Header = ({ siteTitle }) => {
             </a>
             <button className="primary-btn px-4 py-2 rounded-lg font-semibold shadow mt-2">
               <a
-                className="decoration-none text-white no-underline"
+                className="decoration-none text-gray-900 no-underline"
                 target="_blank"
                 href="http://calendly.com/agency-demo"
               >

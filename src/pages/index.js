@@ -93,7 +93,7 @@ const IndexPage = () => {
               ></div>
               <Link
                 to="/comingsoon"
-                className="relative decoration-none text-white no-underline flex items-center justify-center"
+                className="relative decoration-none text-gray-900 no-underline flex items-center justify-center"
               >
                 <i className="fas fa-rocket mr-2"></i>
                 Start Free Trial
@@ -192,7 +192,7 @@ const IndexPage = () => {
                   </div>
                   <button
                     type="submit"
-                    className="primary-btn w-full py-3 rounded-lg font-semibold shadow-lg text-lg text-white"
+                    className="primary-btn w-full py-3 rounded-lg font-semibold shadow-lg text-lg text-gray-900"
                   >
                     Get Free Audit
                   </button>
@@ -578,7 +578,7 @@ const IndexPage = () => {
               <button className="primary-btn px-8 py-4 rounded-lg font-semibold shadow-lg text-lg">
                 <Link
                   to="/comingsoon"
-                  className="decoration-none text-white no-underline"
+                  className="decoration-none text-gray-900 no-underline"
                 >
                   Start 14-Day Free Trial
                 </Link>

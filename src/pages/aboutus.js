@@ -6,6 +6,7 @@ import joe from "./../images/joe.jpg"
 import anthony from "./../images/anthony.png"
 import Footer from "../components/footer"
 import Header from "../components/header"
+import { Link } from "gatsby"
 
 const ContactUsPage = () => {
   const [menuOpen, setMenuOpen] = React.useState(false)
@@ -164,12 +165,12 @@ const ContactUsPage = () => {
             >
               Book a Demo
             </a>
-            <a
-              href="#"
+            <Link
+              to="/comingsoon"
               className="btn-secondary px-8 py-3 rounded-md font-semibold text-lg text-white no-underline"
             >
               Start Free Trial
-            </a>
+            </Link>
           </div>
         </section>
 
