@@ -22,13 +22,14 @@ const FreeAudit = () => {
     setIsLoading(true)
     console.log("Form submitted with data:", formData)
 
-    const response = await fetch(`/api/send-audit-email/`, {
+    const response = await fetch(`/api/send-email/`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         to: formData.email,
-        subject: "Free Audit",
+        subject: "Free Audit From Agency AI",
         text: "Audit Email Test",
+        type: "audit",
         name: formData.name,
         website: formData.website,
       }),
