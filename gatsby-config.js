@@ -53,7 +53,7 @@ module.exports = {
       resolve: "gatsby-plugin-robots-txt",
       options: {
         host: "https://www.agencyai.app",
-        sitemap: "https://www.agencyai.app/sitemap.xml",
+        sitemap: "https://www.agencyai.app/sitemap-index.xml",
         policy: [
           {
             userAgent: "*",
