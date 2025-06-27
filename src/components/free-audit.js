@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 
 const FreeAudit = () => {
+  const [isLoading, setIsLoading] = useState(false)
   const [formData, setFormData] = useState({
     email: "",
     name: "",
@@ -18,9 +19,10 @@ const FreeAudit = () => {
   const handleSubmit = async e => {
     e.preventDefault()
     e.stopPropagation()
+    setIsLoading(true)
     console.log("Form submitted with data:", formData)
 
-    await fetch(`/api/send-audit-email/`, {
+    const response = await fetch(`/api/send-audit-email/`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -31,6 +33,18 @@ const FreeAudit = () => {
         website: formData.website,
       }),
     })
+
+    if (response.ok) {
+      console.log("Email sent successfully")
+      setFormData({
+        email: "",
+        name: "",
+        website: "",
+      })
+    } else {
+      console.error("Failed to send email")
+    }
+    setIsLoading(false)
   }
 
   return (
@@ -120,8 +134,9 @@ const FreeAudit = () => {
                   type="button"
                   className="primary-btn w-full py-3 rounded-lg font-semibold shadow-lg text-lg text-gray-900"
                   onClick={handleSubmit}
+                  disabled={isLoading}
                 >
-                  Get Free Audit
+                  {isLoading ? "Sending..." : "Get Free Audit"}
                 </button>
                 <p className="text-xs text-center text-gray-400 mt-2">
                   No credit card required. Results delivered within 24 hours.
