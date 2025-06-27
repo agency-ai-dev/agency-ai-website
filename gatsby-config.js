@@ -12,7 +12,7 @@ module.exports = {
     title: `Agency AI - AI-Powered Marketing Automation`,
     description: `Transform your marketing with Agency AI. AI-powered marketing automation that feels like an in-house team. Run multi-channel ads and automated email campaigns.`,
     author: `@agencyai`,
-    siteUrl: `https://agencyai.app`,
+    siteUrl: `https://www.agencyai.app`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -42,21 +42,18 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        output: `/sitemap.xml`,
         excludes: [`/using-dsg`, `/using-ssr`, `/using-typescript`, `/page-2`],
-        resolveSiteUrl: () => `https://agencyai.app`,
-        serialize: ({ path }) => ({
-          url: path,
-          changefreq: `weekly`,
-          priority: path === `/` ? 1.0 : 0.7,
-        }),
+        siteUrl:
+          process.env.NODE_ENV === "development"
+            ? "http://localhost:9000"
+            : "https://www.agencyai.app",
       },
     },
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://agencyai.app",
-        sitemap: "https://agencyai.app/sitemap.xml",
+        host: "https://www.agencyai.app",
+        sitemap: "https://www.agencyai.app/sitemap.xml",
         policy: [
           {
             userAgent: "*",
