@@ -20,7 +20,7 @@ const FreeAudit = () => {
     e.stopPropagation()
     console.log("Form submitted with data:", formData)
 
-    await fetch(`api/send-audit-email`, {
+    await fetch(`/api/send-audit-email`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
