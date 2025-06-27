@@ -4,6 +4,7 @@ import "./homestyles.css"
 import { Link } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
+import FreeAudit from "../components/free-audit"
 
 const IndexPage = () => {
   return (
@@ -103,7 +104,7 @@ const IndexPage = () => {
         </div>
 
         {/* Add floating animation keyframes */}
-        <style jsx>{`
+        <style>{`
           @keyframes float {
             0%,
             100% {
@@ -116,95 +117,7 @@ const IndexPage = () => {
         `}</style>
       </section>
 
-      <section className="py-12 px-6">
-        <div className="max-w-5xl mx-auto">
-          <div className="card rounded-xl p-8 shadow-2xl border border-purple-500 border-opacity-30">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div>
-                <h2 className="text-3xl font-bold mb-4">
-                  Get Your Free{" "}
-                  <span className="highlight">Marketing Audit</span>
-                </h2>
-                <p className="text-gray-300 mb-6">
-                  Our AI will analyze your current marketing strategy and
-                  identify opportunities for improvement. Receive a custom
-                  report with actionable insights.
-                </p>
-                <div className="flex items-center mb-6">
-                  <i className="fas fa-check-circle text-green-400 mr-3 text-xl"></i>
-                  <span>Ad Performance Analysis</span>
-                </div>
-                <div className="flex items-center mb-6">
-                  <i className="fas fa-check-circle text-green-400 mr-3 text-xl"></i>
-                  <span>Ad Copy Analysis</span>
-                </div>
-                <div className="flex items-center">
-                  <i className="fas fa-check-circle text-green-400 mr-3 text-xl"></i>
-                  <span>Growth Opportunity Identification</span>
-                </div>
-              </div>
-              <div>
-                <form className="space-y-4">
-                  <div>
-                    <label
-                      className="block text-sm font-medium mb-1"
-                      for="email"
-                    >
-                      Your Email
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      className="form-input w-full px-4 py-3 rounded-lg"
-                      placeholder="you@company.com"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label
-                      className="block text-sm font-medium mb-1"
-                      for="name"
-                    >
-                      Your Name
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      className="form-input w-full px-4 py-3 rounded-lg"
-                      placeholder="John Doe"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label
-                      className="block text-sm font-medium mb-1"
-                      for="website"
-                    >
-                      Website URL
-                    </label>
-                    <input
-                      type="url"
-                      id="website"
-                      className="form-input w-full px-4 py-3 rounded-lg"
-                      placeholder="https://yourstore.com"
-                      required
-                    />
-                  </div>
-                  <button
-                    type="submit"
-                    className="primary-btn w-full py-3 rounded-lg font-semibold shadow-lg text-lg text-gray-900"
-                  >
-                    Get Free Audit
-                  </button>
-                  <p className="text-xs text-center text-gray-400 mt-2">
-                    No credit card required. Results delivered within 24 hours.
-                  </p>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <FreeAudit />
 
       <section id="features" className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
