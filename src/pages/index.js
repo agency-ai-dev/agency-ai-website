@@ -497,7 +497,12 @@ const IndexPage = () => {
                 </Link>
               </button>
               <button className="bg-white text-gray-900 px-8 py-4 rounded-lg font-semibold shadow-lg text-lg w-[100%] sm:w-[275px]">
-                Contact Us
+                <Link
+                  to="/contactus"
+                  className="decoration-none text-gray-900 no-underline"
+                >
+                  Contact Us
+                </Link>
               </button>
             </div>
             <p className="text-gray-400 mt-6 !min-w-[100%]">

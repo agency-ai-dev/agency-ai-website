@@ -1,4 +1,5 @@
 import * as React from "react"
+import { useState } from "react"
 import "@fortawesome/fontawesome-free/css/all.min.css"
 import "./contactstyles.css"
 import Footer from "../components/footer"
@@ -6,6 +7,65 @@ import Header from "../components/header"
 
 const ContactUsPage = () => {
   const [openIndex, setOpenIndex] = React.useState(null)
+  const [isLoading, setIsLoading] = useState(false)
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    company: "",
+    message: "",
+  })
+
+  const handleInputChange = e => {
+    const { name, value } = e.target
+    setFormData(prev => ({
+      ...prev,
+      [name]: value,
+    }))
+  }
+
+  const handleSubmit = async e => {
+    e.preventDefault()
+    e.stopPropagation()
+    setIsLoading(true)
+    console.log("Contact form submitted with data:", formData)
+
+    try {
+      const response = await fetch(`/api/send-email/`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          to: "admin@agencyai.com",
+          subject: "Contact Form Submission - Agency AI",
+          text: `Name: ${formData.name || "N/A"}\nEmail: ${
+            formData.email || "N/A"
+          }\nCompany: ${formData.company || "N/A"}\nMessage: ${
+            formData.message || "N/A"
+          }`,
+          type: "general",
+          name: formData.name,
+          website: "",
+        }),
+      })
+
+      if (response.ok) {
+        console.log("Contact form sent successfully")
+        setFormData({
+          name: "",
+          email: "",
+          company: "",
+          message: "",
+        })
+        // You can add a success message here
+      } else {
+        console.error("Failed to send contact form")
+        // You can add an error message here
+      }
+    } catch (error) {
+      console.error("Error submitting contact form:", error)
+    }
+
+    setIsLoading(false)
+  }
 
   const toggleAccordion = index => {
     setOpenIndex(openIndex === index ? null : index)
@@ -69,10 +129,10 @@ const ContactUsPage = () => {
           <div className="lg:desktop-grid">
             <section className="max-w-xl mx-auto lg:max-w-none mb-16">
               <div className="card p-6 sm:p-8">
-                <form className="space-y-6">
+                <form className="space-y-6" onSubmit={handleSubmit}>
                   <div>
                     <label
-                      for="name"
+                      htmlFor="name"
                       className="block text-sm font-medium mb-2"
                     >
                       Name
@@ -81,6 +141,8 @@ const ContactUsPage = () => {
                       type="text"
                       id="name"
                       name="name"
+                      value={formData.name}
+                      onChange={handleInputChange}
                       className="w-full px-4 py-3 rounded-lg"
                       placeholder="Your name"
                       required
@@ -89,7 +151,7 @@ const ContactUsPage = () => {
 
                   <div>
                     <label
-                      for="email"
+                      htmlFor="email"
                       className="block text-sm font-medium mb-2"
                     >
                       Email
@@ -98,6 +160,8 @@ const ContactUsPage = () => {
                       type="email"
                       id="email"
                       name="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
                       className="w-full px-4 py-3 rounded-lg"
                       placeholder="your@email.com"
                       required
@@ -106,7 +170,7 @@ const ContactUsPage = () => {
 
                   <div>
                     <label
-                      for="company"
+                      htmlFor="company"
                       className="block text-sm font-medium mb-2"
                     >
                       Company (Optional)
@@ -115,6 +179,8 @@ const ContactUsPage = () => {
                       type="text"
                       id="company"
                       name="company"
+                      value={formData.company}
+                      onChange={handleInputChange}
                       className="w-full px-4 py-3 rounded-lg"
                       placeholder="Your company name"
                     />
@@ -122,7 +188,7 @@ const ContactUsPage = () => {
 
                   <div>
                     <label
-                      for="message"
+                      htmlFor="message"
                       className="block text-sm font-medium mb-2"
                     >
                       Message
@@ -131,6 +197,8 @@ const ContactUsPage = () => {
                       id="message"
                       name="message"
                       rows="4"
+                      value={formData.message}
+                      onChange={handleInputChange}
                       className="w-full px-4 py-3 rounded-lg"
                       placeholder="How can we help you?"
                       required
@@ -141,8 +209,9 @@ const ContactUsPage = () => {
                     <button
                       type="submit"
                       className="btn-primary w-full py-3 px-6 rounded-lg font-medium text-black text-center"
+                      disabled={isLoading}
                     >
-                      Send Message
+                      {isLoading ? "Sending..." : "Send Message"}
                     </button>
                   </div>
                 </form>

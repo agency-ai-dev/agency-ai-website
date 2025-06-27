@@ -1,7 +1,7 @@
 {
   "rewrites": [
     {
-      "source": "/api/send-audit-email/",
+      "source": "/api/send-email/",
       "destination": "https://curly-sound-1247.devops-dce.workers.dev"
     }
   ]
