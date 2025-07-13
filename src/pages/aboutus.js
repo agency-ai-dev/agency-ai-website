@@ -119,13 +119,17 @@ const ContactUsPage = () => {
               <h3 className="text-2xl font-bold highlight-purple mb-1">John</h3>
               <p className="text-lg mb-4 opacity-80">CTO, Lead Engineer</p>
               <p className="opacity-90">
-                John is a full-stack developer with over 6 years of experience.
-                He's worked at Shopify agencies, consulted for Fortune 500
-                companies, and contributed to early-stage startups.
+                John is a full-stack developer with 6+ years of experience. He's
+                worked at Shopify agencies, early-stage startups, and consulted
+                for Fortune 500 companies. He also brings deep A/B testing
+                expertise from his time at a consulting firm, where he built
+                experiments that collectively drove millions in additional
+                revenue across clients.
               </p>
               <p className="mt-4 opacity-80">
-                In his free time, he enjoys playing pickleball, relaxing in the
-                sauna, and spending time with his wife and daughter.
+                Outside of work, you’ll find John on the pickleball court,
+                unwinding in the sauna, or spending time with his wife,
+                daughter, and 3 dogs.
               </p>
             </div>
 
