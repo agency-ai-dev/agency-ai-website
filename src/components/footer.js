@@ -33,6 +33,12 @@ const Footer = () => {
           >
             Pricing
           </a>
+          <a
+            href="/privacy-policy"
+            className="text-white hover:text-teal-400 transition-colors no-underline"
+          >
+            Privacy Policy
+          </a>
         </div>
       </div>
     </footer>
