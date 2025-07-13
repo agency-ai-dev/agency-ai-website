@@ -9,10 +9,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Agency AI - AI-Powered Marketing Automation`,
+    description: `Transform your marketing with Agency AI. AI-powered marketing automation that feels like an in-house team. Run multi-channel ads and automated email campaigns.`,
+    author: `@agencyai`,
+    siteUrl: `https://www.agencyai.app`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -28,8 +28,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Agency AI - Marketing Automation`,
+        short_name: `Agency AI`,
         start_url: `/`,
         background_color: `#663399`,
         // This will impact how browsers show your PWA/website
@@ -37,6 +37,35 @@ module.exports = {
         // theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/agency-favicon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        excludes: [`/using-dsg`, `/using-ssr`, `/using-typescript`, `/page-2`],
+        siteUrl:
+          process.env.NODE_ENV === "development"
+            ? "http://localhost:9000"
+            : "https://www.agencyai.app",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://www.agencyai.app",
+        sitemap: "https://www.agencyai.app/sitemap-index.xml",
+        policy: [
+          {
+            userAgent: "*",
+            allow: "/",
+            disallow: [
+              "/using-dsg",
+              "/using-ssr",
+              "/using-typescript",
+              "/page-2",
+            ],
+          },
+        ],
       },
     },
   ],
