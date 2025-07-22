@@ -74,11 +74,6 @@ const PrivacyPolicy = () => {
               catalogs, ad accounts).
             </li>
             <li>
-              <strong>read_insights</strong> – grants aggregated performance
-              metrics (impressions, clicks, cost) for the Pages and ad accounts
-              you connected.
-            </li>
-            <li>
               <strong>pages_read_engagement</strong> – provides public
               engagement stats (likes, comments, shares) so we can surface
               creative-level analytics.
