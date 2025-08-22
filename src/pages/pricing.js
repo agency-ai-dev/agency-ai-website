@@ -39,19 +39,24 @@ const PricingPage = () => {
         </div>
 
         <div className="pricing-grid">
-          <div className="pricing-card" id="essentials-plan">
+          <div className="pricing-card recommended" id="essentials-plan">
+            <div className="recommended-badge">Recommended</div>
             <h2 className="plan-name">Essentials</h2>
-            {!isAnnual && <div className="plan-price monthly">$99</div>}
-            {isAnnual && <div className="plan-price annual">$69</div>}
+            {!isAnnual && <div className="plan-price monthly">$59</div>}
+            {isAnnual && <div className="plan-price annual">$41</div>}
             {!isAnnual && <div className="plan-billing monthly">per month</div>}
             {isAnnual && (
               <div className="plan-billing annual">
-                per month, billed annually ($831/year)
+                per month, billed annually ($492/year)
               </div>
             )}
-            <div className="plan-limit">Up to $1,000 ad spend/month</div>
+            <div className="plan-limit">Unlimited ad spend/month</div>
 
             <div className="feature-list">
+              <div className="feature-item">
+                <i className="fas fa-check feature-icon"></i>
+                <span>Free Audit</span>
+              </div>
               <div className="feature-item">
                 <i className="fas fa-check feature-icon"></i>
                 <span>Full funnel ads launch pack</span>
@@ -59,10 +64,6 @@ const PricingPage = () => {
               <div className="feature-item">
                 <i className="fas fa-check feature-icon"></i>
                 <span>AGEN-AI Facebook & Instagram ads</span>
-              </div>
-              <div className="feature-item">
-                <i className="fas fa-check feature-icon"></i>
-                <span>AGEN-AI Google ads</span>
               </div>
               <div className="feature-item">
                 <i className="fas fa-check feature-icon"></i>
@@ -87,11 +88,11 @@ const PricingPage = () => {
             </div>
 
             <a href="#" className="cta-button no-underline">
-              Get Started
+              Start Free Trial
             </a>
           </div>
 
-          <div className="pricing-card" id="growth-plan">
+          {/* <div className="pricing-card" id="growth-plan">
             <h2 className="plan-name">Growth</h2>
             {!isAnnual && <div className="plan-price monthly">$199</div>}
             {isAnnual && <div className="plan-price annual">$139</div>}
@@ -149,9 +150,9 @@ const PricingPage = () => {
             <a href="#" className="cta-button no-underline">
               Get Started
             </a>
-          </div>
+          </div> */}
 
-          <div className="pricing-card recommended" id="pro-plan">
+          {/* <div className="pricing-card recommended" id="pro-plan">
             <div className="recommended-badge">Recommended</div>
             <h2 className="plan-name">Pro</h2>
             {!isAnnual && <div className="plan-price monthly">$299</div>}
@@ -214,9 +215,9 @@ const PricingPage = () => {
             <a href="#" className="cta-button no-underline">
               Get Started
             </a>
-          </div>
+          </div> */}
 
-          <div className="pricing-card" id="premium-plan">
+          {/* <div className="pricing-card" id="premium-plan">
             <h2 className="plan-name">Premium</h2>
             {!isAnnual && <div className="plan-price monthly">$499</div>}
             {isAnnual && <div className="plan-price annual">$349</div>}
@@ -278,7 +279,7 @@ const PricingPage = () => {
             <a href="#" className="cta-button no-underline">
               Get Started
             </a>
-          </div>
+          </div> */}
         </div>
 
         <div className="enterprise-section">

@@ -67,18 +67,14 @@ const IndexPage = () => {
 
           <h1 className="text-5xl md:text-6xl font-bold leading-tight text-center mb-2">
             <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-              MARKETING AUTOMATION
+              THE E-COMMERCE
             </span>
-            <br />
-            <span className="highlight-purple text-4xl md:text-5xl mt-2 block">
-              THAT FEELS LIKE AN IN-HOUSE TEAM
-            </span>
+            <span className="highlight-purple block">GROWTH ENGINE </span>
           </h1>
 
           <p className="mt-8 text-xl md:text-2xl text-gray-300 text-center max-w-4xl mx-auto leading-relaxed">
-            Run multi-channel ads + automated email campaigns powered by
-            <span className="highlight"> AGEN.AI</span> - your all-in-one
-            marketing solution within Shopify.
+            AI-powered Meta advertising that optimizes, scales, and manages
+            campaigns automatically - so you can focus on growing your business{" "}
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
@@ -96,8 +92,7 @@ const IndexPage = () => {
                 to="/comingsoon"
                 className="relative decoration-none text-gray-900 no-underline flex items-center justify-center"
               >
-                <i className="fas fa-rocket mr-2"></i>
-                Start Free Trial
+                Get Early Access
               </Link>
             </button>
           </div>
@@ -135,20 +130,21 @@ const IndexPage = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="card rounded-xl p-6 hover:shadow-lg">
               <div className="w-14 h-14 bg-opacity-20 bg-purple-500 rounded-lg flex items-center justify-center mb-4">
-                <i className="fas fa-magic text-3xl feature-icon mr-0"></i>
+                <i className="fas fa-clock text-3xl feature-icon mr-0"></i>
               </div>
               <h3 className="text-xl font-bold mb-3">
-                Fast Full Service Setup
+                Hours Lost on Optimization
               </h3>
               <p className="text-gray-300 mb-6">
-                Connect your store, complete a quick onboarding questionnaire.
-                AGEN-AI handles the setup and launch of your ad campaigns.{" "}
+                Spending countless hours manually adjusting bids, budgets, and
+                targeting while your campaigns underperform. Your time should be
+                building your business, not babysitting ads.
               </p>
               <a
                 href="#"
                 className="flex items-center text-primary font-medium hover:underline absolute bottom-[22px] highlight-purple"
               >
-                Learn More <i className="fas fa-arrow-right ml-2"></i>
+                Stop the Grind <i className="fas fa-arrow-right ml-2"></i>
               </a>
             </div>
 
@@ -157,56 +153,58 @@ const IndexPage = () => {
                 <i className="fas fa-chart-line text-3xl feature-icon mr-0"></i>
               </div>
               <h3 className="text-xl font-bold mb-3">
-                Multi-Channel Management
+                Scaling Campaigns That Actually Work
               </h3>
               <p className="text-gray-300 mb-6">
-                Run ads across Meta and Google, send emails, all from one AI
-                powered dashboard. Unify your messaging with the power of
-                AGEN-AI.
+                Struggling to identify winning campaigns and scale them
+                profitably. What works today fails tomorrow, leaving you
+                constantly starting over with trial and error.
               </p>
               <a
                 href="#"
                 className="flex items-center text-primary font-medium hover:underline absolute bottom-[22px] highlight-purple"
               >
-                Learn More <i className="fas fa-arrow-right ml-2"></i>
+                Scale Smarter <i className="fas fa-arrow-right ml-2"></i>
               </a>
             </div>
 
             <div className="card rounded-xl p-6 hover:shadow-lg">
               <div className="w-14 h-14 bg-opacity-20 bg-purple-500 rounded-lg flex items-center justify-center mb-4">
-                <i className="fas fa-envelope text-3xl feature-icon mr-0"></i>
+                <i className="fas fa-mobile-screen text-3xl feature-icon mr-0"></i>
               </div>
               <h3 className="text-xl font-bold mb-3">
-                Built-In Email Provider
+                Constant Performance Monitoring
               </h3>
               <p className="text-gray-300 mb-6">
-                Send and automate email marketing directly within Agency. Use AI
-                driven funnels to capture the business you’re losing out on.
+                Constantly checking ad performance instead of focusing on
+                growing your business. You're stuck managing campaigns when you
+                should be managing strategy.
               </p>
               <a
                 href="#"
                 className="flex items-center text-primary font-medium hover:underline absolute bottom-[22px] highlight-purple"
               >
-                Learn More <i className="fas fa-arrow-right ml-2"></i>
+                Focus on Growth <i className="fas fa-arrow-right ml-2"></i>
               </a>
             </div>
 
             <div className="card rounded-xl p-6 hover:shadow-lg">
               <div className="w-14 h-14 bg-opacity-20 bg-purple-500 rounded-lg flex items-center justify-center mb-4">
-                <i className="fas fa-users-cog text-3xl feature-icon mr-0"></i>
+                <i className="fas fa-bolt text-3xl feature-icon mr-0"></i>
               </div>
               <h3 className="text-xl font-bold mb-3">
-                Full-Stack Agency Experience
+                24-Hour Campaign Launch
               </h3>
               <p className="text-gray-300 mb-6">
-                Get the expertise of a full-service agency: campaign strategy,
-                automation, and optimization. All without the overhead costs.
+                24-hour setup to live campaigns. Connect your Meta account,
+                complete our 5-minute questionnaire, and launch AI-optimized ads
+                ready to scale.
               </p>
               <a
                 href="#"
                 className="flex items-center text-primary font-medium hover:underline absolute bottom-[22px] highlight-purple"
               >
-                Learn More <i className="fas fa-arrow-right ml-2"></i>
+                Launch Fast <i className="fas fa-arrow-right ml-2"></i>
               </a>
             </div>
 
@@ -215,17 +213,18 @@ const IndexPage = () => {
                 <i className="fas fa-chart-pie text-3xl feature-icon mr-0"></i>
               </div>
               <h3 className="text-xl font-bold mb-3">
-                Insightful Data Tracking
+                Your 24/7 AI Marketing Team
               </h3>
               <p className="text-gray-300 mb-6">
-                Track campaign data, get insights and recommendations. See the
-                performance of your campaigns in real-time dashboards.
+                Get a dedicated AI team working around the clock on your Meta
+                campaigns: strategic planning, real-time optimization, and
+                creative direction. All the talent, none of the payroll.
               </p>
               <a
                 href="#"
                 className="flex items-center text-primary font-medium hover:underline absolute bottom-[22px] highlight-purple"
               >
-                Learn More <i className="fas fa-arrow-right ml-2"></i>
+                Get Expert Results <i className="fas fa-arrow-right ml-2"></i>
               </a>
             </div>
 
@@ -234,18 +233,18 @@ const IndexPage = () => {
                 <i className="fas fa-brain text-3xl feature-icon mr-0"></i>
               </div>
               <h3 className="text-xl font-bold mb-3">
-                Leverage our Experience
+                Insightful Campaign Analytics{" "}
               </h3>
               <p className="text-gray-300 mb-6">
-                The team behind Agency has years of experience scaling
-                e-commerce stores, building Shopify apps, and developing
-                automated solutions.
+                Track Meta campaign performance with AI-driven insights and
+                recommendations. See what's working, what's not, and get
+                actionable data to improve your ROI in real-time.
               </p>
               <a
                 href="#"
                 className="flex items-center text-primary font-medium hover:underline absolute bottom-[22px] highlight-purple"
               >
-                Learn More <i className="fas fa-arrow-right ml-2"></i>
+                See Clear Data <i className="fas fa-arrow-right ml-2"></i>
               </a>
             </div>
           </div>
@@ -254,13 +253,13 @@ const IndexPage = () => {
 
       <section id="benefits" className="py-20 px-6 bg-gradient-dark">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
+          <div className="text-center">
             <h2 className="text-4xl font-bold mb-4">
               GROW YOUR BUSINESS <span className="highlight">FASTER</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Cut costs, increase margins, scale effortlessly. Welcome to a new
-              era in digital marketing.
+              era of scalable e-commerce growth.
             </p>
           </div>
         </div>
@@ -381,7 +380,8 @@ const IndexPage = () => {
                 </div>
             </section> */}
 
-      <section className="py-20 px-6 bg-gradient-dark">
+      {/* Review Section */}
+      {/* <section className="py-20 px-6 bg-gradient-dark">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">
@@ -474,7 +474,7 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="py-20 px-6">
         <div className="max-w-5xl mx-auto">
@@ -484,8 +484,8 @@ const IndexPage = () => {
               Marketing?
             </h2>
             <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              Join hundreds of successful Shopify stores already using Agency AI
-              to automate their marketing and increase revenue.
+              Get early access to the AI marketing revolution. Limited spots
+              available for businesses ready to automate their Meta campaigns
             </p>
             <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
               <button className="primary-btn px-8 py-4 rounded-lg font-semibold shadow-lg text-lg">
@@ -493,7 +493,7 @@ const IndexPage = () => {
                   to="/comingsoon"
                   className="decoration-none text-gray-900 no-underline"
                 >
-                  Start 14-Day Free Trial
+                  Get Early Access
                 </Link>
               </button>
               <button className="bg-white text-gray-900 px-8 py-4 rounded-lg font-semibold shadow-lg text-lg w-[100%] sm:w-[275px]">
@@ -505,9 +505,6 @@ const IndexPage = () => {
                 </Link>
               </button>
             </div>
-            <p className="text-gray-400 mt-6 !min-w-[100%]">
-              No credit card required. Cancel anytime.
-            </p>
           </div>
         </div>
       </section>
