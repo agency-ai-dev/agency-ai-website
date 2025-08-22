@@ -75,17 +75,42 @@ const ContactUsPage = () => {
     {
       question: "How quickly can I get started with Agency AI?",
       answer:
-        "You can get started with Agency AI in minutes. After connecting your store, our onboarding manager will help you set up your first campaigns quickly.",
+        "Getting started takes less than 10 minutes. Simply connect your Meta Ads account, complete our 5-minute onboarding questionnaire, and our AI will have your optimized campaigns ready to launch within 24 hours. No technical setup or complicated integrations required.",
     },
     {
-      question: "What platforms does Agency AI integrate with?",
+      question: "What platforms does Agency AI currently support?",
       answer:
-        "Agency AI integrates seamlessly with Shopify, Meta (Facebook & Instagram), and Google Ads platforms with more integrations coming soon.",
+        "Agency AI currently specializes in Meta advertising (Facebook & Instagram). We're actively developing integrations for Google Ads, TikTok Ads, and other major platforms. Shopify integration is launching soon, with additional ecommerce platforms to follow.",
     },
     {
       question: "How does pricing work?",
       answer:
-        "Agency AI offers flexible pricing plans based on your store's needs. Contact us for a custom quote tailored to your business size and requirements.",
+        "We offer a single launch plan at $59/month with a 30-day free trial - no tiers or hidden fees. As an early adopter, you'll be grandfathered into this launch pricing even as our rates increase for future customers. Start your free trial today to lock in this exclusive rate.",
+    },
+    {
+      question: "Is my data and ad account information secure?",
+      answer:
+        "Absolutely. We use enterprise-grade security with 256-bit SSL encryption and follow strict data protection protocols. We never access your payment methods or personal customer data - only the campaign metrics needed for optimization. Your data is never shared with third parties.",
+    },
+    {
+      question: "What kind of results can I expect?",
+      answer:
+        "While results vary by business, our AI typically improves campaign performance within the first month. Most users see reduced cost-per-acquisition, improved ROAS, and significant time savings. Our AI continuously learns and optimizes, so performance tends to improve over time.",
+    },
+    {
+      question: "Do I maintain control over my campaigns?",
+      answer:
+        "Yes, you maintain full control. You can set spending limits, pause campaigns, and adjust targeting parameters anytime. Our AI handles the optimization and management, but you're always in the driver's seat for major decisions.",
+    },
+    {
+      question: "What if I need help or have questions?",
+      answer:
+        "Our support team is available via email and chat during business hours. We also provide comprehensive onboarding support and regular check-ins to ensure you're getting maximum value from the platform.",
+    },
+    {
+      question: "Can I cancel anytime?",
+      answer:
+        "Yes, there are no long-term contracts. You can pause or cancel your subscription at any time. If you cancel, you'll retain access through the end of your current billing period.",
     },
   ]
 
@@ -101,7 +126,7 @@ const ContactUsPage = () => {
             </h1>
           </section>
 
-          <section className="max-w-xl mx-auto lg:max-w-none mb-10 transform hover:-translate-y-1 transition-transform">
+          <section className="max-w-xl mx-auto lg:max-w-[70%] mb-10 transform hover:-translate-y-1 transition-transform">
             <div className="card-highlight p-6 sm:p-8 text-center">
               <div className="flex flex-col items-center">
                 <div className="circle-icon-highlight">
@@ -113,11 +138,11 @@ const ContactUsPage = () => {
                   our powerful AI-driven platform. Get a personalized
                   walkthrough in just 15 minutes.
                 </p>
-                <button className="btn-highlight py-3 px-8 rounded-lg text-black font-semibold text-lg">
+                <button className="primary-btn py-3 px-8 rounded-lg text-black font-semibold text-lg">
                   <a
                     target="_blank"
                     href="http://calendly.com/agency-demo"
-                    className="decoration-none text-white no-underline"
+                    className="decoration-none text-gray-900 no-underline"
                   >
                     Schedule Your Demo Now
                   </a>
@@ -127,7 +152,7 @@ const ContactUsPage = () => {
           </section>
 
           <div className="lg:desktop-grid">
-            <section className="max-w-xl mx-auto lg:max-w-none mb-16">
+            <section className="max-w-xl mx-auto lg:max-w-[70%] mb-16">
               <div className="card p-6 sm:p-8">
                 <form className="space-y-6" onSubmit={handleSubmit}>
                   <div>
@@ -205,10 +230,10 @@ const ContactUsPage = () => {
                     ></textarea>
                   </div>
 
-                  <div>
+                  <div className="flex justify-center">
                     <button
                       type="submit"
-                      className="btn-primary w-full py-3 px-6 rounded-lg font-medium text-black text-center"
+                      className="btn-primary w-full lg:w-[60%] py-3 px-6 rounded-lg font-medium text-black text-center"
                       disabled={isLoading}
                     >
                       {isLoading ? "Sending..." : "Send Message"}

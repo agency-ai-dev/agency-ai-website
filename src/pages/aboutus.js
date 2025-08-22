@@ -22,70 +22,50 @@ const ContactUsPage = () => {
             <span className="highlight-purple">AGENCY AI</span>
           </h1>
           <p className="text-lg md:text-xl max-w-4xl opacity-90 mb-12">
-            Our mission is to help Shopify store owners and their teams simplify
-            marketing and grow faster by leveraging AI technology.
+            Our mission is to help Shopify store owners and their teams automate
+            growth by leveraging AI technology.
           </p>
         </section>
 
         <section className="py-8 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
           <div className="card p-8">
             <h2 className="text-2xl md:text-3xl font-bold mb-6">
-              From Our Store to Yours: Marketing Reimagined.
+              The Problem We're Solving
             </h2>
             <p className="mb-6 text-lg opacity-90">
-              Ever feel like you need a full-scale marketing agency, but it's
-              just not in the budget or you're tired of explaining your vision?
-              We've been there. In fact, we built an 8-figure Shopify brand from
-              the ground up, experiencing every triumph and frustration that
-              comes with scaling an eCommerce business. That journey, filled
-              with countless hours of marketing strategy, campaign management,
-              and a relentless pursuit of efficiency, led us to a powerful
-              realization: <b>there had to be a better way. </b>
+              We've seen too many brilliant business owners spending countless
+              hours manually managing their ad campaigns instead of focusing on
+              what they do best, which is growing their business.
+              <br />
+              <br />
+              The current landscape forces entrepreneurs to choose between
+              expensive agencies, hiring specialists, or becoming marketing
+              experts themselves. None of these options are ideal.
             </p>
             <h2 className="text-2xl md:text-3xl font-bold mb-6 mt-12">
-              Introducing Agency: The Shopify App Born from Real-World Success &
-              AI Innovation
+              Our Solution
             </h2>
             <p className="mb-6 text-lg opacity-90">
-              Agency isn't just another app; it's the culmination of our{" "}
-              <b>20+ years of collective experience</b> at the forefront of
-              eCommerce. We've not only built successful Shopify apps relied
-              upon by thousands of merchants daily, but we've also walked in
-              your shoes, scaling multiple Shopify stores into thriving
-              businesses. We're even Shopify-recognized Experts, having
-              developed groundbreaking solutions like the platform's first-ever
-              performance analysis tool.
+              Agency AI was born from the belief that advanced growth automation
+              should be accessible to every business, not just enterprises with
+              massive budgets.
+              <br />
+              <br />
+              We're building AI that doesn't just automate. It thinks, learns,
+              and optimizes like the best marketing teams, but works 24/7
+              without the overhead.
             </p>
-            <h3 className="text-xl font-semibold mb-4 mt-8">
-              Why Does This Matter For You?
-            </h3>
-            <ul className="list-disc pl-6 mb-12 space-y-2 text-lg opacity-90">
-              <li>
-                <b>Benefit from Our Blueprint:</b> We've poured our hard-earned
-                knowledge – the strategies that built our 8-figure brand – into
-                Agency. It's designed to think like a strategic marketing
-                agency, creating and optimizing multi-channel campaigns based on
-                your unique industry, products, and goals.
-              </li>
-              <li>
-                <b>AI-Powered, Human-Perfected:</b> We combine the raw power of
-                cutting-edge AI with the nuanced understanding that only comes
-                from years of in-the-trenches eCommerce marketing. This means
-                smarter campaigns, better results, and continuous improvement.
-              </li>
-              <li>
-                <b>Your Growth Partner:</b> As entrepreneurs who have navigated
-                the startup world and scaled businesses, we're passionate about
-                empowering others. Agency is built to help businesses of all
-                sizes operate more efficiently and effectively, giving you back
-                time and resources to focus on what you do best.
-              </li>
-            </ul>
+            <h3 className="text-xl font-semibold mb-4 mt-8">Our Values</h3>
             <p className="mb-6 text-lg opacity-90">
-              <b>
-                Agency is more than just software; it's a strategic advantage,
-                built by Shopify veterans for Shopify visionaries.
-              </b>
+              We believe advanced AI marketing and growth automation should be
+              accessible to every business, not just enterprises with massive
+              budgets. Every feature we build drives real business outcomes
+              while continuously learning and evolving from campaign data.
+              <br />
+              <br />
+              We're not just a tool. We're your AI growth partner, democratizing
+              cutting-edge technology so any business can compete at the highest
+              level.
             </p>
           </div>
         </section>
@@ -122,7 +102,7 @@ const ContactUsPage = () => {
                 John is a full-stack developer with 6+ years of experience. He's
                 worked at Shopify agencies, early-stage startups, and consulted
                 for Fortune 500 companies. He also brings deep A/B testing
-                expertise from his time at a consulting firm, where he built
+                expertise from his time in consulting, where he built
                 experiments that collectively drove millions in additional
                 revenue across clients.
               </p>
