@@ -60,19 +60,19 @@ const IndexPage = () => {
           {/* AI Badge */}
           <div className="inline-flex items-center px-4 py-2 mb-8 rounded-full border border-purple-500/30 bg-purple-500/10 backdrop-blur-sm">
             <i className="fas fa-robot text-purple-400 mr-2"></i>
-            <span className="text-sm font-medium text-purple-300">
+            <span className="text-[.75rem] md:text-sm font-medium text-purple-300">
               AI-Powered Marketing
             </span>
           </div>
 
-          <h1 className="text-5xl md:text-6xl font-bold leading-tight text-center mb-2">
+          <h1 className="text-[2rem] md:text-6xl font-bold leading-tight text-center mb-2">
             <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
               THE E-COMMERCE
             </span>
             <span className="highlight-purple block">GROWTH ENGINE </span>
           </h1>
 
-          <p className="mt-8 text-xl md:text-2xl text-gray-300 text-center max-w-4xl mx-auto leading-relaxed">
+          <p className="mt-5 md:mt-8 text-lg md:text-2xl text-gray-300 text-center max-w-4xl mx-auto leading-relaxed">
             AI-powered Meta advertising that optimizes, scales, and manages
             campaigns automatically - so you can focus on growing your business{" "}
           </p>
