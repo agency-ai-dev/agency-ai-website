@@ -32,7 +32,7 @@ const ContactUsPage = () => {
             <h2 className="text-2xl md:text-3xl font-bold mb-6">
               The Problem We're Solving
             </h2>
-            <p className="mb-6 text-lg opacity-90">
+            <p className="mb-10 text-lg opacity-90">
               We've seen too many brilliant business owners spending countless
               hours manually managing their ad campaigns instead of focusing on
               what they do best, which is growing their business.
@@ -45,7 +45,7 @@ const ContactUsPage = () => {
             <h2 className="text-2xl md:text-3xl font-bold mb-6 mt-12">
               Our Solution
             </h2>
-            <p className="mb-6 text-lg opacity-90">
+            <p className="mb-10 text-lg opacity-90">
               Agency AI was born from the belief that advanced growth automation
               should be accessible to every business, not just enterprises with
               massive budgets.
@@ -55,8 +55,10 @@ const ContactUsPage = () => {
               and optimizes like the best marketing teams, but works 24/7
               without the overhead.
             </p>
-            <h3 className="text-xl font-semibold mb-4 mt-8">Our Values</h3>
-            <p className="mb-6 text-lg opacity-90">
+            <h3 className="text-2xl md:text-3xl font-semibold mb-4 mt-8">
+              Our Values
+            </h3>
+            <p className="mb-10 text-lg opacity-90">
               We believe advanced AI marketing and growth automation should be
               accessible to every business, not just enterprises with massive
               budgets. Every feature we build drives real business outcomes
