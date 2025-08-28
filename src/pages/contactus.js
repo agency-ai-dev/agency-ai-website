@@ -71,6 +71,7 @@ const ContactUsPage = () => {
       } else {
         console.error("Failed to send contact form")
         const errorData = await response.text()
+        console.error("Error details:", errorData)
         setMessageType("error")
         setMessage("There was an error sending your message. Please try again.")
       }
