@@ -8,6 +8,8 @@ import Header from "../components/header"
 const ContactUsPage = () => {
   const [openIndex, setOpenIndex] = React.useState(null)
   const [isLoading, setIsLoading] = useState(false)
+  const [messageType, setMessageType] = useState(null) // 'success', 'error', or null
+  const [message, setMessage] = useState("")
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -21,12 +23,19 @@ const ContactUsPage = () => {
       ...prev,
       [name]: value,
     }))
+    // Clear messages when user starts typing
+    if (messageType) {
+      setMessageType(null)
+      setMessage("")
+    }
   }
 
   const handleSubmit = async e => {
     e.preventDefault()
     e.stopPropagation()
     setIsLoading(true)
+    setMessageType(null) // Clear previous messages
+    setMessage("")
     console.log("Contact form submitted with data:", formData)
 
     try {
@@ -49,19 +58,28 @@ const ContactUsPage = () => {
 
       if (response.ok) {
         console.log("Contact form sent successfully")
+        setMessageType("success")
+        setMessage(
+          "Your message has been sent successfully! We'll be in touch soon."
+        )
         setFormData({
           name: "",
           email: "",
           company: "",
           message: "",
         })
-        // You can add a success message here
       } else {
         console.error("Failed to send contact form")
-        // You can add an error message here
+        const errorData = await response.text()
+        setMessageType("error")
+        setMessage("There was an error sending your message. Please try again.")
       }
     } catch (error) {
       console.error("Error submitting contact form:", error)
+      setMessageType("error")
+      setMessage(
+        "Network error occurred. Please check your connection and try again."
+      )
     }
 
     setIsLoading(false)
@@ -154,6 +172,36 @@ const ContactUsPage = () => {
           <div className="lg:desktop-grid">
             <section className="max-w-xl mx-auto lg:max-w-[70%] mb-16">
               <div className="card p-6 sm:p-8">
+                {/* Message Display */}
+                {messageType && (
+                  <div
+                    className={`mb-4 p-4 rounded-lg border ${
+                      messageType === "success"
+                        ? "bg-green-900/20 border-green-500/50 text-green-300"
+                        : "bg-red-900/20 border-red-500/50 text-red-300"
+                    }`}
+                    role="alert"
+                  >
+                    <div className="flex items-start">
+                      <div className="ml-3">
+                        <div className="flex items-center gap-2">
+                          <div className="flex-shrink-0">
+                            {messageType === "success" ? (
+                              <i className="fas fa-check-circle text-green-400 text-lg mt-0.5"></i>
+                            ) : (
+                              <i className="fas fa-exclamation-triangle text-red-400 text-lg mt-0.5"></i>
+                            )}
+                          </div>
+                          <p className="text-sm font-medium mb-0">
+                            {messageType === "success" ? "Success!" : "Error"}
+                          </p>
+                        </div>
+                        <p className="text-sm mt-1 mb-1">{message}</p>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
                 <form className="space-y-6" onSubmit={handleSubmit}>
                   <div>
                     <label
