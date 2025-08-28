@@ -59,6 +59,7 @@ const FreeAudit = () => {
       } else {
         console.error("Failed to send email")
         const errorData = await response.text()
+        console.error("Error response data:", errorData)
         setMessageType("error")
         setMessage(
           "There was an error submitting your request. Please try again."
