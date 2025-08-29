@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import FreeAudit from "../components/free-audit"
-import Pricing from "../components/Pricing"
+import Pricing from "../components/pricing"
 import laptopMobileImage from "../images/laptop-mobile-screengrab.png"
 
 const IndexPage = () => {
