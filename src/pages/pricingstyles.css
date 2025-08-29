@@ -196,7 +196,7 @@ input:checked + .slider:before {
   font-size: 0.95rem;
 }
 
-.feature-icon {
+.pricing-grid .feature-icon {
   color: var(--primary);
   margin-right: 0.75rem;
   flex-shrink: 0;
