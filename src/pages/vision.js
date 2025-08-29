@@ -512,7 +512,7 @@ const IndexPage = () => {
                 </a>
               </button>
               <a
-                href="/investment-deck.pdf"
+                href="/agency-ai-investment-deck.pdf"
                 download="Agency AI Investment Pitch Deck.pdf"
                 className="bg-white text-gray-900 px-8 py-4 rounded-lg font-semibold shadow-lg text-lg border border-gray-300 hover:bg-gray-50 transition-colors inline-block text-center no-underline"
               >
