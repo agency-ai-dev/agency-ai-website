@@ -7,12 +7,13 @@ import Footer from "../components/footer"
 import FreeAudit from "../components/free-audit"
 import Pricing from "../components/pricing"
 import laptopMobileImage from "../images/laptop-mobile-screengrab.png"
+import mobileChat from "../images/mobile-chat.png"
 
 const IndexPage = () => {
   return (
     <div className="pdf-container">
       <Header />
-      <section className="relative py-24 px-6 overflow-hidden min-h-[80vh] flex items-center pt-12">
+      <section className="relative py-24 px-6 overflow-hidden min-h-[80vh] flex items-center">
         <div className="glow"></div>
 
         {/* Floating AI Elements */}
@@ -75,11 +76,11 @@ const IndexPage = () => {
           </h1>
 
           <p className="mt-5 md:mt-8 text-lg md:text-2xl text-gray-300 text-center max-w-4xl mx-auto leading-relaxed">
-            Powered by AGEN-AI, our proprietary intelligence that makes
-            cross-channel marketing decisions like a top-tier agency. Unlike
-            single-purpose apps, we orchestrate your entire growth strategy with
-            unified intelligence trained on brand knowledge and ever changing
-            industry best practices.
+            Built on AGEN-AI: Our closed-source engine that learns, optimizes,
+            and automates your growth stack—from traffic to conversion. Unlike
+            single-purpose apps, unified intelligence powers campaigns, landing
+            pages, and more using your brand knowledge and real-time best
+            practices.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
@@ -93,12 +94,13 @@ const IndexPage = () => {
                   background: "linear-gradient(to right, #00d4a3, #00b89a)",
                 }}
               ></div>
-              <Link
-                to="/comingsoon"
+              <a
+                target="_blank"
+                href="https://calendly.com/agency-demo"
                 className="relative decoration-none text-gray-900 no-underline flex items-center justify-center"
               >
-                See The Vision
-              </Link>
+                Schedule Investor Demo
+              </a>
             </button>
           </div>
         </div>
@@ -132,7 +134,17 @@ const IndexPage = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          {/* Problem Subsection */}
+          <div className="text-center mb-12">
+            <h3
+              className="text-3xl font-bold mb-8"
+              style={{ color: "#00e6b4" }}
+            >
+              Problem
+            </h3>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-20">
             <div className="card rounded-xl p-6 hover:shadow-lg">
               <div className="w-14 h-14 bg-opacity-20 bg-purple-500 rounded-lg flex items-center justify-center mb-4">
                 <i className="fas fa-user-clock text-3xl feature-icon mr-0"></i>
@@ -161,9 +173,9 @@ const IndexPage = () => {
                 Fragmented Growth Stack
               </h3>
               <p className="text-gray-300 mb-6">
-                Marketing, analytics, customer success, and growth teams work in
-                silos with disconnected tools. Critical insights get lost
-                between platforms, slowing decision-making.
+                Marketing, analytics, customer success, and scaling efforts
+                operate in silos with disconnected tools. Critical insights get
+                lost between platforms, slowing decision-making.
               </p>
               <a
                 href="#"
@@ -181,9 +193,9 @@ const IndexPage = () => {
                 Manual Growth Management
               </h3>
               <p className="text-gray-300 mb-6">
-                Growth teams manually monitor dozens of metrics across platforms
-                instead of focusing on strategy and innovation. Reactive instead
-                of proactive growth.
+                Business owners manually monitor dozens of metrics across
+                platforms instead of focusing on strategy and innovation.
+                Reactive instead of proactive growth.
               </p>
               <a
                 href="#"
@@ -192,7 +204,19 @@ const IndexPage = () => {
                 Automate Growth <i className="fas fa-arrow-right ml-2"></i>
               </a>
             </div>
+          </div>
 
+          {/* Solution Subsection */}
+          <div className="text-center mb-12">
+            <h3
+              className="text-3xl font-bold mb-8"
+              style={{ color: "#00e6b4" }}
+            >
+              Solution
+            </h3>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
             <div className="card rounded-xl p-6 hover:shadow-lg">
               <div className="w-14 h-14 bg-opacity-20 bg-purple-500 rounded-lg flex items-center justify-center mb-4">
                 <i className="fas fa-rocket text-3xl feature-icon mr-0"></i>
@@ -201,8 +225,8 @@ const IndexPage = () => {
                 AI Marketing Agency, Not Just Another App
               </h3>
               <p className="text-gray-300 mb-6">
-                AGEN-AI makes strategic decisions across all your marketing
-                channels simultaneously, just like a premium agency team. Get
+                AGEN-AI makes strategic decisions across all your growth
+                channels simultaneously, acting as a premium agency team. Get
                 cross-channel optimization and strategic thinking at 90%+ cost
                 savings vs traditional agencies.
               </p>
@@ -223,9 +247,9 @@ const IndexPage = () => {
               </h3>
               <p className="text-gray-300 mb-6">
                 While other apps optimize in silos, AGEN-AI orchestrates
-                campaigns across Meta, Google, email, SMS, and more. Strategic
-                decision-making that considers your entire customer journey, not
-                individual touchpoints.
+                campaigns across Meta, Google, email, SMS, and your landing
+                pages. Strategic decision-making that considers your entire
+                customer journey, not individual touchpoints.
               </p>
               <a
                 href="#"
@@ -243,9 +267,9 @@ const IndexPage = () => {
                 24-Hour Growth Deployment
               </h3>
               <p className="text-gray-300 mb-6">
-                From setup to full growth automation in 24 hours. AGEN-AI
-                instantly applies learned knowledge from thousands of successful
-                campaigns to optimize your entire funnel.
+                From onboarding to full growth automation in 24 hours. AGEN-AI
+                instantly analyzes your business and applies proven data driven
+                optimization strategies across your entire funnel.
               </p>
               <a
                 href="#"
@@ -258,7 +282,7 @@ const IndexPage = () => {
         </div>
       </section>
 
-      <section id="benefits" className="py-20 px-6 bg-gradient-dark">
+      {/* <section id="benefits" className="py-20 px-6 bg-gradient-dark">
         <div className="max-w-7xl mx-auto">
           <div className="text-center">
             <h2 className="text-4xl font-bold mb-4">
@@ -270,13 +294,39 @@ const IndexPage = () => {
             </p>
           </div>
         </div>
+      </section> */}
+
+      {/* New AGEN-AI Section */}
+      <section className="py-20 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold mb-6">
+              <span className="highlight-purple">AGEN-AI:</span> The Growth
+              Intelligence Advantage
+            </h2>
+            <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+              See how our proprietary AI replaces expensive agency teams and
+              eliminates tool fragmentation with unified, intelligent
+              automation.
+            </p>
+          </div>
+          <div className="flex justify-center">
+            <div className="bg-[#131221]">
+              <img
+                src={laptopMobileImage}
+                alt="AGEN-AI platform dashboard showing unified growth intelligence and automation"
+                className="w-full h-auto bg-[#131221] max-w-4xl mx-auto"
+              />
+            </div>
+          </div>
+        </div>
       </section>
 
       <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1">
-              <h2 className="text-4xl font-bold mb-6">
+              <h2 className="text-4xl font-bold mb-6 highlight-purple">
                 Get Your Free Marketing Audit
               </h2>
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
@@ -301,12 +351,12 @@ const IndexPage = () => {
                 </li>
               </ul>
             </div>
-            <div className="order-1 md:order-2">
-              <div className="bg-[#131221]">
+            <div className="order-2">
+              <div className="">
                 <img
-                  src={laptopMobileImage}
-                  alt="Marketing audit dashboard showing analytics and performance metrics"
-                  className="w-full h-auto bg-[#131221]"
+                  src={mobileChat}
+                  alt="Marketing audit chat conversation on mobile"
+                  className="w-2/3 md:w-1/2 h-auto m-auto"
                 />
               </div>
             </div>
@@ -314,7 +364,153 @@ const IndexPage = () => {
         </div>
       </section>
 
+      {/* From Foundation to Future Section */}
       <section className="py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-6">
+              Beyond Marketing Automation:{" "}
+              <span className="text-[#00e6b4]">
+                Complete Growth Intelligence
+              </span>
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              Our strategic roadmap from Meta advertising foundation to complete
+              agency intelligence replacement.
+            </p>
+          </div>
+
+          {/* Timeline */}
+          <div className="grid lg:grid-cols-2 gap-16">
+            {/* Phase 1: Current Reality */}
+            <div className="card rounded-3xl p-10 relative overflow-hidden hover:shadow-lg">
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-blue-600"></div>
+
+              <div className="timeline-item mb-6">
+                <div className="flex items-center mb-4">
+                  <i className="fab fa-meta text-2xl text-blue-400 mr-4"></i>
+                  <span className="text-sm font-semibold text-blue-400 bg-blue-400 bg-opacity-20 px-3 py-1 rounded-full">
+                    CURRENT REALITY
+                  </span>
+                </div>
+                <h3 className="text-3xl font-bold mb-4">
+                  Meta Advertising Foundation
+                </h3>
+                <p className="text-gray-300 leading-relaxed mb-6">
+                  We're launching with Meta advertising that thinks
+                  strategically about your entire funnel, not just ad
+                  optimization. AGEN-AI considers customer lifetime value,
+                  retention, and cross-channel attribution from day one.
+                </p>
+              </div>
+
+              {/* Current Features */}
+              <div className="space-y-4">
+                <div className="flex items-center">
+                  <i className="fas fa-check-circle text-blue-400 mr-3"></i>
+                  <span className="text-gray-300">
+                    Strategic Meta Campaign Management
+                  </span>
+                </div>
+                <div className="flex items-center">
+                  <i className="fas fa-check-circle text-blue-400 mr-3"></i>
+                  <span className="text-gray-300">
+                    Customer Lifetime Value Optimization
+                  </span>
+                </div>
+                <div className="flex items-center">
+                  <i className="fas fa-check-circle text-blue-400 mr-3"></i>
+                  <span className="text-gray-300">
+                    Cross-Channel Attribution
+                  </span>
+                </div>
+                <div className="flex items-center">
+                  <i className="fas fa-check-circle text-blue-400 mr-3"></i>
+                  <span className="text-gray-300">
+                    Retention-Focused Targeting
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Phase 2: Platform Vision */}
+            <div className="card rounded-3xl p-10 relative overflow-hidden hover:shadow-lg">
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-green-500 to-green-600"></div>
+
+              <div className="timeline-item mb-6">
+                <div className="flex items-center mb-4">
+                  <i className="fas fa-rocket text-2xl text-green-400 mr-4"></i>
+                  <span className="text-sm font-semibold text-green-400 bg-green-400 bg-opacity-20 px-3 py-1 rounded-full">
+                    PLATFORM VISION
+                  </span>
+                </div>
+                <h3 className="text-3xl font-bold mb-4">
+                  Complete Agency Intelligence
+                </h3>
+                <p className="text-gray-300 leading-relaxed mb-6">
+                  Our roadmap expands this strategic thinking across all growth
+                  channels. AGEN-AI will orchestrate email, SMS, social, paid
+                  ads, and customer success as one unified growth strategy —
+                  replacing entire agency teams with intelligent automation.
+                </p>
+              </div>
+
+              {/* Future Features */}
+              <div className="space-y-4">
+                <div className="flex items-center">
+                  <i className="fas fa-arrow-right text-green-400 mr-3"></i>
+                  <span className="text-gray-300">
+                    Email Marketing Intelligence
+                  </span>
+                </div>
+                <div className="flex items-center">
+                  <i className="fas fa-arrow-right text-green-400 mr-3"></i>
+                  <span className="text-gray-300">
+                    SMS Campaign Orchestration
+                  </span>
+                </div>
+                <div className="flex items-center">
+                  <i className="fas fa-arrow-right text-green-400 mr-3"></i>
+                  <span className="text-gray-300">Social Media Automation</span>
+                </div>
+                <div className="flex items-center">
+                  <i className="fas fa-arrow-right text-green-400 mr-3"></i>
+                  <span className="text-gray-300">Customer Success AI</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Market Context */}
+          <div className="mt-16 text-center">
+            <div className="card rounded-2xl p-8 inline-block hover:shadow-lg">
+              <div className="flex items-center justify-center space-x-8">
+                <div className="text-center">
+                  <div className="text-4xl font-bold text-green-400 mb-2">
+                    35M
+                  </div>
+                  <div className="text-gray-300">Ecommerce Stores by 2030</div>
+                </div>
+                <div className="w-px h-16 bg-gray-600"></div>
+                <div className="text-center">
+                  <div className="text-4xl font-bold highlight-purple mb-2">
+                    $320.7B
+                  </div>
+                  <div className="text-gray-300">Total Addressable Market</div>
+                </div>
+              </div>
+              <p className="text-gray-400 mt-4 max-w-2xl">
+                The demand for unified, intelligent growth automation will only
+                accelerate as more businesses recognize the limitations of
+                fragmented tools and expensive agency relationships.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">
@@ -356,9 +552,9 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="py-20 px-6 bg-gradient-dark">
+      {/* <section className="py-20 px-6 bg-gradient-dark">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">
@@ -400,9 +596,9 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="py-20 px-6">
+      {/* <section className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">
@@ -439,9 +635,9 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="py-20 px-6 bg-gradient-dark">
+      {/* <section className="py-20 px-6 bg-gradient-dark">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">
@@ -478,7 +674,7 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="py-20 px-6">
         <div className="max-w-5xl mx-auto">
