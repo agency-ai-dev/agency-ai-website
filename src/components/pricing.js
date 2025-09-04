@@ -11,7 +11,7 @@ const PricingPage = () => {
   const [isAnnual, setIsAnnual] = React.useState(false)
 
   return (
-    <>
+    <div className="py-12 md:py-20">
       <h1 className="section-title">Choose Your Plan</h1>
       <p className="section-subtitle max-w-none">
         Select the perfect plan for your marketing needs
@@ -291,7 +291,7 @@ const PricingPage = () => {
         </div>
       </div>
 
-      <div className="enterprise-section">
+      {/* <div className="enterprise-section">
         <h2 className="enterprise-title">Need a Custom Solution?</h2>
         <p className="enterprise-text">
           Contact us for Enterprise-level pricing and custom features tailored
@@ -304,8 +304,8 @@ const PricingPage = () => {
         >
           Contact for Enterprise Pricing
         </a>
-      </div>
-    </>
+      </div> */}
+    </div>
   )
 }
 
