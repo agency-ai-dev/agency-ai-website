@@ -8,6 +8,7 @@ import FreeAudit from "../components/free-audit"
 import Pricing from "../components/pricing"
 import laptopMobileImage from "../images/laptop-mobile-screengrab.png"
 import mobileChat from "../images/mobile-chat.png"
+import competition from "../images/competition.png"
 
 const IndexPage = () => {
   return (
@@ -121,7 +122,7 @@ const IndexPage = () => {
 
       {/* <FreeAudit /> */}
 
-      <section id="features" className="py-20 px-6">
+      <section id="features" className="py-12 md:py-20 px-6 pt-[7rem]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">
@@ -297,7 +298,7 @@ const IndexPage = () => {
       </section> */}
 
       {/* New AGEN-AI Section */}
-      <section className="py-20 px-6">
+      <section className="py-12 md:py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-6">
@@ -322,31 +323,37 @@ const IndexPage = () => {
         </div>
       </section>
 
-      <section className="py-20 px-6">
+      <section className="py-12 md:py-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-20 items-center">
             <div className="order-2 md:order-1">
-              <h2 className="text-4xl font-bold mb-6 highlight-purple">
-                Get Your Free Marketing Audit
+              <h2 className="text-4xl font-bold mb-6 ">
+                Growth Management <br></br>
+                <span className="highlight-purple">Made Simple</span>
               </h2>
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                AGEN-AI will analyze your current marketing strategy and
-                identify opportunities for improvement. Receive a custom report
-                with actionable insights.
+                AGEN-AI proactively monitors your campaigns and identifies ways
+                to improve performance. Approve optimizations with one tap.
+                Launch new campaigns with a simple message. It's like having a
+                CMO in your pocket.
               </p>
               <ul className="space-y-4">
                 <li className="flex items-center text-gray-300">
                   <div className="w-2 h-2 bg-purple-500 rounded-full mr-4"></div>
-                  <span className="text-lg">Ad Performance Analysis</span>
-                </li>
-                <li className="flex items-center text-gray-300">
-                  <div className="w-2 h-2 bg-purple-500 rounded-full mr-4"></div>
-                  <span className="text-lg">Growth Channel Analysis</span>
+                  <span className="text-lg">
+                    No marketing degree needed - AI handles the complexity
+                  </span>
                 </li>
                 <li className="flex items-center text-gray-300">
                   <div className="w-2 h-2 bg-purple-500 rounded-full mr-4"></div>
                   <span className="text-lg">
-                    ROI & CAC Opportunity Assessment
+                    Skip the tutorials - works like texting a friend
+                  </span>
+                </li>
+                <li className="flex items-center text-gray-300">
+                  <div className="w-2 h-2 bg-purple-500 rounded-full mr-4"></div>
+                  <span className="text-lg">
+                    Approve changes with one tap, not 50 clicks
                   </span>
                 </li>
               </ul>
@@ -356,7 +363,7 @@ const IndexPage = () => {
                 <img
                   src={mobileChat}
                   alt="Marketing audit chat conversation on mobile"
-                  className="w-2/3 md:w-1/2 h-auto m-auto"
+                  className="w-2/3 md:w-3/4 h-auto m-auto"
                 />
               </div>
             </div>
@@ -364,8 +371,16 @@ const IndexPage = () => {
         </div>
       </section>
 
+      {/* <section>
+        <img
+          src={competition}
+          className="w-full h-auto"
+          alt="Competition analysis chart"
+        />
+      </section> */}
+
       {/* From Foundation to Future Section */}
-      <section className="py-20 px-6">
+      <section className="py-12 md:py-20 px-6">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
@@ -500,7 +515,7 @@ const IndexPage = () => {
                   <div className="text-gray-300">Total Addressable Market</div>
                 </div>
               </div>
-              <p className="text-gray-400 mt-4 max-w-2xl">
+              <p className="text-gray-400 my-6 max-w-2xl">
                 The demand for unified, intelligent growth automation will only
                 accelerate as more businesses recognize the limitations of
                 fragmented tools and expensive agency relationships.
@@ -676,7 +691,7 @@ const IndexPage = () => {
         </div>
       </section> */}
 
-      <section className="py-20 px-6">
+      <section className="py-12 md:py-20 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="card rounded-xl p-10 shadow-2xl border border-purple-500 border-opacity-30 text-center">
             <h2 className="text-4xl font-bold mb-4">
@@ -707,13 +722,13 @@ const IndexPage = () => {
                   Schedule Investor Demo
                 </a>
               </button>
-              <a
+              {/* <a
                 href="/agency-ai-investment-deck.pdf"
                 download="Agency AI Investment Pitch Deck.pdf"
                 className="bg-white text-gray-900 px-8 py-4 rounded-lg font-semibold shadow-lg text-lg border border-gray-300 hover:bg-gray-50 transition-colors inline-block text-center no-underline"
               >
                 Download Pitch Deck
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
