@@ -515,9 +515,9 @@ const IndexPage = () => {
               <div className="flex items-center justify-center space-x-8">
                 <div className="text-center">
                   <div className="text-4xl font-bold text-green-400 mb-2">
-                    35M
+                    24M
                   </div>
-                  <div className="text-gray-300">Ecommerce Stores by 2030</div>
+                  <div className="text-gray-300">E-commerce Stores</div>
                 </div>
                 <div className="w-px h-16 bg-gray-600"></div>
                 <div className="text-center">
