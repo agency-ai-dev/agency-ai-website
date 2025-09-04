@@ -141,7 +141,8 @@ const IndexPage = () => {
               className="text-3xl font-bold mb-8"
               style={{ color: "#00e6b4" }}
             >
-              Problem
+              The Barrier To{" "}
+              <span className="whitespace-nowrap">E-Commerce Growth</span>
             </h3>
           </div>
 
@@ -213,7 +214,7 @@ const IndexPage = () => {
               className="text-3xl font-bold mb-8"
               style={{ color: "#00e6b4" }}
             >
-              Solution
+              The Agency AI Solution
             </h3>
           </div>
 
@@ -371,12 +372,23 @@ const IndexPage = () => {
         </div>
       </section>
 
-      {/* <section>
-        <img
-          src={competition}
-          className="w-full h-auto"
-          alt="Competition analysis chart"
-        />
+      {/* <section className="py-12 md:py-20 px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-20">
+              The{" "}
+              <span className="highlight-purple">
+                First Unified Growth Automation App{" "}
+              </span>{" "}
+              For E-commerce
+            </h2>
+            <img
+              src={competition}
+              className="w-full h-auto"
+              alt="Competition analysis chart"
+            />
+          </div>
+        </div>
       </section> */}
 
       {/* From Foundation to Future Section */}
