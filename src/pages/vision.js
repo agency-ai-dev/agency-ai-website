@@ -65,7 +65,7 @@ const IndexPage = () => {
           <div className="inline-flex items-center px-4 py-2 mb-8 rounded-full border border-purple-500/30 bg-purple-500/10 backdrop-blur-sm">
             <i className="fas fa-robot text-purple-400 mr-2"></i>
             <span className="text-[.75rem] md:text-sm font-medium text-purple-300">
-              AI-Powered Marketing
+              Your Digital CMO
             </span>
           </div>
 
