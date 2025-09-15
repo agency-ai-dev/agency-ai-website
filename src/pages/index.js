@@ -33,6 +33,9 @@ const IndexPage = () => {
     // Add small delay to prevent rapid submissions
     setTimeout(() => {
       e.target.submit()
+
+      setIsSubmitting(false)
+      setEmail("")
     }, 500)
   }
 
