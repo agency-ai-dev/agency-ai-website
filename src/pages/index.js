@@ -9,27 +9,27 @@ import FreeAudit from "../components/free-audit"
 import mobileChat from "../images/mobile-chat.png"
 
 const IndexPage = () => {
-  const [email, setEmail] = React.useState('')
+  const [email, setEmail] = React.useState("")
   const [isSubmitting, setIsSubmitting] = React.useState(false)
 
-  const validateEmail = (email) => {
+  const validateEmail = email => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     return emailRegex.test(email)
   }
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = e => {
     if (!validateEmail(email)) {
-      alert('Please enter a valid email address')
+      alert("Please enter a valid email address")
       return
     }
-    
+
     if (email.length < 5) {
-      alert('Email address seems too short')
+      alert("Email address is too short")
       return
     }
 
     setIsSubmitting(true)
-    
+
     // Add small delay to prevent rapid submissions
     setTimeout(() => {
       e.target.submit()
@@ -165,7 +165,7 @@ const IndexPage = () => {
                 name="email"
                 type="email"
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={e => setEmail(e.target.value)}
                 placeholder="Enter your email address"
                 className="w-full px-6 py-4 rounded-xl bg-rgba-20-20-40-0.8 border border-purple-500/30 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:bg-rgba-30-30-50-0.8 transition-all duration-300"
                 style={{
@@ -189,7 +189,7 @@ const IndexPage = () => {
                   }}
                 ></div>
                 <span className="relative">
-                  {isSubmitting ? 'Joining...' : 'Join the Waitlist'}
+                  {isSubmitting ? "Joining..." : "Join the Waitlist"}
                 </span>
               </button>
             </form>
