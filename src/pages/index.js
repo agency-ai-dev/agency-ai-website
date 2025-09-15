@@ -42,7 +42,7 @@ const IndexPage = () => {
         <script src="https://getlaunchlist.com/js/widget-diy.js" defer></script>
       </Helmet>
       <div className="pdf-container">
-        <Header />
+        <Header waitlist={true} />
         <section className="relative px-6 overflow-hidden pb-[5rem] pt-[4.5rem] flex items-center">
           <div className="glow"></div>
 
@@ -698,7 +698,7 @@ const IndexPage = () => {
           </div>
         </section>
         <FreeAudit />
-        <Footer />
+        <Footer waitlist={true} />
       </div>
     </>
   )
