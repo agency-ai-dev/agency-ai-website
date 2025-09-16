@@ -14,7 +14,7 @@ const IndexPage = () => {
   return (
     <div className="pdf-container">
       <Header />
-      <section className="relative py-24 px-6 overflow-hidden min-h-[80vh] flex items-center">
+      <section className="relative px-6 pb-12 overflow-hidden flex items-center pt-10">
         <div className="glow"></div>
 
         {/* Floating AI Elements */}
@@ -65,7 +65,7 @@ const IndexPage = () => {
           <div className="inline-flex items-center px-4 py-2 mb-8 rounded-full border border-purple-500/30 bg-purple-500/10 backdrop-blur-sm">
             <i className="fas fa-robot text-purple-400 mr-2"></i>
             <span className="text-[.75rem] md:text-sm font-medium text-purple-300">
-              Your Digital CMO
+              Full-Funnel Growth on Autopilot
             </span>
           </div>
 
@@ -78,10 +78,10 @@ const IndexPage = () => {
 
           <p className="mt-5 md:mt-8 text-lg md:text-2xl text-gray-300 text-center max-w-4xl mx-auto leading-relaxed">
             Built on AGEN-AI: Our closed-source engine that learns, optimizes,
-            and automates your growth stack—from traffic to conversion. Unlike
-            single-purpose apps, unified intelligence powers campaigns, landing
-            pages, and more using your brand knowledge and real-time best
-            practices.
+            and automates the user’s e-commerce growth stack — from traffic to
+            conversion. Unlike single-purpose apps, unified intelligence powers
+            campaigns, landing pages, and more using brand knowledge and
+            real-time best practices.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
@@ -97,7 +97,7 @@ const IndexPage = () => {
               ></div>
               <a
                 target="_blank"
-                href="https://calendly.com/agency-demo"
+                href="https://calendly.com/agency-demo/agency-ai-investor-brief"
                 className="relative decoration-none text-gray-900 no-underline flex items-center justify-center"
               >
                 Schedule Investor Demo
@@ -122,7 +122,7 @@ const IndexPage = () => {
 
       {/* <FreeAudit /> */}
 
-      <section id="features" className="py-12 md:py-20 px-6 pt-[7rem]">
+      <section id="features" className="py-12 md:py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">
@@ -142,7 +142,7 @@ const IndexPage = () => {
               style={{ color: "#00e6b4" }}
             >
               The Barrier To{" "}
-              <span className="whitespace-nowrap">E-Commerce Growth</span>
+              <span className="whitespace-nowrap">E-commerce Growth</span>
             </h3>
           </div>
 
@@ -270,8 +270,8 @@ const IndexPage = () => {
               </h3>
               <p className="text-gray-300 mb-6">
                 From onboarding to full growth automation in 24 hours. AGEN-AI
-                instantly analyzes your business and applies proven data driven
-                optimization strategies across your entire funnel.
+                instantly analyzes and applies proven data driven optimization
+                strategies across your entire funnel.
               </p>
               <a
                 href="#"
@@ -426,7 +426,7 @@ const IndexPage = () => {
                 </h3>
                 <p className="text-gray-300 leading-relaxed mb-6">
                   We're launching with Meta advertising that thinks
-                  strategically about your entire funnel, not just ad
+                  strategically about the entire funnel, not just ad
                   optimization. AGEN-AI considers customer lifetime value,
                   retention, and cross-channel attribution from day one.
                 </p>
@@ -517,7 +517,9 @@ const IndexPage = () => {
                   <div className="text-4xl font-bold text-green-400 mb-2">
                     24M
                   </div>
-                  <div className="text-gray-300">E-commerce Stores</div>
+                  <div className="text-gray-300">
+                    <span className="whitespace-nowrap">E-commerce</span> Stores
+                  </div>
                 </div>
                 <div className="w-px h-16 bg-gray-600"></div>
                 <div className="text-center">
@@ -728,7 +730,7 @@ const IndexPage = () => {
                 ></div>
                 <a
                   target="_blank"
-                  href="https://calendly.com/agency-demo"
+                  href="https://calendly.com/agency-demo/agency-ai-investor-brief"
                   className="relative text-gray-900 no-underline"
                 >
                   Schedule Investor Demo
