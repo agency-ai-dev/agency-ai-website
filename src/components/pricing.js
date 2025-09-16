@@ -39,59 +39,6 @@ const PricingPage = () => {
       </div>
 
       <div className="pricing-grid vision-page">
-        {/* <div className="pricing-card" id="essentials-plan">
-            <div className="recommended-badge">Recommended</div>
-            <h2 className="plan-name">Essentials</h2>
-            {!isAnnual && <div className="plan-price monthly">$59</div>}
-            {isAnnual && <div className="plan-price annual">$41</div>}
-            {!isAnnual && <div className="plan-billing monthly">per month</div>}
-            {isAnnual && (
-              <div className="plan-billing annual">
-                per month, billed annually ($492/year)
-              </div>
-            )}
-            <div className="plan-limit">Unlimited ad spend/month</div>
-
-            <div className="feature-list">
-              <div className="feature-item">
-                <i className="fas fa-check feature-icon"></i>
-                <span>Free Audit</span>
-              </div>
-              <div className="feature-item">
-                <i className="fas fa-check feature-icon"></i>
-                <span>Full funnel ads launch pack</span>
-              </div>
-              <div className="feature-item">
-                <i className="fas fa-check feature-icon"></i>
-                <span>AGEN-AI Facebook & Instagram ads</span>
-              </div>
-              <div className="feature-item">
-                <i className="fas fa-check feature-icon"></i>
-                <span>24/7 ad optimization</span>
-              </div>
-              <div className="feature-item">
-                <i className="fas fa-check feature-icon"></i>
-                <span>AI traffic funnels</span>
-              </div>
-              <div className="feature-item">
-                <i className="fas fa-check feature-icon"></i>
-                <span>AI remarketing audiences</span>
-              </div>
-              <div className="feature-item">
-                <i className="fas fa-check feature-icon"></i>
-                <span>AI catalog creatives</span>
-              </div>
-              <div className="feature-item">
-                <i className="fas fa-check feature-icon"></i>
-                <span>Actionable growth tips</span>
-              </div>
-            </div>
-
-            <a href="#" className="cta-button no-underline">
-              Start Free Trial
-            </a>
-          </div> */}
-
         <div className="pricing-card" id="growth-plan">
           <h2 className="plan-name">Growth</h2>
           {!isAnnual && <div className="plan-price monthly">$199</div>}
@@ -148,7 +95,8 @@ const PricingPage = () => {
           </div>
 
           <a
-            href="https://calendly.com/agency-demo"
+            target="_blank"
+            href="https://calendly.com/agency-demo/agency-ai-investor-brief"
             className="cta-button no-underline"
           >
             Request Demo
@@ -169,54 +117,37 @@ const PricingPage = () => {
           <div className="plan-limit">Up to $7,000 ad spend/month</div>
 
           <div className="feature-list">
+            <div className="feature-separator">Everything in Growth, plus:</div>
+
             <div className="feature-item">
               <i className="fas fa-check feature-icon"></i>
-              <span>Bi-weekly account manager meeting</span>
+              <span>Email marketing</span>
             </div>
             <div className="feature-item">
               <i className="fas fa-check feature-icon"></i>
-              <span>Free audit</span>
+              <span>AGEN-AI TikTok ads</span>
             </div>
             <div className="feature-item">
               <i className="fas fa-check feature-icon"></i>
-              <span>AI agent reporting & action</span>
+              <span>AGEN-AI Snapchat ads</span>
             </div>
             <div className="feature-item">
               <i className="fas fa-check feature-icon"></i>
-              <span>Full funnel ads launch pack</span>
+              <span>Advanced audience segmentation</span>
             </div>
             <div className="feature-item">
               <i className="fas fa-check feature-icon"></i>
-              <span>AGEN-AI Facebook & Instagram ads</span>
+              <span>Priority support</span>
             </div>
             <div className="feature-item">
               <i className="fas fa-check feature-icon"></i>
-              <span>AGEN-AI Google ads</span>
-            </div>
-            <div className="feature-item">
-              <i className="fas fa-check feature-icon"></i>
-              <span>24/7 ad optimization</span>
-            </div>
-            <div className="feature-item">
-              <i className="fas fa-check feature-icon"></i>
-              <span>AI traffic funnels</span>
-            </div>
-            <div className="feature-item">
-              <i className="fas fa-check feature-icon"></i>
-              <span>AI remarketing audiences</span>
-            </div>
-            <div className="feature-item">
-              <i className="fas fa-check feature-icon"></i>
-              <span>AI catalog creatives</span>
-            </div>
-            <div className="feature-item">
-              <i className="fas fa-check feature-icon"></i>
-              <span>Actionable growth tips</span>
+              <span>Monthly account manager meeting</span>
             </div>
           </div>
 
           <a
-            href="https://calendly.com/agency-demo"
+            target="_blank"
+            href="https://calendly.com/agency-demo/agency-ai-investor-brief"
             className="cta-button no-underline"
           >
             Request Demo
@@ -236,54 +167,33 @@ const PricingPage = () => {
           <div className="plan-limit">Up to $15,000 ad spend/month</div>
 
           <div className="feature-list">
+            <div className="feature-separator">Everything in Pro, plus:</div>
+
+            <div className="feature-item">
+              <i className="fas fa-check feature-icon"></i>
+              <span>AI Creative Studio (included)</span>
+            </div>
             <div className="feature-item">
               <i className="fas fa-check feature-icon"></i>
               <span>Dedicated account manager</span>
             </div>
             <div className="feature-item">
               <i className="fas fa-check feature-icon"></i>
-              <span>Free audit</span>
+              <span>Custom campaign strategies</span>
             </div>
             <div className="feature-item">
               <i className="fas fa-check feature-icon"></i>
-              <span>AI agent reporting & action</span>
+              <span>White-label reporting</span>
             </div>
             <div className="feature-item">
               <i className="fas fa-check feature-icon"></i>
-              <span>Full funnel ads launch pack</span>
-            </div>
-            <div className="feature-item">
-              <i className="fas fa-check feature-icon"></i>
-              <span>AGEN-AI Facebook & Instagram ads</span>
-            </div>
-            <div className="feature-item">
-              <i className="fas fa-check feature-icon"></i>
-              <span>AGEN-AI Google ads</span>
-            </div>
-            <div className="feature-item">
-              <i className="fas fa-check feature-icon"></i>
-              <span>24/7 ad optimization</span>
-            </div>
-            <div className="feature-item">
-              <i className="fas fa-check feature-icon"></i>
-              <span>AI traffic funnels</span>
-            </div>
-            <div className="feature-item">
-              <i className="fas fa-check feature-icon"></i>
-              <span>AI remarketing audiences</span>
-            </div>
-            <div className="feature-item">
-              <i className="fas fa-check feature-icon"></i>
-              <span>AI catalog creatives</span>
-            </div>
-            <div className="feature-item">
-              <i className="fas fa-check feature-icon"></i>
-              <span>Actionable growth tips</span>
+              <span>AGEN-AI Custom Mindsets</span>
             </div>
           </div>
 
           <a
-            href="https://calendly.com/agency-demo"
+            target="_blank"
+            href="https://calendly.com/agency-demo/agency-ai-investor-brief"
             className="cta-button no-underline"
           >
             Request Demo
@@ -291,20 +201,58 @@ const PricingPage = () => {
         </div>
       </div>
 
-      {/* <div className="enterprise-section">
+      <div className="addons-section">
+        <h2 className="addons-title">Add-On Options</h2>
+        <p className="addons-subtitle">
+          Enhance any plan with these powerful add-ons
+        </p>
+
+        <div className="addons-grid">
+          <div className="addon-card">
+            <h3 className="addon-name">SEO Tools & Optimization</h3>
+            <div className="addon-price">
+              $39<span className="addon-period">/month</span>
+            </div>
+          </div>
+
+          <div className="addon-card">
+            <h3 className="addon-name">AI Creative Studio</h3>
+            <div className="addon-price">
+              $149<span className="addon-period">/month</span>
+            </div>
+          </div>
+
+          <div className="addon-card">
+            <h3 className="addon-name">Advanced A/B Testing Suite</h3>
+            <div className="addon-price">
+              Starting at $79<span className="addon-period">/month</span>
+            </div>
+          </div>
+
+          <div className="addon-card">
+            <h3 className="addon-name">SMS Marketing</h3>
+            <div className="addon-price">
+              Starting at $49<span className="addon-period">/month</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="enterprise-section">
         <h2 className="enterprise-title">Need a Custom Solution?</h2>
         <p className="enterprise-text">
           Contact us for Enterprise-level pricing and custom features tailored
           to your specific business requirements.
         </p>
         <a
-          href="#"
+          target="_blank"
+          href="https://calendly.com/agency-demo/agency-ai-investor-brief"
           className="cta-button no-underline"
           style={{ maxWidth: "300px", margin: "0 auto" }}
         >
           Contact for Enterprise Pricing
         </a>
-      </div> */}
+      </div>
     </div>
   )
 }
