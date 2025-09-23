@@ -400,7 +400,7 @@ const IndexPage = () => {
                 </h3>
                 <p className="text-gray-300 mb-6">
                   From onboarding to full growth automation in 24 hours. AGEN-AI
-                  instantly analyzes and applies proven data driven optimization
+                  instantly analyzes and applies proven data-driven optimization
                   strategies across your entire funnel.
                 </p>
                 <a
