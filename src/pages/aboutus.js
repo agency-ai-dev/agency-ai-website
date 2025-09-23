@@ -13,7 +13,7 @@ const ContactUsPage = () => {
 
   return (
     <div className="pdf-container">
-      <Header />
+      <Header waitlist={true} />
       <div className="min-h-screen">
         <section className="pt-16 px-6 md:px-12 lg:px-24 md:pt-24 max-w-7xl mx-auto">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
@@ -25,6 +25,68 @@ const ContactUsPage = () => {
             Our mission is to help Shopify store owners and their teams automate
             growth by leveraging AI technology.
           </p>
+        </section>
+
+        <section className="py-8 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+            Meet Our <span className="highlight-teal">Founders</span>
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="card p-8 flex flex-col items-center text-center">
+              <img src={anthony} alt="Anthony" className="founder-img mb-6" />
+              <h3 className="text-2xl font-bold highlight-purple mb-1">
+                Anthony
+              </h3>
+              <p className="text-lg mb-4 opacity-80">CEO, Founder</p>
+              <p className="opacity-90 text-left">
+                Anthony brings 13 years of experience in the Shopify ecosystem,
+                honing his skills in eCommerce marketing while building,
+                scaling, and managing numerous successful stores. His passion
+                lies at the intersection of marketing technology and AI.
+              </p>
+              <p className="mt-4 opacity-80 text-left">
+                When unplugged, he loves traveling, beaches, and quality time
+                with his canine companion.
+              </p>
+            </div>
+
+            <div className="card p-8 flex flex-col items-center text-center">
+              <img src={john} alt="John" className="founder-img mb-6" />
+              <h3 className="text-2xl font-bold highlight-purple mb-1">John</h3>
+              <p className="text-lg mb-4 opacity-80">CTO, Lead Engineer</p>
+              <p className="opacity-90 text-left">
+                John is a full-stack developer with 6+ years of experience. He's
+                worked at Shopify agencies, early-stage startups, and consulted
+                for Fortune 500 companies. He also brings deep A/B testing
+                expertise from his time in consulting, where he built
+                experiments that collectively drove millions in additional
+                revenue across clients.
+              </p>
+              <p className="mt-4 opacity-80 text-left">
+                Outside of work, you’ll find John on the pickleball court,
+                unwinding in the sauna, or spending time with his wife,
+                daughter, and 3 dogs.
+              </p>
+            </div>
+
+            <div className="card p-8 flex flex-col items-center text-center">
+              <img src={joe} alt="Joe" className="founder-img mb-6" />
+              <h3 className="text-2xl font-bold highlight-purple mb-1">Joe</h3>
+              <p className="text-lg mb-4 opacity-80">
+                Chief Software Architect, Technical Advisor
+              </p>
+              <p className="opacity-90 text-left">
+                Joe's an expert Shopify app developer, 7 year eCommerce store
+                owner, former Shopify optimization agency owner, and the Founder
+                / CTO of Automator Apps.
+              </p>
+              <p className="mt-4 opacity-80 text-left">
+                Outside of tech he's into nature adventures, travel, trees,
+                music, books, and art.
+              </p>
+            </div>
+          </div>
         </section>
 
         <section className="py-8 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
@@ -72,68 +134,6 @@ const ContactUsPage = () => {
           </div>
         </section>
 
-        <section className="py-8 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
-            Meet Our <span className="highlight-teal">Founders</span>
-          </h2>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="card p-8 flex flex-col items-center text-center">
-              <img src={anthony} alt="Anthony" className="founder-img mb-6" />
-              <h3 className="text-2xl font-bold highlight-purple mb-1">
-                Anthony
-              </h3>
-              <p className="text-lg mb-4 opacity-80">CEO, Founder</p>
-              <p className="opacity-90">
-                Anthony brings 13 years of experience in the Shopify ecosystem,
-                honing his skills in eCommerce marketing while building,
-                scaling, and managing numerous successful stores. His passion
-                lies at the intersection of marketing technology and AI.
-              </p>
-              <p className="mt-4 opacity-80">
-                When unplugged, he loves traveling, beaches, and quality time
-                with his canine companion.
-              </p>
-            </div>
-
-            <div className="card p-8 flex flex-col items-center text-center">
-              <img src={john} alt="John" className="founder-img mb-6" />
-              <h3 className="text-2xl font-bold highlight-purple mb-1">John</h3>
-              <p className="text-lg mb-4 opacity-80">CTO, Lead Engineer</p>
-              <p className="opacity-90">
-                John is a full-stack developer with 6+ years of experience. He's
-                worked at Shopify agencies, early-stage startups, and consulted
-                for Fortune 500 companies. He also brings deep A/B testing
-                expertise from his time in consulting, where he built
-                experiments that collectively drove millions in additional
-                revenue across clients.
-              </p>
-              <p className="mt-4 opacity-80">
-                Outside of work, you’ll find John on the pickleball court,
-                unwinding in the sauna, or spending time with his wife,
-                daughter, and 3 dogs.
-              </p>
-            </div>
-
-            <div className="card p-8 flex flex-col items-center text-center">
-              <img src={joe} alt="Joe" className="founder-img mb-6" />
-              <h3 className="text-2xl font-bold highlight-purple mb-1">Joe</h3>
-              <p className="text-lg mb-4 opacity-80">
-                Chief Software Architect, Technical Advisor
-              </p>
-              <p className="opacity-90">
-                Joe's an expert Shopify app developer, 7 year eCommerce store
-                owner, former Shopify optimization agency owner, and the Founder
-                / CTO of Automator Apps.
-              </p>
-              <p className="mt-4 opacity-80">
-                Outside of tech he's into nature adventures, travel, trees,
-                music, books, and art.
-              </p>
-            </div>
-          </div>
-        </section>
-
         <section className="py-16 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">
             Ready to transform your{" "}
@@ -160,7 +160,7 @@ const ContactUsPage = () => {
           </div>
         </section>
 
-        <Footer />
+        <Footer waitlist={true} />
       </div>
     </div>
   )

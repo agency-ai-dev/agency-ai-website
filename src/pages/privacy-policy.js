@@ -6,7 +6,7 @@ import "./privacypolicystyles.css"
 const PrivacyPolicy = () => {
   return (
     <div>
-      <Header />
+      <Header waitlist={true} />
       <div className="privacy-policy-container">
         <div className="privacy-policy-header">
           <h1 className="privacy-policy-title">Privacy Policy</h1>
@@ -144,7 +144,7 @@ const PrivacyPolicy = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer waitlist={true} />
     </div>
   )
 }

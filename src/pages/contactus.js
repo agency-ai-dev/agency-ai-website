@@ -135,7 +135,7 @@ const ContactUsPage = () => {
 
   return (
     <div className="pdf-container">
-      <Header />
+      <Header waitlist={true} />
       <div className="antialiased">
         <main className="container mx-auto px-4 py-8 sm:py-12 desktop-container">
           <section className="text-center mb-12">
@@ -327,7 +327,7 @@ const ContactUsPage = () => {
           </div>
         </main>
 
-        <Footer />
+        <Footer waitlist={true} />
       </div>
     </div>
   )

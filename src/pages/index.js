@@ -7,6 +7,7 @@ import Header from "../components/header"
 import Footer from "../components/footer"
 import FreeAudit from "../components/free-audit"
 import mobileChat from "../images/mobile-chat.png"
+import laptopMobileImage from "../images/laptop-mobile-screengrab.png"
 
 const IndexPage = () => {
   const [email, setEmail] = React.useState("")
@@ -91,12 +92,12 @@ const IndexPage = () => {
 
           <div className="max-w-7xl mx-auto relative z-10 text-center">
             {/* AI Badge */}
-            <div className="inline-flex items-center px-4 py-2 mb-8 rounded-full border border-purple-500/30 bg-purple-500/10 backdrop-blur-sm">
+            {/* <div className="inline-flex items-center px-4 py-2 mb-8 rounded-full border border-purple-500/30 bg-purple-500/10 backdrop-blur-sm">
               <i className="fas fa-robot text-purple-400 mr-2"></i>
               <span className="text-[.75rem] md:text-sm font-medium text-purple-300">
                 Full-Funnel Growth on Autopilot
               </span>
-            </div>
+            </div> */}
 
             <h1 className="text-[2rem] md:text-6xl font-bold leading-tight text-center mb-2">
               <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
@@ -123,7 +124,7 @@ const IndexPage = () => {
                   }}
                 ></div>
                 <Link
-                  to="/comingsoon"
+                  to="#waitlist"
                   className="relative decoration-none text-gray-900 no-underline flex items-center justify-center"
                 >
                   Get Early Access
@@ -146,7 +147,7 @@ const IndexPage = () => {
         `}</style>
         </section>
 
-        <section className="py-12 md:py-20 px-6">
+        {/* <section className="py-12 md:py-20 px-6">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Get <span className="highlight-purple">Early Access</span>
@@ -179,8 +180,8 @@ const IndexPage = () => {
               <button
                 type="submit"
                 disabled={isSubmitting || !email}
-                className="w-full md:w-1/2 px-8 py-4 rounded-xl font-semibold shadow-2xl text-white text-lg overflow-hidden group relative transition-all duration-300 hover:transform hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed"
-                style={{ backgroundColor: "#7b68ee" }}
+                className="w-full md:w-1/2 px-8 py-4 rounded-xl font-semibold shadow-2xl text-gray-900 text-lg overflow-hidden group relative transition-all duration-300 hover:transform hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed"
+                style={{ backgroundColor: "#00e6b4" }}
               >
                 <div
                   className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
@@ -194,14 +195,69 @@ const IndexPage = () => {
               </button>
             </form>
           </div>
+        </section> */}
+
+        <section id="features" className="py-12 md:py-20 px-6">
+          <div className="max-w-7xl mx-auto" id="waitlist">
+            <div className="text-center">
+              <h2 className="text-4xl font-bold mb-4">
+                FIRST 3 MONTHS FREE + 30% OFF{" "}
+                <span className="highlight-purple">LIFETIME DISCOUNT</span>
+              </h2>
+              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+                Join the waitlist and be the first to experience AI-powered
+                growth automation.
+              </p>
+            </div>
+            <div className="max-w-2xl mx-auto text-center">
+              <form
+                className="space-y-4"
+                action="https://getlaunchlist.com/s/ytbURo"
+                method="POST"
+                onSubmit={handleSubmit}
+              >
+                <input
+                  name="email"
+                  type="email"
+                  value={email}
+                  onChange={e => setEmail(e.target.value)}
+                  placeholder="Enter your email address"
+                  className="w-full md:w-[60%] px-6 py-4 rounded-xl bg-rgba-20-20-40-0.8 border border-purple-500/30 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:bg-rgba-30-30-50-0.8 transition-all duration-300"
+                  style={{
+                    backgroundColor: "rgba(20, 20, 40, 0.8)",
+                    border: "1px solid rgba(123, 104, 238, 0.3)",
+                  }}
+                  required
+                  minLength="5"
+                  maxLength="100"
+                />
+                <button
+                  type="submit"
+                  disabled={isSubmitting || !email}
+                  className="w-full md:w-1/2 px-8 py-4 rounded-xl font-semibold shadow-2xl text-gray-900 text-lg overflow-hidden group relative transition-all duration-300 hover:transform hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed"
+                  style={{ backgroundColor: "#00e6b4" }}
+                >
+                  <div
+                    className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                    style={{
+                      background: "linear-gradient(to right, #6a59d1, #5a4bc4)",
+                    }}
+                  ></div>
+                  <span className="relative">
+                    {isSubmitting ? "Joining..." : "Join the Waitlist"}
+                  </span>
+                </button>
+              </form>
+            </div>
+          </div>
         </section>
 
-        {/* <section id="features" className="py-20 px-6">
+        <section id="features" className="py-12 md:py-20 px-6">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold mb-4">
                 SEAMLESS INTEGRATIONS{" "}
-                <span className="highlight-purple">BUILT FOR SHOPIFY</span>
+                <span className="highlight-purple">BUILT FOR E-COMMERCE</span>
               </h2>
               <p className="text-xl text-gray-300 max-w-3xl mx-auto">
                 All the tools you need to grow your e-commerce business,
@@ -209,24 +265,35 @@ const IndexPage = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-3 gap-8">
+            {/* Problem Subsection */}
+            <div className="text-center mb-12">
+              <h3
+                className="text-3xl font-bold mb-8"
+                style={{ color: "#00e6b4" }}
+              >
+                The Barrier To{" "}
+                <span className="whitespace-nowrap">E-commerce Growth</span>
+              </h3>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8 mb-20">
               <div className="card rounded-xl p-6 hover:shadow-lg">
                 <div className="w-14 h-14 bg-opacity-20 bg-purple-500 rounded-lg flex items-center justify-center mb-4">
-                  <i className="fas fa-clock text-3xl feature-icon mr-0"></i>
+                  <i className="fas fa-user-clock text-3xl feature-icon mr-0"></i>
                 </div>
                 <h3 className="text-xl font-bold mb-3">
-                  Hours Lost on Optimization
+                  Growth Teams Are Overwhelmed
                 </h3>
                 <p className="text-gray-300 mb-6">
-                  Spending countless hours manually adjusting bids, budgets, and
-                  targeting while your campaigns underperform. Your time should
-                  be building your business, not babysitting ads.
+                  Growing businesses juggle dozens of marketing tools, analytics
+                  platforms, and optimization tasks. Teams spend more time
+                  managing systems than driving actual growth.
                 </p>
                 <a
-                  href="#"
+                  href="#waitlist"
                   className="flex items-center text-primary font-medium hover:underline absolute bottom-[22px] highlight-purple"
                 >
-                  Stop the Grind <i className="fas fa-arrow-right ml-2"></i>
+                  See the Solution <i className="fas fa-arrow-right ml-2"></i>
                 </a>
               </div>
 
@@ -235,18 +302,18 @@ const IndexPage = () => {
                   <i className="fas fa-chart-line text-3xl feature-icon mr-0"></i>
                 </div>
                 <h3 className="text-xl font-bold mb-3">
-                  Scaling Campaigns That Actually Work
+                  Fragmented Growth Stack
                 </h3>
                 <p className="text-gray-300 mb-6">
-                  Struggling to identify winning campaigns and scale them
-                  profitably. What works today fails tomorrow, leaving you
-                  constantly starting over with trial and error.
+                  Marketing, analytics, customer success, and scaling efforts
+                  operate in silos with disconnected tools. Critical insights
+                  get lost between platforms, slowing decision-making.
                 </p>
                 <a
-                  href="#"
+                  href="#waitlist"
                   className="flex items-center text-primary font-medium hover:underline absolute bottom-[22px] highlight-purple"
                 >
-                  Scale Smarter <i className="fas fa-arrow-right ml-2"></i>
+                  Unify Growth <i className="fas fa-arrow-right ml-2"></i>
                 </a>
               </div>
 
@@ -255,18 +322,72 @@ const IndexPage = () => {
                   <i className="fas fa-mobile-screen text-3xl feature-icon mr-0"></i>
                 </div>
                 <h3 className="text-xl font-bold mb-3">
-                  Constant Performance Monitoring
+                  Manual Growth Management
                 </h3>
                 <p className="text-gray-300 mb-6">
-                  Constantly checking ad performance instead of focusing on
-                  growing your business. You're stuck managing campaigns when
-                  you should be managing strategy.
+                  Business owners manually monitor dozens of metrics across
+                  platforms instead of focusing on strategy and innovation.
+                  Reactive instead of proactive growth.
                 </p>
                 <a
-                  href="#"
+                  href="#waitlist"
                   className="flex items-center text-primary font-medium hover:underline absolute bottom-[22px] highlight-purple"
                 >
-                  Focus on Growth <i className="fas fa-arrow-right ml-2"></i>
+                  Automate Growth <i className="fas fa-arrow-right ml-2"></i>
+                </a>
+              </div>
+            </div>
+
+            {/* Solution Subsection */}
+            <div className="text-center mb-12">
+              <h3
+                className="text-3xl font-bold mb-8"
+                style={{ color: "#00e6b4" }}
+              >
+                The Agency AI Solution
+              </h3>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="card rounded-xl p-6 hover:shadow-lg">
+                <div className="w-14 h-14 bg-opacity-20 bg-purple-500 rounded-lg flex items-center justify-center mb-4">
+                  <i className="fas fa-rocket text-3xl feature-icon mr-0"></i>
+                </div>
+                <h3 className="text-xl font-bold mb-3">
+                  AI Growth Agency, Not Just Another App
+                </h3>
+                <p className="text-gray-300 mb-6">
+                  AGEN-AI makes strategic decisions across all your growth
+                  channels simultaneously, acting as a premium agency team. Get
+                  cross-channel optimization and strategic thinking at 90%+ cost
+                  savings vs traditional agencies.
+                </p>
+                <a
+                  href="#waitlist"
+                  className="flex items-center text-primary font-medium hover:underline absolute bottom-[22px] highlight-purple"
+                >
+                  See Platform <i className="fas fa-arrow-right ml-2"></i>
+                </a>
+              </div>
+
+              <div className="card rounded-xl p-6 hover:shadow-lg">
+                <div className="w-14 h-14 bg-opacity-20 bg-purple-500 rounded-lg flex items-center justify-center mb-4">
+                  <i className="fas fa-chart-simple text-3xl feature-icon mr-0"></i>
+                </div>
+                <h3 className="text-xl font-bold mb-3">
+                  Cross-Channel Growth Intelligence
+                </h3>
+                <p className="text-gray-300 mb-6">
+                  While other apps optimize in silos, AGEN-AI orchestrates
+                  campaigns across Meta, Google, email, SMS, and your landing
+                  pages. Strategic decision-making that considers your entire
+                  customer journey, not individual touchpoints.
+                </p>
+                <a
+                  href="#waitlist"
+                  className="flex items-center text-primary font-medium hover:underline absolute bottom-[22px] highlight-purple"
+                >
+                  View Analytics <i className="fas fa-arrow-right ml-2"></i>
                 </a>
               </div>
 
@@ -275,63 +396,23 @@ const IndexPage = () => {
                   <i className="fas fa-bolt text-3xl feature-icon mr-0"></i>
                 </div>
                 <h3 className="text-xl font-bold mb-3">
-                  24-Hour Campaign Launch
+                  24-Hour Growth Deployment
                 </h3>
                 <p className="text-gray-300 mb-6">
-                  24-hour setup to live campaigns. Connect your Meta account,
-                  complete our 5-minute questionnaire, and launch AI-optimized
-                  ads ready to scale.
+                  From onboarding to full growth automation in 24 hours. AGEN-AI
+                  instantly analyzes and applies proven data-driven optimization
+                  strategies across your entire funnel.
                 </p>
                 <a
-                  href="#"
+                  href="#waitlist"
                   className="flex items-center text-primary font-medium hover:underline absolute bottom-[22px] highlight-purple"
                 >
-                  Launch Fast <i className="fas fa-arrow-right ml-2"></i>
-                </a>
-              </div>
-
-              <div className="card rounded-xl p-6 hover:shadow-lg">
-                <div className="w-14 h-14 bg-opacity-20 bg-purple-500 rounded-lg flex items-center justify-center mb-4">
-                  <i className="fas fa-chart-pie text-3xl feature-icon mr-0"></i>
-                </div>
-                <h3 className="text-xl font-bold mb-3">
-                  Your 24/7 AI Marketing Team
-                </h3>
-                <p className="text-gray-300 mb-6">
-                  Get a dedicated AI team working around the clock on your Meta
-                  campaigns: strategic planning, real-time optimization, and
-                  creative direction. All the talent, none of the payroll.
-                </p>
-                <a
-                  href="#"
-                  className="flex items-center text-primary font-medium hover:underline absolute bottom-[22px] highlight-purple"
-                >
-                  Get Expert Results <i className="fas fa-arrow-right ml-2"></i>
-                </a>
-              </div>
-
-              <div className="card rounded-xl p-6 hover:shadow-lg">
-                <div className="w-14 h-14 bg-opacity-20 bg-purple-500 rounded-lg flex items-center justify-center mb-4">
-                  <i className="fas fa-brain text-3xl feature-icon mr-0"></i>
-                </div>
-                <h3 className="text-xl font-bold mb-3">
-                  Insightful Campaign Analytics{" "}
-                </h3>
-                <p className="text-gray-300 mb-6">
-                  Track Meta campaign performance with AI-driven insights and
-                  recommendations. See what's working, what's not, and get
-                  actionable data to improve your ROI in real-time.
-                </p>
-                <a
-                  href="#"
-                  className="flex items-center text-primary font-medium hover:underline absolute bottom-[22px] highlight-purple"
-                >
-                  See Clear Data <i className="fas fa-arrow-right ml-2"></i>
+                  Deploy Fast <i className="fas fa-arrow-right ml-2"></i>
                 </a>
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
 
         {/* <section id="benefits" className="py-20 px-6 bg-gradient-dark">
           <div className="max-w-7xl mx-auto">
@@ -650,6 +731,38 @@ const IndexPage = () => {
                     </div>
                 </div>
             </footer> */}
+
+        {/* New AGEN-AI Section */}
+        <section className="py-12 md:py-20 px-6">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold mb-6">
+                <span className="highlight-purple">AGEN-AI:</span> The Growth
+                Intelligence Advantage
+              </h2>
+              <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+                See how our proprietary AI replaces expensive agency teams and
+                eliminates tool fragmentation with unified, intelligent
+                automation.
+              </p>
+            </div>
+            <div className="flex justify-center">
+              <div className="bg-[#131221]">
+                <img
+                  src={laptopMobileImage}
+                  alt="AGEN-AI platform dashboard showing unified growth intelligence and automation"
+                  className="w-full h-auto bg-[#131221] max-w-4xl mx-auto"
+                />
+              </div>
+            </div>
+            <div className="text-center mt-4">
+              <p className="text-sm text-gray-400 italic max-w-none">
+                * Renderings may not represent final design
+              </p>
+            </div>
+          </div>
+        </section>
+
         <section className="py-12 md:py-20 px-6">
           <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols-2 gap-8 md:gap-20 items-center">
@@ -692,6 +805,11 @@ const IndexPage = () => {
                     alt="Marketing audit chat conversation on mobile"
                     className="w-2/3 md:w-3/4 h-auto m-auto"
                   />
+                </div>
+                <div className="text-center mt-4">
+                  <p className="text-sm text-gray-400 italic">
+                    * Renderings may not represent final design
+                  </p>
                 </div>
               </div>
             </div>

@@ -62,12 +62,12 @@ const IndexPage = () => {
 
         <div className="max-w-7xl mx-auto relative z-10 text-center">
           {/* AI Badge */}
-          <div className="inline-flex items-center px-4 py-2 mb-8 rounded-full border border-purple-500/30 bg-purple-500/10 backdrop-blur-sm">
+          {/* <div className="inline-flex items-center px-4 py-2 mb-8 rounded-full border border-purple-500/30 bg-purple-500/10 backdrop-blur-sm">
             <i className="fas fa-robot text-purple-400 mr-2"></i>
             <span className="text-[.75rem] md:text-sm font-medium text-purple-300">
               Full-Funnel Growth on Autopilot
             </span>
-          </div>
+          </div> */}
 
           <h1 className="text-[2rem] md:text-6xl font-bold leading-tight text-center mb-2">
             <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
@@ -77,11 +77,9 @@ const IndexPage = () => {
           </h1>
 
           <p className="mt-5 md:mt-8 text-lg md:text-2xl text-gray-300 text-center max-w-4xl mx-auto leading-relaxed">
-            Built on AGEN-AI: Our closed-source engine that learns, optimizes,
-            and automates the user’s e-commerce growth stack — from traffic to
-            conversion. Unlike single-purpose apps, unified intelligence powers
-            campaigns, landing pages, and more using brand knowledge and
-            real-time best practices.
+            Agency AI automates your entire growth funnel; from multichannel ads
+            to conversion optimization, replacing agencies and app stacks with
+            one intelligent platform.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
@@ -224,7 +222,7 @@ const IndexPage = () => {
                 <i className="fas fa-rocket text-3xl feature-icon mr-0"></i>
               </div>
               <h3 className="text-xl font-bold mb-3">
-                AI Marketing Agency, Not Just Another App
+                AI Growth Agency, Not Just Another App
               </h3>
               <p className="text-gray-300 mb-6">
                 AGEN-AI makes strategic decisions across all your growth
@@ -425,10 +423,11 @@ const IndexPage = () => {
                   Meta Advertising Foundation
                 </h3>
                 <p className="text-gray-300 leading-relaxed mb-6">
-                  We're launching with Meta advertising that thinks
-                  strategically about the entire funnel, not just ad
-                  optimization. AGEN-AI considers customer lifetime value,
-                  retention, and cross-channel attribution from day one.
+                  Our Meta launch implements proper campaign structure and
+                  proven best practices built-in from day one. AGEN-AI launches
+                  the exact funnel architecture that Meta's algorithm rewards,
+                  fixing the chaotic ad accounts that kill most stores'
+                  profitability.
                 </p>
               </div>
 
@@ -437,25 +436,25 @@ const IndexPage = () => {
                 <div className="flex items-center">
                   <i className="fas fa-check-circle text-blue-400 mr-3"></i>
                   <span className="text-gray-300">
-                    Strategic Meta Campaign Management
+                    Advantage+ campaigns configured for maximum efficiency
                   </span>
                 </div>
                 <div className="flex items-center">
                   <i className="fas fa-check-circle text-blue-400 mr-3"></i>
                   <span className="text-gray-300">
-                    Customer Lifetime Value Optimization
+                    TOF/MOF/BOF structure with proper audience exclusions
                   </span>
                 </div>
                 <div className="flex items-center">
                   <i className="fas fa-check-circle text-blue-400 mr-3"></i>
                   <span className="text-gray-300">
-                    Cross-Channel Attribution
+                    Creative testing frameworks that find winners fast
                   </span>
                 </div>
                 <div className="flex items-center">
                   <i className="fas fa-check-circle text-blue-400 mr-3"></i>
                   <span className="text-gray-300">
-                    Retention-Focused Targeting
+                    Budget distribution optimized for Meta's requirements
                   </span>
                 </div>
               </div>
@@ -476,10 +475,10 @@ const IndexPage = () => {
                   Complete Agency Intelligence
                 </h3>
                 <p className="text-gray-300 leading-relaxed mb-6">
-                  Our roadmap expands this strategic thinking across all growth
-                  channels. AGEN-AI will orchestrate email, SMS, social, paid
-                  ads, and customer success as one unified growth strategy —
-                  replacing entire agency teams with intelligent automation.
+                  Our proprietary AI system AGEN-AI evolves from automation to
+                  complete business intelligence. Each quarter unlocks new
+                  capabilities that feed back into the core engine, turning
+                  isolated channels into one self-improving ecosystem.
                 </p>
               </div>
 
@@ -488,22 +487,26 @@ const IndexPage = () => {
                 <div className="flex items-center">
                   <i className="fas fa-arrow-right text-green-400 mr-3"></i>
                   <span className="text-gray-300">
-                    Email Marketing Intelligence
+                    Google Ads, Generative AI Design Studio (Beta)
                   </span>
                 </div>
                 <div className="flex items-center">
                   <i className="fas fa-arrow-right text-green-400 mr-3"></i>
                   <span className="text-gray-300">
-                    SMS Campaign Orchestration
+                    AGEN-AI V2, Tik-Tok Ads & Snapchat Ads Integration
                   </span>
                 </div>
                 <div className="flex items-center">
                   <i className="fas fa-arrow-right text-green-400 mr-3"></i>
-                  <span className="text-gray-300">Social Media Automation</span>
+                  <span className="text-gray-300">
+                    Text to Action, Email & SMS
+                  </span>
                 </div>
                 <div className="flex items-center">
                   <i className="fas fa-arrow-right text-green-400 mr-3"></i>
-                  <span className="text-gray-300">Customer Success AI</span>
+                  <span className="text-gray-300">
+                    SEO, CRO & Dynamic Landing Page Optimization
+                  </span>
                 </div>
               </div>
             </div>
