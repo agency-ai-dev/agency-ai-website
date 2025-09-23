@@ -8,42 +8,40 @@ const Footer = ({ waitlist }) => {
           <h2 className="text-xl font-bold mb-2">Agency AI</h2>
           <p className="opacity-70">© 2025 Agency AI. All rights reserved.</p>
         </div>
-        {waitlist ? (
-          ""
-        ) : (
-          <div className="flex flex-col md:flex-row gap-4">
-            <a
-              href="/"
-              className="text-white hover:text-teal-400 transition-colors no-underline"
-            >
-              Home
-            </a>
-            <a
-              href="/aboutus"
-              className="text-white hover:text-teal-400 transition-colors no-underline"
-            >
-              About
-            </a>
-            <a
-              href="/contactus"
-              className="text-white hover:text-teal-400 transition-colors no-underline"
-            >
-              Contact
-            </a>
+        <div className="flex flex-col md:flex-row gap-4">
+          <a
+            href="/"
+            className="text-white hover:text-teal-400 transition-colors no-underline"
+          >
+            Home
+          </a>
+          <a
+            href="/aboutus"
+            className="text-white hover:text-teal-400 transition-colors no-underline"
+          >
+            About
+          </a>
+          <a
+            href="/contactus"
+            className="text-white hover:text-teal-400 transition-colors no-underline"
+          >
+            Contact
+          </a>
+          {!waitlist && (
             <a
               href="/pricing"
               className="text-white hover:text-teal-400 transition-colors no-underline"
             >
               Pricing
             </a>
-            <a
-              href="/privacy-policy"
-              className="text-white hover:text-teal-400 transition-colors no-underline"
-            >
-              Privacy Policy
-            </a>
-          </div>
-        )}
+          )}
+          <a
+            href="/privacy-policy"
+            className="text-white hover:text-teal-400 transition-colors no-underline"
+          >
+            Privacy Policy
+          </a>
+        </div>
       </div>
     </footer>
   )
