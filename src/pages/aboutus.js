@@ -15,13 +15,13 @@ const ContactUsPage = () => {
     <div className="pdf-container">
       <Header waitlist={true} />
       <div className="min-h-screen">
-        <section className="pt-16 px-6 md:px-12 lg:px-24 md:pt-24 max-w-7xl mx-auto">
+        <section className="pt-16 px-6 md:px-12 lg:px-24 md:pt-24 max-w-7xl mx-auto lg:text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
             ABOUT
             <br />
             <span className="highlight-purple">AGENCY AI</span>
           </h1>
-          <p className="text-lg md:text-xl max-w-4xl opacity-90 mb-12">
+          <p className="text-lg md:text-xl max-w-4xl opacity-90 mb-12 lg:text-center lg:w-2/3 lg:mx-auto">
             Our mission is to help Shopify store owners and their teams automate
             growth by leveraging AI technology.
           </p>
@@ -91,10 +91,10 @@ const ContactUsPage = () => {
 
         <section className="py-8 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
           <div className="card p-8">
-            <h2 className="text-2xl md:text-3xl font-bold mb-6">
+            <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">
               The Problem We're Solving
             </h2>
-            <p className="mb-10 text-lg opacity-90">
+            <p className="m-auto mb-10 text-lg opacity-90">
               We've seen too many brilliant business owners spending countless
               hours manually managing their ad campaigns instead of focusing on
               what they do best, which is growing their business.
@@ -104,10 +104,10 @@ const ContactUsPage = () => {
               expensive agencies, hiring specialists, or becoming marketing
               experts themselves. None of these options are ideal.
             </p>
-            <h2 className="text-2xl md:text-3xl font-bold mb-6 mt-12">
+            <h2 className="text-2xl md:text-3xl font-bold mb-6 mt-12 text-center">
               Our Solution
             </h2>
-            <p className="mb-10 text-lg opacity-90">
+            <p className="m-auto mb-10 text-lg opacity-90">
               Agency AI was born from the belief that advanced growth automation
               should be accessible to every business, not just enterprises with
               massive budgets.
@@ -117,10 +117,10 @@ const ContactUsPage = () => {
               and optimizes like the best marketing teams, but works 24/7
               without the overhead.
             </p>
-            <h3 className="text-2xl md:text-3xl font-semibold mb-4 mt-8">
+            <h3 className="text-2xl md:text-3xl font-semibold mb-4 mt-8 text-center">
               Our Values
             </h3>
-            <p className="mb-10 text-lg opacity-90">
+            <p className="m-auto mb-10 text-lg opacity-90">
               We believe advanced AI marketing and growth automation should be
               accessible to every business, not just enterprises with massive
               budgets. Every feature we build drives real business outcomes
@@ -134,7 +134,7 @@ const ContactUsPage = () => {
           </div>
         </section>
 
-        <section className="py-16 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto text-center">
+        {/* <section className="py-16 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">
             Ready to transform your{" "}
             <span className="highlight-teal">marketing</span>?
@@ -158,7 +158,7 @@ const ContactUsPage = () => {
               Start Free Trial
             </Link>
           </div>
-        </section>
+        </section> */}
 
         <Footer waitlist={true} />
       </div>
