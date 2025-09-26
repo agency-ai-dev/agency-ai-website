@@ -13,63 +13,18 @@ const ContactUsPage = () => {
 
   return (
     <div className="pdf-container">
-      <Header />
+      <Header waitlist={true} />
       <div className="min-h-screen">
-        <section className="pt-16 px-6 md:px-12 lg:px-24 md:pt-24 max-w-7xl mx-auto">
+        <section className="pt-16 px-6 md:px-12 lg:px-24 md:pt-24 max-w-7xl mx-auto lg:text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
             ABOUT
             <br />
             <span className="highlight-purple">AGENCY AI</span>
           </h1>
-          <p className="text-lg md:text-xl max-w-4xl opacity-90 mb-12">
+          <p className="text-lg md:text-xl max-w-4xl opacity-90 mb-12 lg:text-center lg:w-2/3 lg:mx-auto">
             Our mission is to help Shopify store owners and their teams automate
             growth by leveraging AI technology.
           </p>
-        </section>
-
-        <section className="py-8 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
-          <div className="card p-8">
-            <h2 className="text-2xl md:text-3xl font-bold mb-6">
-              The Problem We're Solving
-            </h2>
-            <p className="mb-10 text-lg opacity-90">
-              We've seen too many brilliant business owners spending countless
-              hours manually managing their ad campaigns instead of focusing on
-              what they do best, which is growing their business.
-              <br />
-              <br />
-              The current landscape forces entrepreneurs to choose between
-              expensive agencies, hiring specialists, or becoming marketing
-              experts themselves. None of these options are ideal.
-            </p>
-            <h2 className="text-2xl md:text-3xl font-bold mb-6 mt-12">
-              Our Solution
-            </h2>
-            <p className="mb-10 text-lg opacity-90">
-              Agency AI was born from the belief that advanced growth automation
-              should be accessible to every business, not just enterprises with
-              massive budgets.
-              <br />
-              <br />
-              We're building AI that doesn't just automate. It thinks, learns,
-              and optimizes like the best marketing teams, but works 24/7
-              without the overhead.
-            </p>
-            <h3 className="text-2xl md:text-3xl font-semibold mb-4 mt-8">
-              Our Values
-            </h3>
-            <p className="mb-10 text-lg opacity-90">
-              We believe advanced AI marketing and growth automation should be
-              accessible to every business, not just enterprises with massive
-              budgets. Every feature we build drives real business outcomes
-              while continuously learning and evolving from campaign data.
-              <br />
-              <br />
-              We're not just a tool. We're your AI growth partner, democratizing
-              cutting-edge technology so any business can compete at the highest
-              level.
-            </p>
-          </div>
         </section>
 
         <section className="py-8 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
@@ -84,13 +39,13 @@ const ContactUsPage = () => {
                 Anthony
               </h3>
               <p className="text-lg mb-4 opacity-80">CEO, Founder</p>
-              <p className="opacity-90">
+              <p className="opacity-90 text-left">
                 Anthony brings 13 years of experience in the Shopify ecosystem,
                 honing his skills in eCommerce marketing while building,
                 scaling, and managing numerous successful stores. His passion
                 lies at the intersection of marketing technology and AI.
               </p>
-              <p className="mt-4 opacity-80">
+              <p className="mt-4 opacity-80 text-left">
                 When unplugged, he loves traveling, beaches, and quality time
                 with his canine companion.
               </p>
@@ -100,7 +55,7 @@ const ContactUsPage = () => {
               <img src={john} alt="John" className="founder-img mb-6" />
               <h3 className="text-2xl font-bold highlight-purple mb-1">John</h3>
               <p className="text-lg mb-4 opacity-80">CTO, Lead Engineer</p>
-              <p className="opacity-90">
+              <p className="opacity-90 text-left">
                 John is a full-stack developer with 6+ years of experience. He's
                 worked at Shopify agencies, early-stage startups, and consulted
                 for Fortune 500 companies. He also brings deep A/B testing
@@ -108,7 +63,7 @@ const ContactUsPage = () => {
                 experiments that collectively drove millions in additional
                 revenue across clients.
               </p>
-              <p className="mt-4 opacity-80">
+              <p className="mt-4 opacity-80 text-left">
                 Outside of work, you’ll find John on the pickleball court,
                 unwinding in the sauna, or spending time with his wife,
                 daughter, and 3 dogs.
@@ -121,12 +76,12 @@ const ContactUsPage = () => {
               <p className="text-lg mb-4 opacity-80">
                 Chief Software Architect, Technical Advisor
               </p>
-              <p className="opacity-90">
+              <p className="opacity-90 text-left">
                 Joe's an expert Shopify app developer, 7 year eCommerce store
                 owner, former Shopify optimization agency owner, and the Founder
                 / CTO of Automator Apps.
               </p>
-              <p className="mt-4 opacity-80">
+              <p className="mt-4 opacity-80 text-left">
                 Outside of tech he's into nature adventures, travel, trees,
                 music, books, and art.
               </p>
@@ -134,7 +89,52 @@ const ContactUsPage = () => {
           </div>
         </section>
 
-        <section className="py-16 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto text-center">
+        <section className="py-8 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
+          <div className="card p-8">
+            <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center">
+              The Problem We're Solving
+            </h2>
+            <p className="m-auto mb-10 text-lg opacity-90">
+              We've seen too many brilliant business owners spending countless
+              hours manually managing their ad campaigns instead of focusing on
+              what they do best, which is growing their business.
+              <br />
+              <br />
+              The current landscape forces entrepreneurs to choose between
+              expensive agencies, hiring specialists, or becoming marketing
+              experts themselves. None of these options are ideal.
+            </p>
+            <h2 className="text-2xl md:text-3xl font-bold mb-6 mt-12 text-center">
+              Our Solution
+            </h2>
+            <p className="m-auto mb-10 text-lg opacity-90">
+              Agency AI was born from the belief that advanced growth automation
+              should be accessible to every business, not just enterprises with
+              massive budgets.
+              <br />
+              <br />
+              We're building AI that doesn't just automate. It thinks, learns,
+              and optimizes like the best marketing teams, but works 24/7
+              without the overhead.
+            </p>
+            <h3 className="text-2xl md:text-3xl font-semibold mb-4 mt-8 text-center">
+              Our Values
+            </h3>
+            <p className="m-auto mb-10 text-lg opacity-90">
+              We believe advanced AI marketing and growth automation should be
+              accessible to every business, not just enterprises with massive
+              budgets. Every feature we build drives real business outcomes
+              while continuously learning and evolving from campaign data.
+              <br />
+              <br />
+              We're not just a tool. We're your AI growth partner, democratizing
+              cutting-edge technology so any business can compete at the highest
+              level.
+            </p>
+          </div>
+        </section>
+
+        {/* <section className="py-16 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">
             Ready to transform your{" "}
             <span className="highlight-teal">marketing</span>?
@@ -158,9 +158,9 @@ const ContactUsPage = () => {
               Start Free Trial
             </Link>
           </div>
-        </section>
+        </section> */}
 
-        <Footer />
+        <Footer waitlist={true} />
       </div>
     </div>
   )
