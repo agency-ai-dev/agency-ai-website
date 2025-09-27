@@ -69,7 +69,7 @@ const IndexPage = () => {
             </span>
           </div> */}
 
-          <h1 className="text-[2rem] md:text-6xl font-bold leading-tight text-center mb-2">
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight text-center mb-2">
             <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
               The Complete <span className="highlight-purple">AI</span>
             </span>
@@ -118,12 +118,19 @@ const IndexPage = () => {
         `}</style>
       </section>
 
+      {/* <p className="text-sm text-gray-400 italic text-center max-w-4xl mb-0 mx-auto py-12 md:py-20">
+        Led by founders with $25M+ in Shopify sales, four Shopify app exits, and
+        Fortune 500 consulting experience, we combine proven e-commerce results
+        with technical expertise to power the next-generation growth engine for
+        online merchants.
+      </p> */}
+
       {/* <FreeAudit /> */}
 
       <section id="features" className="py-12 md:py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">
+            <h2 className="text-[2rem] font-bold mb-4">
               SEAMLESS INTEGRATIONS{" "}
               <span className="highlight-purple">BUILT FOR SHOPIFY</span>
             </h2>
@@ -300,7 +307,7 @@ const IndexPage = () => {
       <section className="py-12 md:py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-6">
+            <h2 className="text-[2rem] font-bold mb-6">
               <span className="highlight-purple">AGEN-AI:</span> The Growth
               Intelligence Advantage
             </h2>
@@ -326,7 +333,7 @@ const IndexPage = () => {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8 md:gap-20 items-center">
             <div className="order-2 md:order-1">
-              <h2 className="text-4xl font-bold mb-6 ">
+              <h2 className="text-[2rem] font-bold mb-6 ">
                 Growth Management <br></br>
                 <span className="highlight-purple">Made Simple</span>
               </h2>
@@ -394,7 +401,7 @@ const IndexPage = () => {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-6">
+            <h2 className="text-[2rem] font-bold mb-6">
               Beyond Marketing Automation:{" "}
               <span className="text-[#00e6b4]">
                 Complete Growth Intelligence
@@ -711,7 +718,7 @@ const IndexPage = () => {
       <section className="py-12 md:py-20 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="card rounded-xl p-10 shadow-2xl border border-purple-500 border-opacity-30 text-center">
-            <h2 className="text-4xl font-bold mb-4">
+            <h2 className="text-[2rem] font-bold mb-4">
               Partner with the{" "}
               <span className="highlight-purple">Future of Growth</span>
             </h2>
