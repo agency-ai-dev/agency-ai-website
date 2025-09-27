@@ -99,7 +99,7 @@ const IndexPage = () => {
               </span>
             </div> */}
 
-            <h1 className="text-[2rem] md:text-6xl font-bold leading-tight text-center mb-2">
+            <h1 className="text-4xl md:text-6xl font-bold leading-tight text-center mb-2">
               <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
                 THE E-COMMERCE
               </span>
@@ -200,18 +200,17 @@ const IndexPage = () => {
         <section id="features" className="py-12 md:py-20 px-6">
           <div className="max-w-7xl mx-auto" id="waitlist">
             <div className="text-center">
-              <h2 className="text-4xl font-bold mb-4">
+              <h2 className="text-[2rem] font-bold mb-4">
                 FIRST 3 MONTHS FREE + 30% OFF{" "}
                 <span className="highlight-purple">LIFETIME DISCOUNT</span>
               </h2>
-              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                Join the waitlist and be the first to experience AI-powered
-                growth automation.
+              <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-6">
+                Be the first to experience AI-powered growth automation.
               </p>
             </div>
             <div className="max-w-2xl mx-auto text-center">
               <form
-                className="space-y-4"
+                className="space-y-4 flex flex-col items-center"
                 action="https://getlaunchlist.com/s/ytbURo"
                 method="POST"
                 onSubmit={handleSubmit}
@@ -222,10 +221,9 @@ const IndexPage = () => {
                   value={email}
                   onChange={e => setEmail(e.target.value)}
                   placeholder="Enter your email address"
-                  className="w-full md:w-[60%] px-6 py-4 rounded-xl bg-rgba-20-20-40-0.8 border border-purple-500/30 text-white placeholder-gray-400 focus:outline-none focus:border-purple-500 focus:bg-rgba-30-30-50-0.8 transition-all duration-300"
+                  className="w-full md:w-1/2 px-6 py-4 rounded-xl bg-rgba-20-20-40-0.8 text-white placeholder-gray-400 focus:outline-none transition-all duration-300"
                   style={{
-                    backgroundColor: "rgba(20, 20, 40, 0.8)",
-                    border: "1px solid rgba(123, 104, 238, 0.3)",
+                    backgroundColor: "rgba(255, 255, 255, 0.1)",
                   }}
                   required
                   minLength="5"
@@ -234,8 +232,8 @@ const IndexPage = () => {
                 <button
                   type="submit"
                   disabled={isSubmitting || !email}
-                  className="w-full md:w-1/2 px-8 py-4 rounded-xl font-semibold shadow-2xl text-gray-900 text-lg overflow-hidden group relative transition-all duration-300 hover:transform hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed"
-                  style={{ backgroundColor: "#00e6b4" }}
+                  className="w-full md:w-1/2 px-8 py-4 rounded-xl font-semibold shadow-2xl text-gray-900 text-lg overflow-hidden group relative transition-all duration-300 hover:transform hover:-translate-y-1 disabled:cursor-not-allowed"
+                  style={{ backgroundColor: "#FF3CAC" }}
                 >
                   <div
                     className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
@@ -255,7 +253,7 @@ const IndexPage = () => {
         <section id="features" className="py-12 md:py-20 px-6">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-4">
+              <h2 className="text-[2rem] font-bold mb-4">
                 SEAMLESS INTEGRATIONS{" "}
                 <span className="highlight-purple">BUILT FOR E-COMMERCE</span>
               </h2>
@@ -736,7 +734,7 @@ const IndexPage = () => {
         <section className="py-12 md:py-20 px-6">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-6">
+              <h2 className="text-[2rem] font-bold mb-6">
                 <span className="highlight-purple">AGEN-AI:</span> The Growth
                 Intelligence Advantage
               </h2>
@@ -756,7 +754,7 @@ const IndexPage = () => {
               </div>
             </div>
             <div className="text-center mt-4">
-              <p className="text-sm text-gray-400 italic max-w-none">
+              <p className="text-[.75rem] text-gray-400 italic max-w-none">
                 * Renderings may not represent final design
               </p>
             </div>
@@ -807,7 +805,7 @@ const IndexPage = () => {
                   />
                 </div>
                 <div className="text-center mt-4">
-                  <p className="text-sm text-gray-400 italic">
+                  <p className="text-[.75rem] text-gray-400 italic">
                     * Renderings may not represent final design
                   </p>
                 </div>

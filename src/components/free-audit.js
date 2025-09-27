@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useRef } from "react"
 
 const FreeAudit = () => {
   const [isLoading, setIsLoading] = useState(false)
@@ -8,6 +8,7 @@ const FreeAudit = () => {
     email: "",
     name: "",
     website: "",
+    honeypot: "", // Hidden field for bot detection
   })
 
   const handleInputChange = e => {
@@ -23,12 +24,74 @@ const FreeAudit = () => {
     }
   }
 
+  // Validation functions
+  const isValidWebsiteUrl = url => {
+    if (!url) return false
+
+    // Block date patterns like 00/00/00, 01/01/23, etc.
+    const datePattern = /^\d{1,2}\/\d{1,2}\/\d{2,4}$/
+    if (datePattern.test(url.trim())) {
+      return false
+    }
+
+    // Block pure number sequences
+    const numberPattern = /^\d+$/
+    if (numberPattern.test(url.trim())) {
+      return false
+    }
+
+    // More flexible URL validation - just needs a domain with extension
+    // Accepts: example.com, www.example.com, https://example.com, etc.
+    const urlPattern =
+      /^(https?:\/\/)?(www\.)?[a-zA-Z0-9-]+\.[a-zA-Z]{2,}(\/.*)?$/i
+    return urlPattern.test(url.trim())
+  }
+
+  const validateForm = () => {
+    // Check honeypot field (should be empty)
+    if (formData.honeypot && formData.honeypot.trim() !== "") {
+      console.log("Bot detected: honeypot field filled")
+      return { isValid: false, error: "Please try again." }
+    }
+
+    // Validate website URL
+    if (!isValidWebsiteUrl(formData.website)) {
+      return {
+        isValid: false,
+        error: "Please enter a valid website URL (e.g., yoursite.com)",
+      }
+    }
+
+    // Basic email validation
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    if (!emailPattern.test(formData.email)) {
+      return { isValid: false, error: "Please enter a valid email address." }
+    }
+
+    // Check for minimum name length
+    if (formData.name.trim().length < 2) {
+      return { isValid: false, error: "Please enter your full name." }
+    }
+
+    return { isValid: true }
+  }
+
   const handleSubmit = async e => {
     e.preventDefault()
     e.stopPropagation()
+
+    // Validate form before submission
+    const validation = validateForm()
+    if (!validation.isValid) {
+      setMessageType("error")
+      setMessage(validation.error)
+      return
+    }
+
     setIsLoading(true)
     setMessageType(null) // Clear previous messages
     setMessage("")
+
     console.log("Form submitted with data:", formData)
 
     try {
@@ -55,6 +118,7 @@ const FreeAudit = () => {
           email: "",
           name: "",
           website: "",
+          honeypot: "",
         })
       } else {
         console.error("Failed to send email")
@@ -134,6 +198,26 @@ const FreeAudit = () => {
               )}
 
               <form className="space-y-4">
+                {/* Honeypot field - hidden from users but visible to bots */}
+                <div
+                  style={{
+                    position: "absolute",
+                    left: "-9999px",
+                    visibility: "hidden",
+                  }}
+                >
+                  <label htmlFor="website_url">Website URL (leave blank)</label>
+                  <input
+                    type="text"
+                    id="website_url"
+                    name="honeypot"
+                    value={formData.honeypot}
+                    onChange={handleInputChange}
+                    tabIndex="-1"
+                    autoComplete="off"
+                  />
+                </div>
+
                 <div>
                   <label
                     className="block text-sm font-medium mb-1"
