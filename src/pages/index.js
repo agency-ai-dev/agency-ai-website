@@ -6,37 +6,11 @@ import { Helmet } from "react-helmet"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import FreeAudit from "../components/free-audit"
+import WaitlistCard from "../components/waitlist-card"
 import mobileChat from "../images/mobile-chat.png"
 import laptopMobileImage from "../images/laptop-mobile-screengrab.png"
 
 const IndexPage = () => {
-  const [email, setEmail] = React.useState("")
-  const [isSubmitting, setIsSubmitting] = React.useState(false)
-
-  const validateEmail = email => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-    return emailRegex.test(email)
-  }
-
-  const handleSubmit = e => {
-    if (!validateEmail(email)) {
-      alert("Please enter a valid email address")
-      return
-    }
-
-    if (email.length < 5) {
-      alert("Email address is too short")
-      return
-    }
-
-    setIsSubmitting(true)
-
-    // Add small delay to prevent rapid submissions
-    setTimeout(() => {
-      e.target.submit()
-    }, 500)
-  }
-
   return (
     <>
       <Helmet>
@@ -44,7 +18,7 @@ const IndexPage = () => {
       </Helmet>
       <div className="pdf-container">
         <Header waitlist={true} />
-        <section className="relative px-6 overflow-hidden pb-[5rem] pt-[4.5rem] flex items-center">
+        <section className="relative px-6 overflow-hidden pt-[4.5rem] flex items-center">
           <div className="glow"></div>
 
           {/* Floating AI Elements */}
@@ -106,13 +80,14 @@ const IndexPage = () => {
               <span className="highlight-purple block">GROWTH ENGINE</span>
             </h1>
 
-            <p className="mt-5 md:mt-8 text-lg md:text-2xl text-gray-300 text-center max-w-4xl mx-auto leading-relaxed">
-              AI-powered Meta advertising that optimizes, scales, and manages
-              campaigns automatically - so you can focus on growing your
-              business{" "}
+            <p className="mt-5 md:mt-8 text-base md:text-xl text-gray-300 text-center max-w-4xl mx-auto leading-relaxed">
+              Agency AI unifies digital ads, retention, and conversion
+              optimization into a single platform that evolves with your
+              business, automating decisions based on what actually converts
+              your customers.
             </p>
 
-            <div className="mt-10 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
+            {/* <div className="mt-10 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
               <button
                 className="group relative px-8 py-4 rounded-xl font-semibold shadow-2xl text-white text-lg overflow-hidden"
                 style={{ backgroundColor: "#00e6b4" }}
@@ -130,7 +105,7 @@ const IndexPage = () => {
                   Get Early Access
                 </Link>
               </button>
-            </div>
+            </div> */}
           </div>
 
           {/* Add floating animation keyframes */}
@@ -197,74 +172,137 @@ const IndexPage = () => {
           </div>
         </section> */}
 
-        <section id="features" className="py-12 md:py-20 px-6">
-          <div className="max-w-7xl mx-auto" id="waitlist">
-            <div className="text-center">
-              <h2 className="text-[2rem] font-bold mb-4">
-                FIRST 3 MONTHS FREE + 30% OFF{" "}
-                <span className="highlight-purple">LIFETIME DISCOUNT</span>
-              </h2>
-              <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-6">
-                Be the first to experience AI-powered growth automation.
-              </p>
-            </div>
-            <div className="max-w-2xl mx-auto text-center">
-              <form
-                className="space-y-4 flex flex-col items-center"
-                action="https://getlaunchlist.com/s/ytbURo"
-                method="POST"
-                onSubmit={handleSubmit}
-              >
-                <input
-                  name="email"
-                  type="email"
-                  value={email}
-                  onChange={e => setEmail(e.target.value)}
-                  placeholder="Enter your email address"
-                  className="w-full md:w-1/2 px-6 py-4 rounded-xl bg-rgba-20-20-40-0.8 text-white placeholder-gray-400 focus:outline-none transition-all duration-300"
-                  style={{
-                    backgroundColor: "rgba(255, 255, 255, 0.1)",
-                  }}
-                  required
-                  minLength="5"
-                  maxLength="100"
-                />
-                <button
-                  type="submit"
-                  disabled={isSubmitting || !email}
-                  className="w-full md:w-1/2 px-8 py-4 rounded-xl font-semibold shadow-2xl text-gray-900 text-lg overflow-hidden group relative transition-all duration-300 hover:transform hover:-translate-y-1 disabled:cursor-not-allowed"
-                  style={{ backgroundColor: "#FF3CAC" }}
-                >
-                  <div
-                    className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                    style={{
-                      background: "linear-gradient(to right, #6a59d1, #5a4bc4)",
-                    }}
-                  ></div>
-                  <span className="relative">
-                    {isSubmitting ? "Joining..." : "Join the Waitlist"}
-                  </span>
-                </button>
-              </form>
+        <div id="waitlist">
+          <WaitlistCard />
+        </div>
+
+        {/* Promo Video Section */}
+        <section className="py-12 md:py-20 px-6 pt-0">
+          <div className="text-center">
+            <h2 className="text-[1.75rem] md:text-[2rem] font-bold mb-4">
+              THE PROBLEMS <span className="highlight-purple">WE SOLVE</span>
+            </h2>
+          </div>
+          <div className="mx-auto text-center">
+            <div className="rounded-xl overflow-hidden w-full md:w-[70%] m-auto">
+              <div className="relative">
+                <video className="w-full h-full" controls>
+                  <source src="/promo-video.mp4" type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              </div>
             </div>
           </div>
         </section>
+      </div>
 
+      {/* Credibility Section - Full Width Banner (outside container) */}
+      <div className="w-full bg-gradient-to-r from-gray-900/40 via-gray-800/30 to-gray-900/40 border-t border-b border-gray-700/30">
+        <section className="py-12">
+          <div className="max-w-5xl mx-auto px-6 text-center">
+            <h2 className="text-xl md:text-2xl font-bold mb-4 text-white tracking-wide uppercase">
+              <span style={{ color: "#00e6b4" }}>Our Experience </span>
+              <br className="block md:hidden" />
+              Brought Us Here
+            </h2>
+            <p className="text-base md:text-lg text-gray-300 leading-relaxed font-light m-auto max-w-[710px]">
+              Led by founders with{" "}
+              <span className="text-white font-medium">
+                $25M+ in Shopify sales
+              </span>
+              , multiple apps serving{" "}
+              <span className="text-white font-medium">20,000+ users</span>, and{" "}
+              <span className="text-white font-medium">
+                Fortune 500 optimization expertise
+              </span>
+              , our team pairs proven e-commerce results with technical depth to
+              build the next-generation growth engine.
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <div className="pdf-container">
         <section id="features" className="py-12 md:py-20 px-6">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="text-[2rem] font-bold mb-4">
+            <div className="text-center">
+              <h2 className="text-[1.75rem] md:text-[2rem] font-bold mb-4">
                 SEAMLESS INTEGRATIONS{" "}
                 <span className="highlight-purple">BUILT FOR E-COMMERCE</span>
               </h2>
-              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              <p className="text-base md:text-xl text-gray-300 max-w-3xl mx-auto">
                 All the tools you need to grow your e-commerce business,
                 integrated into one powerful platform.
               </p>
             </div>
 
+            {/* Integration Icons Grid */}
+            <div className="grid grid-cols-4 gap-2 md:gap-4 max-w-[30rem] mx-auto">
+              <div className="flex flex-col items-center p-4 rounded-xl transition-all duration-300">
+                <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center mb-4">
+                  <i className="fab fa-meta text-3xl text-[#7b68ee]"></i>
+                </div>
+                <span className="text-sm text-gray-300 font-medium">Meta</span>
+              </div>
+
+              <div className="flex flex-col items-center p-4 rounded-xl transition-all duration-300">
+                <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center mb-4">
+                  <i className="fab fa-google text-3xl text-[#7b68ee]"></i>
+                </div>
+                <span className="text-sm text-gray-300 font-medium">
+                  Google
+                </span>
+              </div>
+
+              <div className="flex flex-col items-center p-4 rounded-xl transition-all duration-300">
+                <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center mb-4">
+                  <i className="fab fa-shopify text-3xl text-[#7b68ee]"></i>
+                </div>
+                <span className="text-sm text-gray-300 font-medium">
+                  Shopify
+                </span>
+              </div>
+
+              <div className="flex flex-col items-center p-4 rounded-xl transition-all duration-300">
+                <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center mb-4">
+                  <i className="fa-brands fa-tiktok text-3xl text-[#7b68ee]"></i>
+                </div>
+                <span className="text-sm text-gray-300 font-medium">
+                  TikTok
+                </span>
+              </div>
+
+              <div className="flex flex-col items-center p-4 pb-0 rounded-xl transition-all duration-300">
+                <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center mb-4">
+                  <i className="fa-solid fa-filter-circle-dollar text-3xl text-[#7b68ee]"></i>
+                </div>
+                <span className="text-sm text-gray-300 font-medium">CRO </span>
+              </div>
+
+              <div className="flex flex-col items-center p-4 pb-0 rounded-xl transition-all duration-300">
+                <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center mb-4">
+                  <i className="fas fa-mobile-alt text-3xl text-[#7b68ee]"></i>
+                </div>
+                <span className="text-sm text-gray-300 font-medium">SMS</span>
+              </div>
+
+              <div className="flex flex-col items-center p-4 pb-0 rounded-xl transition-all duration-300">
+                <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center mb-4">
+                  <i className="fa-regular fa-envelope text-3xl text-[#7b68ee]"></i>
+                </div>
+                <span className="text-sm text-gray-300 font-medium">Email</span>
+              </div>
+
+              <div className="flex flex-col items-center p-4 pb-0 rounded-xl transition-all duration-300">
+                <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center mb-4">
+                  <i className="fa-solid fa-magnifying-glass text-3xl text-[#7b68ee]"></i>
+                </div>
+                <span className="text-sm text-gray-300 font-medium">SEO</span>
+              </div>
+            </div>
+
             {/* Problem Subsection */}
-            <div className="text-center mb-12">
+            {/* <div className="text-center mb-12">
               <h3
                 className="text-3xl font-bold mb-8"
                 style={{ color: "#00e6b4" }}
@@ -272,9 +310,9 @@ const IndexPage = () => {
                 The Barrier To{" "}
                 <span className="whitespace-nowrap">E-commerce Growth</span>
               </h3>
-            </div>
+            </div> */}
 
-            <div className="grid md:grid-cols-3 gap-8 mb-20">
+            {/* <div className="grid md:grid-cols-3 gap-8 mb-20">
               <div className="card rounded-xl p-6 hover:shadow-lg">
                 <div className="w-14 h-14 bg-opacity-20 bg-purple-500 rounded-lg flex items-center justify-center mb-4">
                   <i className="fas fa-user-clock text-3xl feature-icon mr-0"></i>
@@ -334,10 +372,10 @@ const IndexPage = () => {
                   Automate Growth <i className="fas fa-arrow-right ml-2"></i>
                 </a>
               </div>
-            </div>
+            </div> */}
 
             {/* Solution Subsection */}
-            <div className="text-center mb-12">
+            {/* <div className="text-center mb-12">
               <h3
                 className="text-3xl font-bold mb-8"
                 style={{ color: "#00e6b4" }}
@@ -408,7 +446,7 @@ const IndexPage = () => {
                   Deploy Fast <i className="fas fa-arrow-right ml-2"></i>
                 </a>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -734,11 +772,11 @@ const IndexPage = () => {
         <section className="py-12 md:py-20 px-6">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-[2rem] font-bold mb-6">
-                <span className="highlight-purple">AGEN-AI:</span> The Growth
+              <h2 className="text-[1.75rem] md:text-[2rem] font-bold mb-6">
+                <span className="text-[#00e6b4]">Agency AI:</span> The Growth
                 Intelligence Advantage
               </h2>
-              <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+              <p className="text-base md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
                 See how our proprietary AI replaces expensive agency teams and
                 eliminates tool fragmentation with unified, intelligent
                 automation.
@@ -763,13 +801,13 @@ const IndexPage = () => {
 
         <section className="py-12 md:py-20 px-6">
           <div className="max-w-7xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8 md:gap-20 items-center">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-[7rem] items-center">
               <div className="order-2 md:order-1">
-                <h2 className="text-4xl font-bold mb-6 ">
+                <h2 className="text-center md:text-left text-[1.75rem] md:text-[2rem] font-bold mb-6 ">
                   Growth Management <br></br>
                   <span className="highlight-purple">Made Simple</span>
                 </h2>
-                <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+                <p className="text-center md:text-left text-base md:text-xl text-gray-300 mb-8 leading-relaxed">
                   AGEN-AI proactively monitors your campaigns and identifies
                   ways to improve performance. Approve optimizations with one
                   tap. Launch new campaigns with a simple message. It's like
@@ -778,19 +816,19 @@ const IndexPage = () => {
                 <ul className="space-y-4">
                   <li className="flex items-center text-gray-300">
                     <div className="w-2 h-2 bg-purple-500 rounded-full mr-4"></div>
-                    <span className="text-lg">
+                    <span className="text-base md:text-xl">
                       No marketing degree needed - AI handles the complexity
                     </span>
                   </li>
                   <li className="flex items-center text-gray-300">
                     <div className="w-2 h-2 bg-purple-500 rounded-full mr-4"></div>
-                    <span className="text-lg">
+                    <span className="text-base md:text-xl">
                       Skip the tutorials - works like texting a friend
                     </span>
                   </li>
                   <li className="flex items-center text-gray-300">
                     <div className="w-2 h-2 bg-purple-500 rounded-full mr-4"></div>
-                    <span className="text-lg">
+                    <span className="text-base md:text-xl">
                       Approve changes with one tap, not 50 clicks
                     </span>
                   </li>
@@ -813,7 +851,8 @@ const IndexPage = () => {
             </div>
           </div>
         </section>
-        <FreeAudit />
+        {/* <FreeAudit /> */}
+        <WaitlistCard />
         <Footer waitlist={true} />
       </div>
     </>
