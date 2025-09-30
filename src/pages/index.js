@@ -187,7 +187,10 @@ const IndexPage = () => {
             <div className="rounded-xl overflow-hidden w-full md:w-[70%] m-auto">
               <div className="relative">
                 <video className="w-full h-full" controls>
-                  <source src="/promo-video.mp4" type="video/mp4" />
+                  <source
+                    src="https://res.cloudinary.com/dn71ngylo/video/upload/v1759190688/Agency_Ai_video_1_xwubxm.mp4"
+                    type="video/mp4"
+                  />
                   Your browser does not support the video tag.
                 </video>
               </div>
