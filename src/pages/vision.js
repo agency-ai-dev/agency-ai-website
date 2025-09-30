@@ -76,10 +76,10 @@ const IndexPage = () => {
             <span className="highlight-purple block">Growth Platform</span>
           </h1>
 
-          <p className="mt-5 md:mt-8 text-lg md:text-2xl text-gray-300 text-center max-w-4xl mx-auto leading-relaxed">
-            Agency AI automates your entire growth funnel; from multichannel ads
-            to conversion optimization, replacing agencies and app stacks with
-            one intelligent platform.
+          <p className="text-left md:text-center mt-5 md:mt-8 text-base md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+            Agency AI automates the entire e-commerce growth funnel; from
+            multichannel ads to conversion optimization, replacing agencies and
+            app stacks with one intelligent platform.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
@@ -129,21 +129,79 @@ const IndexPage = () => {
 
       <section id="features" className="py-12 md:py-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold mb-4">
+          <div className="text-center mb-10">
+            <h2 className="text-[1.75rem] font-bold mb-4">
               SEAMLESS INTEGRATIONS{" "}
-              <span className="highlight-purple">BUILT FOR SHOPIFY</span>
+              <span className="highlight-purple">BUILT FOR E-COMMERCE</span>
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              All the tools you need to grow your e-commerce business,
-              integrated into one powerful platform.
+            <p className="text-base md:text-xl text-gray-300 max-w-3xl mx-auto">
+              All the tools you need to scale an e-commerce business, integrated
+              into one powerful platform.
             </p>
+          </div>
+          {/* Integration Icons Grid */}
+          <div className="grid grid-cols-4 gap-2 md:gap-4 max-w-[30rem] mx-auto mb-16">
+            <div className="flex flex-col items-center p-4 rounded-xl transition-all duration-300">
+              <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center mb-4">
+                <i className="fab fa-meta text-3xl text-[#7b68ee]"></i>
+              </div>
+              <span className="text-sm text-gray-300 font-medium">Meta</span>
+            </div>
+
+            <div className="flex flex-col items-center p-4 rounded-xl transition-all duration-300">
+              <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center mb-4">
+                <i className="fab fa-google text-3xl text-[#7b68ee]"></i>
+              </div>
+              <span className="text-sm text-gray-300 font-medium">Google</span>
+            </div>
+
+            <div className="flex flex-col items-center p-4 rounded-xl transition-all duration-300">
+              <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center mb-4">
+                <i className="fab fa-shopify text-3xl text-[#7b68ee]"></i>
+              </div>
+              <span className="text-sm text-gray-300 font-medium">Shopify</span>
+            </div>
+
+            <div className="flex flex-col items-center p-4 rounded-xl transition-all duration-300">
+              <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center mb-4">
+                <i className="fa-brands fa-tiktok text-3xl text-[#7b68ee]"></i>
+              </div>
+              <span className="text-sm text-gray-300 font-medium">TikTok</span>
+            </div>
+
+            <div className="flex flex-col items-center p-4 pb-0 rounded-xl transition-all duration-300">
+              <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center mb-4">
+                <i className="fa-solid fa-filter-circle-dollar text-3xl text-[#7b68ee]"></i>
+              </div>
+              <span className="text-sm text-gray-300 font-medium">CRO </span>
+            </div>
+
+            <div className="flex flex-col items-center p-4 pb-0 rounded-xl transition-all duration-300">
+              <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center mb-4">
+                <i className="fas fa-mobile-alt text-3xl text-[#7b68ee]"></i>
+              </div>
+              <span className="text-sm text-gray-300 font-medium">SMS</span>
+            </div>
+
+            <div className="flex flex-col items-center p-4 pb-0 rounded-xl transition-all duration-300">
+              <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center mb-4">
+                <i className="fa-regular fa-envelope text-3xl text-[#7b68ee]"></i>
+              </div>
+              <span className="text-sm text-gray-300 font-medium">Email</span>
+            </div>
+
+            <div className="flex flex-col items-center p-4 pb-0 rounded-xl transition-all duration-300">
+              <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center mb-4">
+                <i className="fa-solid fa-magnifying-glass text-3xl text-[#7b68ee]"></i>
+              </div>
+              <span className="text-sm text-gray-300 font-medium">SEO</span>
+            </div>
           </div>
 
           {/* Problem Subsection */}
           <div className="text-center mb-12">
             <h3
-              className="text-3xl font-bold mb-8"
+              className="text-[1.75rem] font-bold mb-8"
               style={{ color: "#00e6b4" }}
             >
               The Barrier To{" "}
@@ -216,7 +274,7 @@ const IndexPage = () => {
           {/* Solution Subsection */}
           <div className="text-center mb-12">
             <h3
-              className="text-3xl font-bold mb-8"
+              className="text-[1.75rem] font-bold mb-8"
               style={{ color: "#00e6b4" }}
             >
               The Agency AI Solution
@@ -232,10 +290,10 @@ const IndexPage = () => {
                 AI Growth Agency, Not Just Another App
               </h3>
               <p className="text-gray-300 mb-6">
-                AGEN-AI makes strategic decisions across all your growth
-                channels simultaneously, acting as a premium agency team. Get
-                cross-channel optimization and strategic thinking at 90%+ cost
-                savings vs traditional agencies.
+                Our proprietary AI system makes strategic decisions across all
+                your growth channels simultaneously, acting as a premium agency
+                team. Get cross-channel optimization and strategic thinking at
+                90%+ cost savings vs traditional agencies.
               </p>
               <a
                 href="#"
@@ -253,7 +311,7 @@ const IndexPage = () => {
                 Cross-Channel Growth Intelligence
               </h3>
               <p className="text-gray-300 mb-6">
-                While other apps optimize in silos, AGEN-AI orchestrates
+                While other apps optimize in silos, Agency AI orchestrates
                 campaigns across Meta, Google, email, SMS, and your landing
                 pages. Strategic decision-making that considers your entire
                 customer journey, not individual touchpoints.
@@ -274,9 +332,9 @@ const IndexPage = () => {
                 24-Hour Growth Deployment
               </h3>
               <p className="text-gray-300 mb-6">
-                From onboarding to full growth automation in 24 hours. AGEN-AI
-                instantly analyzes and applies proven data driven optimization
-                strategies across your entire funnel.
+                From onboarding to full growth automation in 24 hours. Our AI
+                engine instantly analyzes and applies proven data driven
+                optimization strategies across your entire funnel.
               </p>
               <a
                 href="#"
@@ -307,11 +365,11 @@ const IndexPage = () => {
       <section className="py-12 md:py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-[2rem] font-bold mb-6">
-              <span className="highlight-purple">AGEN-AI:</span> The Growth
+            <h2 className="text-[1.75rem] font-bold mb-6">
+              <span className="text-[#00e6b4]">Agency AI:</span> The Growth
               Intelligence Advantage
             </h2>
-            <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-base md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
               See how our proprietary AI replaces expensive agency teams and
               eliminates tool fragmentation with unified, intelligent
               automation.
@@ -331,34 +389,34 @@ const IndexPage = () => {
 
       <section className="py-12 md:py-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8 md:gap-20 items-center">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-[7rem] items-center">
             <div className="order-2 md:order-1">
-              <h2 className="text-[2rem] font-bold mb-6 ">
+              <h2 className="text-center md:text-left text-[1.75rem] font-bold mb-6 ">
                 Growth Management <br></br>
                 <span className="highlight-purple">Made Simple</span>
               </h2>
-              <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                AGEN-AI proactively monitors your campaigns and identifies ways
-                to improve performance. Approve optimizations with one tap.
+              <p className="text-center md:text-left text-base md:text-xl text-gray-300 mb-8 leading-relaxed">
+                Our AI system proactively monitors your campaigns and identifies
+                ways to improve performance. Approve optimizations with one tap.
                 Launch new campaigns with a simple message. It's like having a
                 CMO in your pocket.
               </p>
               <ul className="space-y-4">
                 <li className="flex items-center text-gray-300">
                   <div className="w-2 h-2 bg-purple-500 rounded-full mr-4"></div>
-                  <span className="text-lg">
+                  <span className="text-base md:text-xl">
                     No marketing degree needed - AI handles the complexity
                   </span>
                 </li>
                 <li className="flex items-center text-gray-300">
                   <div className="w-2 h-2 bg-purple-500 rounded-full mr-4"></div>
-                  <span className="text-lg">
+                  <span className="text-base md:text-xl">
                     Skip the tutorials - works like texting a friend
                   </span>
                 </li>
                 <li className="flex items-center text-gray-300">
                   <div className="w-2 h-2 bg-purple-500 rounded-full mr-4"></div>
-                  <span className="text-lg">
+                  <span className="text-base md:text-xl">
                     Approve changes with one tap, not 50 clicks
                   </span>
                 </li>
@@ -401,13 +459,13 @@ const IndexPage = () => {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="text-[2rem] font-bold mb-6">
+            <h2 className="text-[1.75rem] font-bold mb-6">
               Beyond Marketing Automation:{" "}
               <span className="text-[#00e6b4]">
                 Complete Growth Intelligence
               </span>
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-base md:text-xl text-gray-300 max-w-3xl mx-auto">
               Our strategic roadmap from Meta advertising foundation to complete
               agency intelligence replacement.
             </p>
@@ -423,17 +481,17 @@ const IndexPage = () => {
                 <div className="flex items-center mb-4">
                   <i className="fab fa-meta text-2xl text-blue-400 mr-4"></i>
                   <span className="text-sm font-semibold text-blue-400 bg-blue-400 bg-opacity-20 px-3 py-1 rounded-full">
-                    CURRENT REALITY
+                    CURRENT BUILD
                   </span>
                 </div>
-                <h3 className="text-3xl font-bold mb-4">
+                <h3 className="text-2xl font-bold mb-4">
                   Meta Advertising Foundation
                 </h3>
                 <p className="text-gray-300 leading-relaxed mb-6">
                   Our Meta launch implements proper campaign structure and
-                  proven best practices built-in from day one. AGEN-AI launches
-                  the exact funnel architecture that Meta's algorithm rewards,
-                  fixing the chaotic ad accounts that kill most stores'
+                  proven best practices built-in from day one. Agency AI
+                  launches the exact funnel architecture that Meta's algorithm
+                  rewards, fixing the chaotic ad accounts that kill most stores'
                   profitability.
                 </p>
               </div>
@@ -478,39 +536,39 @@ const IndexPage = () => {
                     PLATFORM VISION
                   </span>
                 </div>
-                <h3 className="text-3xl font-bold mb-4">
+                <h3 className="text-2xl font-bold mb-4">
                   Complete Agency Intelligence
                 </h3>
                 <p className="text-gray-300 leading-relaxed mb-6">
-                  Our proprietary AI system AGEN-AI evolves from automation to
-                  complete business intelligence. Each quarter unlocks new
-                  capabilities that feed back into the core engine, turning
-                  isolated channels into one self-improving ecosystem.
+                  Our proprietary AI system evolves from automation to complete
+                  business intelligence. Each quarter unlocks new capabilities
+                  that feed back into the core engine, turning isolated channels
+                  into one self-improving ecosystem.
                 </p>
               </div>
 
               {/* Future Features */}
               <div className="space-y-4">
                 <div className="flex items-center">
-                  <i className="fas fa-arrow-right text-green-400 mr-3"></i>
+                  <i className="fas fa-check-circle text-green-400 mr-3"></i>
                   <span className="text-gray-300">
                     Google Ads, Generative AI Design Studio (Beta)
                   </span>
                 </div>
                 <div className="flex items-center">
-                  <i className="fas fa-arrow-right text-green-400 mr-3"></i>
+                  <i className="fas fa-check-circle text-green-400 mr-3"></i>
                   <span className="text-gray-300">
                     AGEN-AI V2, Tik-Tok Ads & Snapchat Ads Integration
                   </span>
                 </div>
                 <div className="flex items-center">
-                  <i className="fas fa-arrow-right text-green-400 mr-3"></i>
+                  <i className="fas fa-check-circle text-green-400 mr-3"></i>
                   <span className="text-gray-300">
                     Text to Action, Email & SMS
                   </span>
                 </div>
                 <div className="flex items-center">
-                  <i className="fas fa-arrow-right text-green-400 mr-3"></i>
+                  <i className="fas fa-check-circle text-green-400 mr-3"></i>
                   <span className="text-gray-300">
                     SEO, CRO & Dynamic Landing Page Optimization
                   </span>
@@ -522,7 +580,7 @@ const IndexPage = () => {
           {/* Market Context */}
           <div className="mt-16 text-center">
             <div className="card rounded-2xl p-8 inline-block hover:shadow-lg">
-              <div className="flex items-center justify-center space-x-8">
+              <div className="flex items-center justify-center gap-5">
                 <div className="text-center">
                   <div className="text-4xl font-bold text-green-400 mb-2">
                     24M
@@ -718,12 +776,12 @@ const IndexPage = () => {
       <section className="py-12 md:py-20 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="card rounded-xl p-10 shadow-2xl border border-purple-500 border-opacity-30 text-center">
-            <h2 className="text-[2rem] font-bold mb-4">
+            <h2 className="text-[1.75rem] font-bold mb-4">
               Partner with the{" "}
               <span className="highlight-purple">Future of Growth</span>
             </h2>
-            <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
-              Join leading investors backing AGEN-AI, the proprietary
+            <p className="text-base md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+              Join leading investors backing Agency AI, the proprietary
               intelligence revolutionizing how businesses grow. Limited
               partnership opportunities available.
             </p>
