@@ -36,7 +36,7 @@ const WaitlistCard = () => {
         <div className="card rounded-xl py-8 shadow-2xl border border-purple-500 border-opacity-30">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="w-11/12 m-auto">
-              <h2 className="text-[1.75rem] font-bold mb-6">
+              <h2 className="text-[1.65rem] font-bold mb-6">
                 Be The First To Experience{" "}
                 <span style={{ color: "#00e6b4" }}>
                   AI Powered Growth Automation

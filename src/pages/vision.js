@@ -76,7 +76,7 @@ const IndexPage = () => {
             <span className="highlight-purple block">Growth Platform</span>
           </h1>
 
-          <p className="mt-5 md:mt-8 text-base md:text-xl text-gray-300 text-center max-w-4xl mx-auto leading-relaxed">
+          <p className="text-left md:text-center mt-5 md:mt-8 text-base md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
             Agency AI automates the entire e-commerce growth funnel; from
             multichannel ads to conversion optimization, replacing agencies and
             app stacks with one intelligent platform.
@@ -580,7 +580,7 @@ const IndexPage = () => {
           {/* Market Context */}
           <div className="mt-16 text-center">
             <div className="card rounded-2xl p-8 inline-block hover:shadow-lg">
-              <div className="flex items-center justify-center space-x-8">
+              <div className="flex items-center justify-center gap-5">
                 <div className="text-center">
                   <div className="text-4xl font-bold text-green-400 mb-2">
                     24M

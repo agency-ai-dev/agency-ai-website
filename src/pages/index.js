@@ -9,6 +9,7 @@ import FreeAudit from "../components/free-audit"
 import WaitlistCard from "../components/waitlist-card"
 import mobileChat from "../images/mobile-chat.png"
 import laptopMobileImage from "../images/laptop-mobile-screengrab.png"
+import track from "../utils/analytics"
 
 const IndexPage = () => {
   return (
@@ -80,7 +81,7 @@ const IndexPage = () => {
               <span className="highlight-purple block">GROWTH ENGINE</span>
             </h1>
 
-            <p className="mt-5 md:mt-8 text-base md:text-xl text-gray-300 text-center max-w-4xl mx-auto leading-relaxed">
+            <p className="text-left md:text-center mt-5 md:mt-8 text-base md:text-xl text-gray-300 max-w-4xl mx-auto">
               Agency AI unifies digital ads, retention, and conversion
               optimization into a single platform that evolves with your
               business, automating decisions based on what actually converts
@@ -180,13 +181,18 @@ const IndexPage = () => {
         <section className="py-12 md:py-20 px-6 pt-0">
           <div className="text-center">
             <h2 className="text-[1.75rem] md:text-[2rem] font-bold mb-4">
-              THE PROBLEMS <span className="highlight-purple">WE SOLVE</span>
+              THE PROBLEMS <br className="block md:hidden" />{" "}
+              <span className="highlight-purple">WE SOLVE</span>
             </h2>
           </div>
           <div className="mx-auto text-center">
             <div className="rounded-xl overflow-hidden w-full md:w-[70%] m-auto">
               <div className="relative">
-                <video className="w-full h-full" controls>
+                <video
+                  className="w-full h-full"
+                  controls
+                  onClick={() => track("video_clicked")}
+                >
                   <source
                     src="https://res.cloudinary.com/dn71ngylo/video/upload/v1759190688/Agency_Ai_video_1_xwubxm.mp4"
                     type="video/mp4"
