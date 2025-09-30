@@ -145,7 +145,7 @@ const ContactUsPage = () => {
             </h1>
           </section>
 
-          <section className="max-w-xl mx-auto lg:max-w-[70%] mb-10 transform hover:-translate-y-1 transition-transform">
+          {/* <section className="max-w-xl mx-auto lg:max-w-[70%] mb-10 transform hover:-translate-y-1 transition-transform">
             <div className="card-highlight p-6 sm:p-8 text-center">
               <div className="flex flex-col items-center">
                 <div className="circle-icon-highlight">
@@ -168,7 +168,7 @@ const ContactUsPage = () => {
                 </button>
               </div>
             </div>
-          </section>
+          </section> */}
 
           <div className="lg:desktop-grid">
             <section className="max-w-xl mx-auto lg:max-w-[70%] mb-16">

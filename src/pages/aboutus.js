@@ -17,8 +17,7 @@ const ContactUsPage = () => {
       <div className="min-h-screen">
         <section className="pt-16 px-6 md:px-12 lg:px-24 md:pt-24 max-w-7xl mx-auto lg:text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-            ABOUT
-            <br />
+            ABOUT <br className="block md:hidden" />
             <span className="highlight-purple">AGENCY AI</span>
           </h1>
           <p className="text-lg md:text-xl max-w-4xl opacity-90 mb-12 lg:text-center lg:w-2/3 lg:mx-auto">
