@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import agencyailogo from "./../images/agencyailogo.png"
+import track from "../utils/analytics"
 
 const Header = ({ siteTitle, waitlist = false }) => {
   const [menuOpen, setMenuOpen] = React.useState(false)
@@ -27,12 +28,14 @@ const Header = ({ siteTitle, waitlist = false }) => {
           <a
             href="/aboutus"
             className="text-white hover:text-teal-400 transition-colors no-underline"
+            onClick={() => track("nav_click", { nav_item: "about" })}
           >
             About
           </a>
           <a
             href="/contactus"
             className="text-white hover:text-teal-400 transition-colors no-underline"
+            onClick={() => track("nav_click", { nav_item: "contact" })}
           >
             Contact
           </a>
@@ -40,6 +43,7 @@ const Header = ({ siteTitle, waitlist = false }) => {
             <a
               href="/pricing"
               className="text-white hover:text-teal-400 transition-colors no-underline"
+              onClick={() => track("nav_click", { nav_item: "pricing" })}
             >
               Pricing
             </a>
@@ -50,6 +54,7 @@ const Header = ({ siteTitle, waitlist = false }) => {
                 className="decoration-none text-gray-900 no-underline"
                 target="_blank"
                 href="http://calendly.com/agency-demo"
+                onClick={() => track("nav_click", { nav_item: "book_demo" })}
               >
                 Book a Demo
               </a>
@@ -86,12 +91,14 @@ const Header = ({ siteTitle, waitlist = false }) => {
           <a
             href="/aboutus"
             className="text-white hover:text-teal-400 no-underline transition-colors py-2"
+            onClick={() => track("nav_click", { nav_item: "about" })}
           >
             About
           </a>
           <a
             href="/contactus"
             className="text-white hover:text-teal-400 no-underline transition-colors py-2"
+            onClick={() => track("nav_click", { nav_item: "contact" })}
           >
             Contact
           </a>
@@ -99,6 +106,7 @@ const Header = ({ siteTitle, waitlist = false }) => {
             <a
               href="/pricing"
               className="text-white hover:text-teal-400 no-underline transition-colors py-2"
+              onClick={() => track("nav_click", { nav_item: "pricing" })}
             >
               Pricing
             </a>
@@ -109,6 +117,7 @@ const Header = ({ siteTitle, waitlist = false }) => {
                 className="decoration-none text-gray-900 no-underline"
                 target="_blank"
                 href="http://calendly.com/agency-demo"
+                onClick={() => track("nav_click", { nav_item: "book_demo" })}
               >
                 Book a Demo
               </a>
