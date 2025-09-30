@@ -817,7 +817,8 @@ const IndexPage = () => {
             <div className="grid md:grid-cols-2 gap-8 md:gap-[9rem] items-center">
               <div className="order-2 md:order-1">
                 <h2 className="text-center md:text-left text-[1.65rem] md:text-[2rem] font-bold mb-6 ">
-                  GROWTH MANAGEMENT <br></br>
+                  <span className="whitespace-nowrap">GROWTH MANAGEMENT</span>{" "}
+                  <br></br>
                   <span className="highlight-purple">MADE SIMPLE</span>
                 </h2>
                 <p className="text-center md:text-left text-base md:text-xl text-gray-300 mb-8 leading-relaxed">
