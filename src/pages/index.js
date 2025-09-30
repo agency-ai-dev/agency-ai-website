@@ -214,7 +214,7 @@ const IndexPage = () => {
               <span className="text-white font-medium">
                 $25M+ in Shopify sales
               </span>
-              , multiple apps serving{" "}
+              , multiple apps which have served a combined{" "}
               <span className="text-white font-medium">20,000+ users</span>{" "}
               including{" "}
               <a

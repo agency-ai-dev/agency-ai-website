@@ -3,7 +3,7 @@ import * as React from "react"
 const Footer = ({ waitlist }) => {
   return (
     <footer className="py-12 px-6 md:px-12 lg:px-24 border-t border-gray-800">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start">
+      <div className="max-w-7xl ml-4 md:ml-0 mx-auto flex flex-col md:flex-row justify-between items-start">
         <div className="mb-8 md:mb-0">
           <h2 className="text-xl font-bold mb-2">Agency AI</h2>
           <p className="opacity-70">© 2025 Agency AI. All rights reserved.</p>
