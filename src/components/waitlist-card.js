@@ -114,7 +114,7 @@ const WaitlistCard = () => {
                   <div
                     className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                     style={{
-                      background: "linear-gradient(to right, #6a59d1, #5a4bc4)",
+                      background: "#03a682",
                     }}
                   ></div>
                   <span className="relative">
