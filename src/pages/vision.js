@@ -71,9 +71,9 @@ const IndexPage = () => {
 
           <h1 className="text-[2.15rem] md:text-6xl font-bold leading-tight text-center mb-2">
             <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-              The Complete <span className="highlight-purple">AI</span>
+              THE COMPLETE <span className="highlight-purple">AI</span>
             </span>
-            <span className="highlight-purple block">Growth Platform</span>
+            <span className="highlight-purple block">GROWTH PLATFORM</span>
           </h1>
 
           <p className="text-center mt-5 md:mt-8 text-base md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
@@ -366,8 +366,8 @@ const IndexPage = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-[1.65rem] font-bold mb-6">
-              <span className="text-[#00e6b4]">Agency AI:</span> The Growth
-              Intelligence Advantage
+              <span className="text-[#00e6b4]">AGENCY AI:</span> THE GROWTH
+              INTELLIGENCE ADVANTAGE
             </h2>
             <p className="text-base md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
               See how our proprietary AI replaces expensive agency teams and
@@ -392,8 +392,9 @@ const IndexPage = () => {
           <div className="grid md:grid-cols-2 gap-8 md:gap-[9rem] items-center">
             <div className="order-2 md:order-1">
               <h2 className="text-center md:text-left text-[1.65rem] font-bold mb-6 ">
-                Growth Management <br></br>
-                <span className="highlight-purple">Made Simple</span>
+                <span className="whitespace-nowrap">GROWTH MANAGEMENT</span>{" "}
+                <br></br>
+                <span className="highlight-purple">MADE SIMPLE</span>
               </h2>
               <p className="text-center md:text-left text-base md:text-xl text-gray-300 mb-8 leading-relaxed">
                 Our AI system proactively monitors your campaigns and identifies
@@ -460,9 +461,9 @@ const IndexPage = () => {
           {/* Header */}
           <div className="text-center mb-16">
             <h2 className="text-[1.65rem] font-bold mb-6">
-              Beyond Marketing Automation:{" "}
+              BEYOND MARKETING AUTOMATION:{" "}
               <span className="text-[#00e6b4]">
-                Complete Growth Intelligence
+                COMPLETE GROWTH INTELLIGENCE
               </span>
             </h2>
             <p className="text-base md:text-xl text-gray-300 max-w-3xl mx-auto">
@@ -777,8 +778,8 @@ const IndexPage = () => {
         <div className="max-w-5xl mx-auto">
           <div className="card rounded-xl p-10 shadow-2xl border border-purple-500 border-opacity-30 text-center">
             <h2 className="text-[1.65rem] font-bold mb-4">
-              Partner with the{" "}
-              <span className="highlight-purple">Future of Growth</span>
+              PARTNER WITH THE{" "}
+              <span className="highlight-purple">FUTURE OF GROWTH</span>
             </h2>
             <p className="text-base md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
               Join leading investors backing Agency AI, the proprietary
