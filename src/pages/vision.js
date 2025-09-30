@@ -69,14 +69,14 @@ const IndexPage = () => {
             </span>
           </div> */}
 
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight text-center mb-2">
+          <h1 className="text-[2.15rem] md:text-6xl font-bold leading-tight text-center mb-2">
             <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
-              The Complete <span className="highlight-purple">AI</span>
+              THE COMPLETE <span className="highlight-purple">AI</span>
             </span>
-            <span className="highlight-purple block">Growth Platform</span>
+            <span className="highlight-purple block">GROWTH PLATFORM</span>
           </h1>
 
-          <p className="text-left md:text-center mt-5 md:mt-8 text-base md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-center mt-5 md:mt-8 text-base md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
             Agency AI automates the entire e-commerce growth funnel; from
             multichannel ads to conversion optimization, replacing agencies and
             app stacks with one intelligent platform.
@@ -130,7 +130,7 @@ const IndexPage = () => {
       <section id="features" className="py-12 md:py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10">
-            <h2 className="text-[1.75rem] font-bold mb-4">
+            <h2 className="text-[1.65rem] font-bold mb-4">
               SEAMLESS INTEGRATIONS{" "}
               <span className="highlight-purple">BUILT FOR E-COMMERCE</span>
             </h2>
@@ -201,7 +201,7 @@ const IndexPage = () => {
           {/* Problem Subsection */}
           <div className="text-center mb-12">
             <h3
-              className="text-[1.75rem] font-bold mb-8"
+              className="text-[1.65rem] font-bold mb-8"
               style={{ color: "#00e6b4" }}
             >
               The Barrier To{" "}
@@ -274,7 +274,7 @@ const IndexPage = () => {
           {/* Solution Subsection */}
           <div className="text-center mb-12">
             <h3
-              className="text-[1.75rem] font-bold mb-8"
+              className="text-[1.65rem] font-bold mb-8"
               style={{ color: "#00e6b4" }}
             >
               The Agency AI Solution
@@ -365,9 +365,9 @@ const IndexPage = () => {
       <section className="py-12 md:py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-[1.75rem] font-bold mb-6">
-              <span className="text-[#00e6b4]">Agency AI:</span> The Growth
-              Intelligence Advantage
+            <h2 className="text-[1.65rem] font-bold mb-6">
+              <span className="text-[#00e6b4]">AGENCY AI:</span> THE GROWTH
+              INTELLIGENCE ADVANTAGE
             </h2>
             <p className="text-base md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
               See how our proprietary AI replaces expensive agency teams and
@@ -389,11 +389,12 @@ const IndexPage = () => {
 
       <section className="py-12 md:py-20 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8 md:gap-[7rem] items-center">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-[9rem] items-center">
             <div className="order-2 md:order-1">
-              <h2 className="text-center md:text-left text-[1.75rem] font-bold mb-6 ">
-                Growth Management <br></br>
-                <span className="highlight-purple">Made Simple</span>
+              <h2 className="text-center md:text-left text-[1.65rem] font-bold mb-6 ">
+                <span className="whitespace-nowrap">GROWTH MANAGEMENT</span>{" "}
+                <br></br>
+                <span className="highlight-purple">MADE SIMPLE</span>
               </h2>
               <p className="text-center md:text-left text-base md:text-xl text-gray-300 mb-8 leading-relaxed">
                 Our AI system proactively monitors your campaigns and identifies
@@ -459,10 +460,10 @@ const IndexPage = () => {
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="text-[1.75rem] font-bold mb-6">
-              Beyond Marketing Automation:{" "}
+            <h2 className="text-[1.65rem] font-bold mb-6">
+              BEYOND MARKETING AUTOMATION:{" "}
               <span className="text-[#00e6b4]">
-                Complete Growth Intelligence
+                COMPLETE GROWTH INTELLIGENCE
               </span>
             </h2>
             <p className="text-base md:text-xl text-gray-300 max-w-3xl mx-auto">
@@ -776,9 +777,9 @@ const IndexPage = () => {
       <section className="py-12 md:py-20 px-6">
         <div className="max-w-5xl mx-auto">
           <div className="card rounded-xl p-10 shadow-2xl border border-purple-500 border-opacity-30 text-center">
-            <h2 className="text-[1.75rem] font-bold mb-4">
-              Partner with the{" "}
-              <span className="highlight-purple">Future of Growth</span>
+            <h2 className="text-[1.65rem] font-bold mb-4">
+              PARTNER WITH THE{" "}
+              <span className="highlight-purple">FUTURE OF GROWTH</span>
             </h2>
             <p className="text-base md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
               Join leading investors backing Agency AI, the proprietary

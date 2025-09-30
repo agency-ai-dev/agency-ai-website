@@ -74,14 +74,14 @@ const IndexPage = () => {
               </span>
             </div> */}
 
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight text-center mb-2">
-              <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+            <h1 className="text-[2.15rem] md:text-6xl font-bold leading-tight text-center mb-2">
+              <span className="bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent sm:whitespace-nowrap">
                 THE E-COMMERCE
               </span>
               <span className="highlight-purple block">GROWTH ENGINE</span>
             </h1>
 
-            <p className="text-left md:text-center mt-5 md:mt-8 text-base md:text-xl text-gray-300 max-w-4xl mx-auto">
+            <p className="text-center mt-5 md:mt-8 text-base md:text-xl text-gray-300 max-w-4xl mx-auto">
               Agency AI unifies digital ads, retention, and conversion
               optimization into a single platform that evolves with your
               business, automating decisions based on what actually converts
@@ -180,9 +180,9 @@ const IndexPage = () => {
         {/* Promo Video Section */}
         <section className="py-12 md:py-20 px-6 pt-0">
           <div className="text-center">
-            <h2 className="text-[1.75rem] md:text-[2rem] font-bold mb-4">
-              THE PROBLEMS <br className="block md:hidden" />{" "}
-              <span className="highlight-purple">WE SOLVE</span>
+            <h2 className="text-[1.65rem] md:text-[2rem] font-bold mb-4">
+              THE E-COMMERCE <br className="block md:hidden" />{" "}
+              <span className="highlight-purple">OWNER'S DILEMMA</span>
             </h2>
           </div>
           <div className="mx-auto text-center">
@@ -194,7 +194,7 @@ const IndexPage = () => {
                   onClick={() => track("video_clicked")}
                 >
                   <source
-                    src="https://res.cloudinary.com/dn71ngylo/video/upload/v1759190688/Agency_Ai_video_1_xwubxm.mp4"
+                    src="https://res.cloudinary.com/dn71ngylo/video/upload/v1759252335/Agency_Ai_video_1_xwubxm.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
@@ -206,21 +206,25 @@ const IndexPage = () => {
       </div>
 
       {/* Credibility Section - Full Width Banner (outside container) */}
-      <div className="w-full bg-gradient-to-r from-gray-900/40 via-gray-800/30 to-gray-900/40 border-t border-b border-gray-700/30">
+      <div className="w-full bg-gradient-to-r from-gray-900/40 via-gray-800/30 to-gray-900/40 border-t border-b border-gray-500/30">
         <section className="py-12">
           <div className="max-w-5xl mx-auto px-6 text-center">
-            <h2 className="text-xl md:text-2xl font-bold mb-4 text-white tracking-wide uppercase">
-              <span style={{ color: "#00e6b4" }}>Our Experience </span>
-              <br className="block md:hidden" />
-              Brought Us Here
-            </h2>
             <p className="text-base md:text-lg text-gray-300 leading-relaxed font-light m-auto max-w-[710px]">
               Led by founders with{" "}
               <span className="text-white font-medium">
                 $25M+ in Shopify sales
               </span>
               , multiple apps serving{" "}
-              <span className="text-white font-medium">20,000+ users</span>, and{" "}
+              <span className="text-white font-medium">20,000+ users</span>{" "}
+              including{" "}
+              <a
+                href="https://apps.shopify.com/order-automator"
+                target="_blank"
+                className="text-[#988be7] hover:underline font-light no-underline"
+              >
+                Order Automator
+              </a>
+              , and{" "}
               <span className="text-white font-medium">
                 Fortune 500 optimization expertise
               </span>
@@ -235,7 +239,7 @@ const IndexPage = () => {
         <section id="features" className="py-12 md:py-20 px-6">
           <div className="max-w-7xl mx-auto">
             <div className="text-center">
-              <h2 className="text-[1.75rem] md:text-[2rem] font-bold mb-4">
+              <h2 className="text-[1.65rem] md:text-[2rem] font-bold mb-4">
                 SEAMLESS INTEGRATIONS{" "}
                 <span className="highlight-purple">BUILT FOR E-COMMERCE</span>
               </h2>
@@ -781,9 +785,9 @@ const IndexPage = () => {
         <section className="py-12 md:py-20 px-6">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-[1.75rem] md:text-[2rem] font-bold mb-6">
-                <span className="text-[#00e6b4]">Agency AI:</span> The Growth
-                Intelligence Advantage
+              <h2 className="text-[1.65rem] md:text-[2rem] font-bold mb-6">
+                <span className="text-[#00e6b4]">AGENCY AI:</span> THE GROWTH
+                INTELLIGENCE ADVANTAGE
               </h2>
               <p className="text-base md:text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
                 See how our proprietary AI replaces expensive agency teams and
@@ -810,11 +814,12 @@ const IndexPage = () => {
 
         <section className="py-12 md:py-20 px-6">
           <div className="max-w-7xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8 md:gap-[7rem] items-center">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-[9rem] items-center">
               <div className="order-2 md:order-1">
-                <h2 className="text-center md:text-left text-[1.75rem] md:text-[2rem] font-bold mb-6 ">
-                  Growth Management <br></br>
-                  <span className="highlight-purple">Made Simple</span>
+                <h2 className="text-center md:text-left text-[1.65rem] md:text-[2rem] font-bold mb-6 ">
+                  <span className="whitespace-nowrap">GROWTH MANAGEMENT</span>{" "}
+                  <br></br>
+                  <span className="highlight-purple">MADE SIMPLE</span>
                 </h2>
                 <p className="text-center md:text-left text-base md:text-xl text-gray-300 mb-8 leading-relaxed">
                   AGEN-AI proactively monitors your campaigns and identifies

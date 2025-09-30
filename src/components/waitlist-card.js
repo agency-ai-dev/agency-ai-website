@@ -33,10 +33,10 @@ const WaitlistCard = () => {
   return (
     <section className="py-12 px-6 md:py-20">
       <div className="max-w-5xl mx-auto">
-        <div className="card rounded-xl py-8 shadow-2xl border border-purple-500 border-opacity-30">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div className="w-11/12 m-auto">
-              <h2 className="text-[1.65rem] font-bold mb-6">
+        <div className="card rounded-xl py-8 md:p-8 shadow-2xl border border-purple-500 border-opacity-30">
+          <div className="grid md:grid-cols-2 gap-6 items-start">
+            <div className="w-11/12 mx-auto">
+              <h2 className="text-[1.65rem] font-bold mb-8">
                 Be The First To Experience{" "}
                 <span style={{ color: "#00e6b4" }}>
                   AI Powered Growth Automation
