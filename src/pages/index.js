@@ -192,6 +192,7 @@ const IndexPage = () => {
                   className="w-full h-full"
                   controls
                   onClick={() => track("video_clicked")}
+                  data-fast-goal="video_clicked"
                 >
                   <source
                     src="https://res.cloudinary.com/dn71ngylo/video/upload/v1759252335/Agency_Ai_video_1_xwubxm.mp4"
