@@ -10,9 +10,10 @@
 module.exports = {
   siteMetadata: {
     title: `Agency AI - AI-Powered Marketing Automation`,
-    description: `Transform your marketing with Agency AI. AI-powered marketing automation that feels like an in-house team. Run multi-channel ads and automated email campaigns.`,
+    description: `Join the waitlist for Agency AI - AI-powered marketing automation that feels like an in-house team.`,
     author: `@agencyai`,
     siteUrl: `https://www.agencyai.app`,
+    image: `/laptop-mobile-screengrab.png`,
   },
   plugins: [
     `gatsby-plugin-image`,
