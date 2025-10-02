@@ -10,7 +10,7 @@
 module.exports = {
   siteMetadata: {
     title: `Agency AI - AI-Powered Marketing Automation`,
-    description: `Join the waitlist for Agency AI - AI-powered marketing automation that feels like an in-house team.`,
+    description: `AI-powered marketing automation that feels like an in-house team.`,
     author: `@agencyai`,
     siteUrl: `https://www.agencyai.app`,
     image: `/laptop-mobile-screengrab.png`,
