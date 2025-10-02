@@ -24,6 +24,11 @@ const WaitlistCard = () => {
 
     setIsSubmitting(true)
 
+    // Fire Reddit pixel custom event
+    if (window.rdt) {
+      window.rdt("track", "SignUp")
+    }
+
     // Add small delay to prevent rapid submissions
     setTimeout(() => {
       e.target.submit()
