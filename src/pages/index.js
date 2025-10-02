@@ -3,6 +3,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css"
 import "./homestyles.css"
 import { Link } from "gatsby"
 import { Helmet } from "react-helmet"
+import Seo from "../components/seo"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import FreeAudit from "../components/free-audit"
@@ -14,6 +15,7 @@ import track from "../utils/analytics"
 const IndexPage = () => {
   return (
     <>
+      <Seo title="Join the Waitlist" />
       <Helmet>
         <script src="https://getlaunchlist.com/js/widget-diy.js" defer></script>
       </Helmet>

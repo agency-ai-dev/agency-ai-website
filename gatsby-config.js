@@ -13,6 +13,7 @@ module.exports = {
     description: `Join the waitlist for Agency AI - AI-powered marketing automation that feels like an in-house team.`,
     author: `@agencyai`,
     siteUrl: `https://www.agencyai.app`,
+    image: `/laptop-mobile-screengrab.png`,
   },
   plugins: [
     `gatsby-plugin-image`,
