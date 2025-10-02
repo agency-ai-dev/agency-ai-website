@@ -15,7 +15,7 @@ import track from "../utils/analytics"
 const IndexPage = () => {
   return (
     <>
-      <Seo title="Join the Waitlist" />
+      <Seo title="Agency AI - Join the Waitlist" />
       <Helmet>
         <script src="https://getlaunchlist.com/js/widget-diy.js" defer></script>
       </Helmet>
