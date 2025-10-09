@@ -260,9 +260,11 @@ const IndexPage = () => {
 
               <div className="flex flex-col items-center p-4 pb-0 rounded-xl transition-all duration-300">
                 <div className="w-16 h-16 bg-white rounded-lg flex items-center justify-center mb-4">
-                  <i className="fa-solid fa-magnifying-glass text-3xl text-[#7b68ee]"></i>
+                  <i className="fa-solid fa-chart-line text-3xl text-[#7b68ee]"></i>
                 </div>
-                <span className="text-sm text-gray-300 font-medium">SEO</span>
+                <span className="text-sm text-gray-300 font-medium">
+                  Analytics
+                </span>
               </div>
             </div>
 
