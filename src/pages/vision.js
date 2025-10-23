@@ -664,7 +664,7 @@ const IndexPage = () => {
                   <div className="w-px h-16 bg-gray-600"></div>
                   <div className="text-center">
                     <div className="text-4xl font-bold highlight-purple mb-2">
-                      $320.7B
+                      $495.7B
                     </div>
                     <div className="text-gray-300">
                       Total Addressable Market
