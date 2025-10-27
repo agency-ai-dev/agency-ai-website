@@ -834,19 +834,19 @@ const IndexPage = () => {
                 </p>
                 <ul className="space-y-4">
                   <li className="flex items-center text-gray-300">
-                    <div className="w-2 h-2 bg-purple-500 rounded-full mr-4"></div>
+                    <i className="fas fa-check-circle text-purple-500 mr-3 text-xl"></i>
                     <span className="text-base md:text-xl">
                       No marketing degree needed - AI handles the complexity
                     </span>
                   </li>
                   <li className="flex items-center text-gray-300">
-                    <div className="w-2 h-2 bg-purple-500 rounded-full mr-4"></div>
+                    <i className="fas fa-check-circle text-purple-500 mr-3 text-xl"></i>
                     <span className="text-base md:text-xl">
                       Skip the tutorials - works like texting a friend
                     </span>
                   </li>
                   <li className="flex items-center text-gray-300">
-                    <div className="w-2 h-2 bg-purple-500 rounded-full mr-4"></div>
+                    <i className="fas fa-check-circle text-purple-500 mr-3 text-xl"></i>
                     <span className="text-base md:text-xl">
                       Approve changes with one tap, not 50 clicks
                     </span>
