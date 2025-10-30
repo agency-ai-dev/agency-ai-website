@@ -801,11 +801,11 @@ const IndexPage = () => {
               </p>
             </div>
             <div className="flex justify-center">
-              <div className="bg-[#131221]">
+              <div>
                 <img
                   src={laptopMobileImage}
                   alt="AGEN-AI platform dashboard showing unified growth intelligence and automation"
-                  className="w-full h-auto bg-[#131221] max-w-4xl mx-auto"
+                  className="w-full h-auto max-w-4xl mx-auto mb-0"
                 />
               </div>
             </div>
@@ -858,7 +858,7 @@ const IndexPage = () => {
                   <img
                     src={mobileChat}
                     alt="Marketing audit chat conversation on mobile"
-                    className="w-2/3 md:w-3/4 h-auto m-auto"
+                    className="w-2/3 md:w-3/4 h-auto m-auto mb-0"
                   />
                 </div>
                 <div className="text-center mt-4">
