@@ -641,7 +641,7 @@ const IndexPage = () => {
                   <div className="flex items-center">
                     <i className="fas fa-check-circle text-green-400 mr-3"></i>
                     <span className="text-gray-300">
-                      SEO, CRO & Dynamic Landing Page Optimization
+                      CRO & Dynamic Landing Page Optimization
                     </span>
                   </div>
                 </div>
