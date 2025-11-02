@@ -209,13 +209,6 @@ const PricingPage = () => {
 
         <div className="addons-grid">
           <div className="addon-card">
-            <h3 className="addon-name">SEO Tools & Optimization</h3>
-            <div className="addon-price">
-              $39<span className="addon-period">/month</span>
-            </div>
-          </div>
-
-          <div className="addon-card">
             <h3 className="addon-name">AI Creative Studio</h3>
             <div className="addon-price">
               $149<span className="addon-period">/month</span>
