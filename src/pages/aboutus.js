@@ -1,7 +1,7 @@
 import * as React from "react"
 import "@fortawesome/fontawesome-free/css/all.min.css"
 import "./aboutstyles.css"
-import john from "./../images/john.jpg"
+import john from "./../images/john.png"
 import joe from "./../images/joe.jpg"
 import anthony from "./../images/anthony.png"
 import Footer from "../components/footer"
