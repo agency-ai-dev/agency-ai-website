@@ -1,0 +1,14 @@
+PLACEHOLDER: This blog post needs a hero image.
+
+Recommended specifications:
+- Dimensions: 1200x630px (or similar aspect ratio)
+- Format: PNG or JPG
+- Content: Facebook and Instagram logos with Shopify branding
+- File name: hero.png
+
+You can:
+1. Create a custom graphic showing Facebook, Instagram, and Shopify integration
+2. Use a screenshot of the Shopify Facebook & Instagram app
+3. Use a stock image related to social media e-commerce
+
+Once you have the image, replace this file with hero.png
