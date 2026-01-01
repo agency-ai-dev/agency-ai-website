@@ -33,6 +33,13 @@ const Header = ({ siteTitle, waitlist = false }) => {
             About
           </a>
           <a
+            href="/blog"
+            className="text-white hover:text-teal-400 transition-colors no-underline"
+            onClick={() => track("nav_click", { nav_item: "blog" })}
+          >
+            Blog
+          </a>
+          <a
             href="/contactus"
             className="text-white hover:text-teal-400 transition-colors no-underline"
             onClick={() => track("nav_click", { nav_item: "contact" })}
@@ -94,6 +101,13 @@ const Header = ({ siteTitle, waitlist = false }) => {
             onClick={() => track("nav_click", { nav_item: "about" })}
           >
             About
+          </a>
+          <a
+            href="/blog"
+            className="text-white hover:text-teal-400 no-underline transition-colors py-2"
+            onClick={() => track("nav_click", { nav_item: "blog" })}
+          >
+            Blog
           </a>
           <a
             href="/contactus"

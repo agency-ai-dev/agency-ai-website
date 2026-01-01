@@ -22,6 +22,12 @@ const Footer = ({ waitlist }) => {
             About
           </a>
           <a
+            href="/blog"
+            className="text-white hover:text-teal-400 transition-colors no-underline text-[.9rem]"
+          >
+            Blog
+          </a>
+          <a
             href="/contactus"
             className="text-white hover:text-teal-400 transition-colors no-underline text-[.9rem]"
           >
