@@ -53,7 +53,7 @@ const BlogPost = ({ data, children }) => {
                 </>
               )}
               <time dateTime={post.frontmatter.date}>
-                {new Date(post.frontmatter.date).toLocaleDateString("en-US", {
+                {new Date(post.frontmatter.date + 'T00:00:00').toLocaleDateString("en-US", {
                   year: "numeric",
                   month: "long",
                   day: "numeric",

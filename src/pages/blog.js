@@ -91,7 +91,7 @@ const BlogIndex = ({ data }) => {
 
                         <div className="flex items-center justify-between text-sm text-gray-400">
                           <time dateTime={post.frontmatter.date}>
-                            {new Date(post.frontmatter.date).toLocaleDateString(
+                            {new Date(post.frontmatter.date + 'T00:00:00').toLocaleDateString(
                               "en-US",
                               {
                                 year: "numeric",
