@@ -21,7 +21,7 @@ const IndexPage = () => {
       </Helmet> */}
       <div className="pdf-container">
         <Header waitlist={false} />
-        <section className="relative px-6 overflow-hidden pt-[4.5rem] flex items-center">
+        <section className="relative px-6 overflow-hidden pt-[4.5rem] pb-12 md:pb-20 flex items-center">
           <div className="glow"></div>
 
           {/* Floating AI Elements */}
@@ -89,6 +89,21 @@ const IndexPage = () => {
               business, automating decisions based on what actually converts
               your customers.
             </p>
+
+            <div className="mt-10 flex justify-center">
+              <a
+                href="http://calendly.com/agency-demo"
+                onClick={() => track("hero_cta_click", { cta: "book_demo" })}
+                className="group relative px-8 py-4 rounded-xl font-semibold shadow-2xl text-gray-900 text-lg overflow-hidden transition-all duration-300 hover:transform hover:-translate-y-1 no-underline"
+                style={{ backgroundColor: "#00e6b4" }}
+              >
+                <div
+                  className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  style={{ background: "#03a682" }}
+                ></div>
+                <span className="relative">Book a Demo</span>
+              </a>
+            </div>
 
             {/* <div className="mt-10 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
               <button
