@@ -7,7 +7,7 @@ import Seo from "../components/seo"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import FreeAudit from "../components/free-audit"
-import WaitlistCard from "../components/waitlist-card"
+// import WaitlistCard from "../components/waitlist-card"
 import mobileChat from "../images/mobile-chat.png"
 import laptopMobileImage from "../images/laptop-mobile-screengrab.png"
 import track from "../utils/analytics"
@@ -15,12 +15,12 @@ import track from "../utils/analytics"
 const IndexPage = () => {
   return (
     <>
-      <Seo title="Agency AI - Join the Waitlist" />
-      <Helmet>
+      <Seo title="Agency AI - E-commerce Growth Engine" />
+      {/* <Helmet>
         <script src="https://getlaunchlist.com/js/widget-diy.js" defer></script>
-      </Helmet>
+      </Helmet> */}
       <div className="pdf-container">
-        <Header waitlist={true} />
+        <Header waitlist={false} />
         <section className="relative px-6 overflow-hidden pt-[4.5rem] flex items-center">
           <div className="glow"></div>
 
@@ -175,9 +175,9 @@ const IndexPage = () => {
           </div>
         </section> */}
 
-        <div id="waitlist">
+        {/* <div id="waitlist">
           <WaitlistCard />
-        </div>
+        </div> */}
 
         {/* Promo Video Section */}
         <section className="py-12 md:py-20 px-6 pt-0">
@@ -871,8 +871,8 @@ const IndexPage = () => {
           </div>
         </section>
         {/* <FreeAudit /> */}
-        <WaitlistCard />
-        <Footer waitlist={true} />
+        {/* <WaitlistCard /> */}
+        <Footer waitlist={false} />
       </div>
     </>
   )
