@@ -21,7 +21,7 @@ const IndexPage = () => {
       </Helmet> */}
       <div className="pdf-container">
         <Header waitlist={false} />
-        <section className="relative px-6 overflow-hidden pt-[4.5rem] flex items-center">
+        <section className="relative px-6 overflow-hidden pt-[4.5rem] pb-12 md:pb-20 flex items-center">
           <div className="glow"></div>
 
           {/* Floating AI Elements */}
@@ -94,7 +94,7 @@ const IndexPage = () => {
               <a
                 href="http://calendly.com/agency-demo"
                 onClick={() => track("hero_cta_click", { cta: "book_demo" })}
-                className="group relative px-8 py-4 rounded-xl font-semibold shadow-2xl text-gray-900 text-lg overflow-hidden transition-all duration-300 hover:transform hover:-translate-y-1"
+                className="group relative px-8 py-4 rounded-xl font-semibold shadow-2xl text-gray-900 text-lg overflow-hidden transition-all duration-300 hover:transform hover:-translate-y-1 no-underline"
                 style={{ backgroundColor: "#00e6b4" }}
               >
                 <div
