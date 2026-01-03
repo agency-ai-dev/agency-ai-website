@@ -7,7 +7,7 @@ import Seo from "../components/seo"
 import Header from "../components/header"
 import Footer from "../components/footer"
 import FreeAudit from "../components/free-audit"
-import WaitlistCard from "../components/waitlist-card"
+// import WaitlistCard from "../components/waitlist-card"
 import mobileChat from "../images/mobile-chat.png"
 import laptopMobileImage from "../images/laptop-mobile-screengrab.png"
 import track from "../utils/analytics"
@@ -15,13 +15,13 @@ import track from "../utils/analytics"
 const IndexPage = () => {
   return (
     <>
-      <Seo title="Agency AI - Join the Waitlist" />
-      <Helmet>
+      <Seo title="Agency AI - E-commerce Growth Engine" />
+      {/* <Helmet>
         <script src="https://getlaunchlist.com/js/widget-diy.js" defer></script>
-      </Helmet>
+      </Helmet> */}
       <div className="pdf-container">
-        <Header waitlist={true} />
-        <section className="relative px-6 overflow-hidden pt-[4.5rem] flex items-center">
+        <Header waitlist={false} />
+        <section className="relative px-6 overflow-hidden pt-[4.5rem] pb-12 md:pb-20 flex items-center">
           <div className="glow"></div>
 
           {/* Floating AI Elements */}
@@ -89,6 +89,21 @@ const IndexPage = () => {
               business, automating decisions based on what actually converts
               your customers.
             </p>
+
+            <div className="mt-10 flex justify-center">
+              <a
+                href="http://calendly.com/agency-demo"
+                onClick={() => track("hero_cta_click", { cta: "book_demo" })}
+                className="group relative px-8 py-4 rounded-xl font-semibold shadow-2xl text-gray-900 text-lg overflow-hidden transition-all duration-300 hover:transform hover:-translate-y-1 no-underline"
+                style={{ backgroundColor: "#00e6b4" }}
+              >
+                <div
+                  className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  style={{ background: "#03a682" }}
+                ></div>
+                <span className="relative">Book a Demo</span>
+              </a>
+            </div>
 
             {/* <div className="mt-10 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center">
               <button
@@ -175,9 +190,9 @@ const IndexPage = () => {
           </div>
         </section> */}
 
-        <div id="waitlist">
+        {/* <div id="waitlist">
           <WaitlistCard />
-        </div>
+        </div> */}
 
         {/* Promo Video Section */}
         <section className="py-12 md:py-20 px-6 pt-0">
@@ -871,8 +886,8 @@ const IndexPage = () => {
           </div>
         </section>
         {/* <FreeAudit /> */}
-        <WaitlistCard />
-        <Footer waitlist={true} />
+        {/* <WaitlistCard /> */}
+        <Footer waitlist={false} />
       </div>
     </>
   )
