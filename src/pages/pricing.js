@@ -39,8 +39,7 @@ const PricingPage = () => {
         </div>
 
         <div className="pricing-grid">
-          <div className="pricing-card recommended" id="essentials-plan">
-            <div className="recommended-badge">Recommended</div>
+          {/* <div className="pricing-card" id="essentials-plan">
             <h2 className="plan-name">Essentials</h2>
             {!isAnnual && <div className="plan-price monthly">$59</div>}
             {isAnnual && <div className="plan-price annual">$41</div>}
@@ -90,9 +89,9 @@ const PricingPage = () => {
             <a href="#" className="cta-button no-underline">
               Start Free Trial
             </a>
-          </div>
+          </div> */}
 
-          {/* <div className="pricing-card" id="growth-plan">
+          <div className="pricing-card" id="growth-plan">
             <h2 className="plan-name">Growth</h2>
             {!isAnnual && <div className="plan-price monthly">$199</div>}
             {isAnnual && <div className="plan-price annual">$139</div>}
@@ -107,11 +106,7 @@ const PricingPage = () => {
             <div className="feature-list">
               <div className="feature-item">
                 <i className="fas fa-check feature-icon"></i>
-                <span>Free audit</span>
-              </div>
-              <div className="feature-item">
-                <i className="fas fa-check feature-icon"></i>
-                <span>AI agent reporting & action</span>
+                <span>Free Audit</span>
               </div>
               <div className="feature-item">
                 <i className="fas fa-check feature-icon"></i>
@@ -120,10 +115,6 @@ const PricingPage = () => {
               <div className="feature-item">
                 <i className="fas fa-check feature-icon"></i>
                 <span>AGEN-AI Facebook & Instagram ads</span>
-              </div>
-              <div className="feature-item">
-                <i className="fas fa-check feature-icon"></i>
-                <span>AGEN-AI Google ads</span>
               </div>
               <div className="feature-item">
                 <i className="fas fa-check feature-icon"></i>
@@ -150,9 +141,9 @@ const PricingPage = () => {
             <a href="#" className="cta-button no-underline">
               Get Started
             </a>
-          </div> */}
+          </div>
 
-          {/* <div className="pricing-card recommended" id="pro-plan">
+          <div className="pricing-card recommended" id="pro-plan">
             <div className="recommended-badge">Recommended</div>
             <h2 className="plan-name">Pro</h2>
             {!isAnnual && <div className="plan-price monthly">$299</div>}
@@ -215,9 +206,9 @@ const PricingPage = () => {
             <a href="#" className="cta-button no-underline">
               Get Started
             </a>
-          </div> */}
+          </div>
 
-          {/* <div className="pricing-card" id="premium-plan">
+          <div className="pricing-card" id="premium-plan">
             <h2 className="plan-name">Premium</h2>
             {!isAnnual && <div className="plan-price monthly">$499</div>}
             {isAnnual && <div className="plan-price annual">$349</div>}
@@ -279,7 +270,7 @@ const PricingPage = () => {
             <a href="#" className="cta-button no-underline">
               Get Started
             </a>
-          </div> */}
+          </div>
         </div>
 
         <div className="enterprise-section">
