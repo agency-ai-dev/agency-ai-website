@@ -1,9 +1,8 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import agencyailogo from "./../images/agencyailogo.png"
 import track from "../utils/analytics"
 
-const Header = ({ siteTitle, waitlist = false }) => {
+const Header = () => {
   const [menuOpen, setMenuOpen] = React.useState(false)
 
   return (
@@ -17,7 +16,7 @@ const Header = ({ siteTitle, waitlist = false }) => {
             />
           </a>
         </div>
-        {/* Desktop navigation - always show container, selectively hide pricing and demo */}
+        {/* Desktop navigation */}
         <div className="hidden md:flex space-x-8 items-center">
           <a
             href="/"
@@ -46,30 +45,24 @@ const Header = ({ siteTitle, waitlist = false }) => {
           >
             Contact
           </a>
-          {!waitlist && (
+          <button className="primary-btn px-6 py-2 rounded-lg font-semibold shadow-lg">
             <a
-              href="/pricing"
-              className="text-white hover:text-teal-400 transition-colors no-underline"
-              onClick={() => track("nav_click", { nav_item: "pricing" })}
+              className="decoration-none text-gray-900 no-underline flex items-center"
+              target="_blank"
+              href="https://apps.shopify.com/agency-ai"
+              onClick={() => track("nav_click", { nav_item: "download_beta" })}
             >
-              Pricing
+              <img
+                src="/02 - Glyph/png/shopify_glyph_black.png"
+                alt="Shopify"
+                className="block w-7 h-7 mr-2 mb-0 object-contain self-center"
+              />
+              Download Beta
             </a>
-          )}
-          {!waitlist && (
-            <button className="primary-btn px-6 py-2 rounded-lg font-semibold shadow-lg">
-              <a
-                className="decoration-none text-gray-900 no-underline"
-                target="_blank"
-                href="http://calendly.com/agency-demo"
-                onClick={() => track("nav_click", { nav_item: "book_demo" })}
-              >
-                Book a Demo
-              </a>
-            </button>
-          )}
+          </button>
         </div>
 
-        {/* Mobile navigation - always show hamburger, selectively hide pricing and demo in menu */}
+        {/* Mobile navigation */}
         <button
           className="md:hidden text-white text-2xl"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -116,27 +109,21 @@ const Header = ({ siteTitle, waitlist = false }) => {
           >
             Contact
           </a>
-          {!waitlist && (
+          <button className="primary-btn px-4 py-2 rounded-lg font-semibold shadow mt-2">
             <a
-              href="/pricing"
-              className="text-white hover:text-teal-400 no-underline transition-colors py-2"
-              onClick={() => track("nav_click", { nav_item: "pricing" })}
+              className="decoration-none text-gray-900 no-underline flex items-center justify-center"
+              target="_blank"
+              href="https://apps.shopify.com/agency-ai"
+              onClick={() => track("nav_click", { nav_item: "download_beta" })}
             >
-              Pricing
+              <img
+                src="/02 - Glyph/png/shopify_glyph_black.png"
+                alt="Shopify"
+                className="block w-7 h-7 mr-2 mb-0 object-contain self-center"
+              />
+              Download Beta
             </a>
-          )}
-          {!waitlist && (
-            <button className="primary-btn px-4 py-2 rounded-lg font-semibold shadow mt-2">
-              <a
-                className="decoration-none text-gray-900 no-underline"
-                target="_blank"
-                href="http://calendly.com/agency-demo"
-                onClick={() => track("nav_click", { nav_item: "book_demo" })}
-              >
-                Book a Demo
-              </a>
-            </button>
-          )}
+          </button>
         </div>
       </nav>
     </header>

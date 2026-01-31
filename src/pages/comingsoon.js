@@ -94,13 +94,13 @@ const ComingSoonPage = () => {
                   Email for Beta Access
                 </a>
                 <a
-                  href="http://calendly.com/agency-demo"
+                  href="https://apps.shopify.com/agency-ai"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="border-2 border-white border-opacity-30 bg-white text-black px-4 py-4 rounded-lg font-semibold shadow-lg text-center no-underline hover:bg-white hover:bg-opacity-10 transition-all duration-300"
+                  className="border-2 border-white border-opacity-30 bg-white text-black px-4 py-4 rounded-lg font-semibold shadow-lg text-center no-underline hover:bg-white hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center"
                 >
-                  <i className="fas fa-calendar mr-2"></i>
-                  Book a Demo
+                  <img src="/02 - Glyph/png/shopify_glyph_black.png" alt="Shopify" className="block w-7 h-7 mr-2 mb-0 object-contain self-center" />
+                  Download Beta
                 </a>
               </div>
             </div>
