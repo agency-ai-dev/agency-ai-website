@@ -1,6 +1,6 @@
 import * as React from "react"
 
-const Footer = ({ waitlist }) => {
+const Footer = () => {
   return (
     <footer className="py-12 px-6 md:px-12 lg:px-24 border-t border-gray-800">
       <div className="max-w-7xl ml-4 md:ml-0 mx-auto flex flex-col md:flex-row justify-between items-start">
@@ -33,14 +33,6 @@ const Footer = ({ waitlist }) => {
           >
             Contact
           </a>
-          {!waitlist && (
-            <a
-              href="/pricing"
-              className="text-white hover:text-teal-400 transition-colors no-underline text-[.9rem]"
-            >
-              Pricing
-            </a>
-          )}
           <a
             href="/privacy-policy"
             className="text-white hover:text-teal-400 transition-colors no-underline text-[.9rem]"

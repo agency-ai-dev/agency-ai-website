@@ -68,7 +68,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        excludes: [`/using-dsg`, `/using-ssr`, `/using-typescript`, `/page-2`],
+        excludes: [
+          `/using-dsg`,
+          `/using-ssr`,
+          `/using-typescript`,
+          `/page-2`,
+          `/pricing`,
+        ],
         siteUrl:
           process.env.NODE_ENV === "development"
             ? "http://localhost:9000"
@@ -89,6 +95,7 @@ module.exports = {
               "/using-ssr",
               "/using-typescript",
               "/page-2",
+              "/pricing",
             ],
           },
         ],
