@@ -667,7 +667,7 @@ const IndexPage = () => {
                 </p>
                 <div className="flex items-center">
                   <img
-                    src="/vapor-95-logo.webp"
+                    src="/vapor-95-logo-static.png"
                     alt="Vapor95"
                     className="h-7 w-auto mr-4 object-contain flex-shrink-0"
                   />
