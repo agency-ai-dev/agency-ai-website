@@ -1,7 +1,6 @@
 import * as React from "react"
 import "@fortawesome/fontawesome-free/css/all.min.css"
 import "./aboutstyles.css"
-import john from "./../images/john.png"
 import joe from "./../images/joe.jpg"
 import anthony from "./../images/anthony.png"
 import Footer from "../components/footer"
@@ -31,11 +30,11 @@ const ContactUsPage = () => {
             Meet Our <span className="highlight-teal">Founders</span>
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
             <div className="card p-8 flex flex-col items-center text-center">
               <img src={anthony} alt="Anthony" className="founder-img mb-6" />
               <h3 className="text-2xl font-bold highlight-purple mb-1">
-                Anthony
+                Anthony Ulanovsky
               </h3>
               <p className="text-lg mb-4 opacity-80">CEO, Founder</p>
               <p className="opacity-90 text-left">
@@ -51,24 +50,8 @@ const ContactUsPage = () => {
             </div>
 
             <div className="card p-8 flex flex-col items-center text-center">
-              <img src={john} alt="John" className="founder-img mb-6" />
-              <h3 className="text-2xl font-bold highlight-purple mb-1">John</h3>
-              <p className="text-lg mb-4 opacity-80">CTO, Lead Engineer</p>
-              <p className="opacity-90 text-left">
-                John is a full-stack engineer with 6+ years of experience
-                consulting for companies ranging from SMBs to F500, and building
-                at Shopify agencies and early-stage startups. He has deep A/B
-                testing expertise driving multimillion-dollar impact.
-              </p>
-              <p className="mt-4 opacity-80 text-left">
-                Outside of work, you’ll find John unwinding in the sauna, or
-                spending time with his wife, daughter, and 3 dogs.
-              </p>
-            </div>
-
-            <div className="card p-8 flex flex-col items-center text-center">
               <img src={joe} alt="Joe" className="founder-img mb-6" />
-              <h3 className="text-2xl font-bold highlight-purple mb-1">Joe</h3>
+              <h3 className="text-2xl font-bold highlight-purple mb-1">Joe Lannen</h3>
               <p className="text-lg mb-4 opacity-80">
                 Chief Software Architect, Technical Advisor
               </p>

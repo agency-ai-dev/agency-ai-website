@@ -13,60 +13,6 @@ import laptopMobileImage from "../images/laptop-mobile-screengrab.png"
 import track from "../utils/analytics"
 
 const IndexPage = () => {
-  const [activeReviewIndex, setActiveReviewIndex] = React.useState(0)
-  const carouselRef = React.useRef(null)
-  const activeReviewIndexRef = React.useRef(0)
-  const lastInteractionRef = React.useRef(0)
-  const totalReviews = 3
-  const autoScrollIntervalMs = 5000
-  const autoScrollPauseMs = 6000
-
-  const handleCarouselScroll = React.useCallback(() => {
-    if (!carouselRef.current) return
-    const { scrollLeft, clientWidth } = carouselRef.current
-    if (!clientWidth) return
-    const nextIndex = Math.round(scrollLeft / clientWidth)
-    setActiveReviewIndex((prev) => (prev === nextIndex ? prev : nextIndex))
-    lastInteractionRef.current = Date.now()
-  }, [])
-
-  const scrollToReview = React.useCallback((index) => {
-    if (!carouselRef.current) return
-    const slideWidth = carouselRef.current.clientWidth
-    carouselRef.current.scrollTo({
-      left: slideWidth * index,
-      behavior: "smooth",
-    })
-    setActiveReviewIndex(index)
-  }, [])
-
-  React.useEffect(() => {
-    activeReviewIndexRef.current = activeReviewIndex
-  }, [activeReviewIndex])
-
-  React.useEffect(() => {
-    const id = window.setInterval(() => {
-      if (!carouselRef.current) return
-      const timeSinceInteraction = Date.now() - lastInteractionRef.current
-      if (timeSinceInteraction < autoScrollPauseMs) return
-      const nextIndex = (activeReviewIndexRef.current + 1) % totalReviews
-      scrollToReview(nextIndex)
-    }, autoScrollIntervalMs)
-    return () => window.clearInterval(id)
-  }, [scrollToReview, autoScrollIntervalMs, autoScrollPauseMs, totalReviews])
-
-  React.useEffect(() => {
-    if (typeof window === "undefined") return
-    const handleResize = () => {
-      if (!carouselRef.current) return
-      carouselRef.current.scrollTo({
-        left: carouselRef.current.clientWidth * activeReviewIndex,
-        behavior: "auto",
-      })
-    }
-    window.addEventListener("resize", handleResize)
-    return () => window.removeEventListener("resize", handleResize)
-  }, [activeReviewIndex])
 
   return (
     <>
@@ -670,8 +616,8 @@ const IndexPage = () => {
 
         {/* Review Section */}
         <section className="py-20 px-6 bg-gradient-dark">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-16">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
               <h2 className="text-4xl font-bold mb-4">
                 WHAT OUR <span className="highlight-purple">CUSTOMERS SAY</span>
               </h2>
@@ -681,161 +627,80 @@ const IndexPage = () => {
               </p>
             </div>
 
-            <div className="relative max-w-4xl mx-auto">
-              <style jsx>{`
-                .carousel-container {
-                  overflow-x: auto;
-                  overflow-y: hidden;
-                  position: relative;
-                  scroll-snap-type: x mandatory;
-                  -webkit-overflow-scrolling: touch;
-                  scroll-behavior: smooth;
-                  scrollbar-width: none;
-                }
-                .carousel-container::-webkit-scrollbar {
-                  display: none;
-                }
-                .carousel-track {
-                  display: flex;
-                  width: 100%;
-                }
-                .carousel-slide {
-                  min-width: 100%;
-                  flex: 0 0 100%;
-                  padding: 0 1rem;
-                  scroll-snap-align: start;
-                }
-                .carousel-dots {
-                  display: flex;
-                  gap: 0.5rem;
-                  justify-content: center;
-                  margin-top: 2rem;
-                }
-                .carousel-dot {
-                  width: 0.75rem;
-                  height: 0.75rem;
-                  border-radius: 50%;
-                  background: rgba(255, 255, 255, 0.3);
-                  transition: background 0.3s ease, transform 0.3s ease;
-                  cursor: pointer;
-                  border: none;
-                }
-                .carousel-dot-active {
-                  background: #00e6b4;
-                  transform: scale(1.1);
-                }
-                @media (max-width: 640px) {
-                  .carousel-slide {
-                    padding: 0 0.5rem;
-                  }
-                }
-              `}</style>
-
-              <div className="carousel-container" ref={carouselRef} onScroll={handleCarouselScroll}>
-                <div className="carousel-track">
-                  {/* Slide 1: Lola Hemp */}
-                  <div className="carousel-slide">
-                    <div className="card rounded-xl p-6 sm:p-8 hover:shadow-lg">
-                      <div className="flex mb-4">
-                        <i className="fas fa-star text-yellow-400"></i>
-                        <i className="fas fa-star text-yellow-400"></i>
-                        <i className="fas fa-star text-yellow-400"></i>
-                        <i className="fas fa-star text-yellow-400"></i>
-                        <i className="fas fa-star text-yellow-400"></i>
-                      </div>
-                      <p className="text-gray-300 mb-8 sm:mb-12 text-base sm:text-lg">
-                        "Agency AI has outperformed both our internal ad efforts and every agency we've ever worked with"
-                      </p>
-                      <div className="flex items-center">
-                        <img
-                          src="/lola-logo.webp"
-                          alt="Lola Hemp"
-                          className="w-12 h-12 rounded-full mr-4 object-cover"
-                        />
-                        <div>
-                          <h4 className="font-bold">Lola Hemp</h4>
-                          <p className="text-sm text-gray-400">lolahemp.com</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Slide 2: Vapor95 */}
-                  <div className="carousel-slide">
-                    <div className="card rounded-xl p-6 sm:p-8 hover:shadow-lg">
-                      <div className="flex mb-4">
-                        <i className="fas fa-star text-yellow-400"></i>
-                        <i className="fas fa-star text-yellow-400"></i>
-                        <i className="fas fa-star text-yellow-400"></i>
-                        <i className="fas fa-star text-yellow-400"></i>
-                        <i className="fas fa-star text-yellow-400"></i>
-                      </div>
-                      <p className="text-gray-300 mb-8 sm:mb-12 text-base sm:text-lg">
-                        "Since launching with Agency AI we've seen an almost 200% increase in ROI"
-                      </p>
-                      <div className="flex items-center">
-                        <img
-                          src="/vapor-95-logo.webp"
-                          alt="Vapor95"
-                          className="w-12 h-12 rounded-full mr-4 object-cover"
-                        />
-                        <div>
-                          <h4 className="font-bold">Vapor95</h4>
-                          <p className="text-sm text-gray-400">vapor95.com</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Slide 3: Epic Hoodie */}
-                  <div className="carousel-slide">
-                    <div className="card rounded-xl p-6 sm:p-8 hover:shadow-lg">
-                      <div className="flex mb-4">
-                        <i className="fas fa-star text-yellow-400"></i>
-                        <i className="fas fa-star text-yellow-400"></i>
-                        <i className="fas fa-star text-yellow-400"></i>
-                        <i className="fas fa-star text-yellow-400"></i>
-                        <i className="fas fa-star text-yellow-400"></i>
-                      </div>
-                      <p className="text-gray-300 mb-8 sm:mb-12 text-base sm:text-lg">
-                        "Great marketing app, improved our Meta ROAS and saves our marketing team a ton time"
-                      </p>
-                      <div className="flex items-center">
-                        <div className="w-12 h-12 rounded-full bg-indigo-600 flex items-center justify-center mr-4">
-                          <span className="font-bold">EH</span>
-                        </div>
-                        <div>
-                          <h4 className="font-bold">Epic Hoodie</h4>
-                          <p className="text-sm text-gray-400">epichoodie.com</p>
-                        </div>
-                      </div>
-                    </div>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+              {/* Review 1: Lola Hemp */}
+              <div className="card rounded-xl p-8 flex flex-col">
+                <div className="flex gap-1 mb-4">
+                  <i className="fas fa-star text-yellow-400"></i>
+                  <i className="fas fa-star text-yellow-400"></i>
+                  <i className="fas fa-star text-yellow-400"></i>
+                  <i className="fas fa-star text-yellow-400"></i>
+                  <i className="fas fa-star text-yellow-400"></i>
+                </div>
+                <p className="text-gray-300 mb-6 text-base flex-grow">
+                  "Agency AI has outperformed both our internal ad efforts and every agency we've ever worked with"
+                </p>
+                <div className="flex items-center">
+                  <img
+                    src="/lola-logo.webp"
+                    alt="Lola Hemp"
+                    className="w-10 h-10 rounded-full mr-4 object-cover flex-shrink-0"
+                  />
+                  <div>
+                    <h4 className="font-bold">Lola Hemp</h4>
+                    <p className="text-sm text-gray-400">lolahemp.com</p>
                   </div>
                 </div>
               </div>
 
-              <div className="carousel-dots">
-                <button
-                  type="button"
-                  className={`carousel-dot ${activeReviewIndex === 0 ? "carousel-dot-active" : ""}`}
-                  onClick={() => scrollToReview(0)}
-                  aria-label="Go to review 1"
-                  aria-current={activeReviewIndex === 0 ? "true" : "false"}
-                ></button>
-                <button
-                  type="button"
-                  className={`carousel-dot ${activeReviewIndex === 1 ? "carousel-dot-active" : ""}`}
-                  onClick={() => scrollToReview(1)}
-                  aria-label="Go to review 2"
-                  aria-current={activeReviewIndex === 1 ? "true" : "false"}
-                ></button>
-                <button
-                  type="button"
-                  className={`carousel-dot ${activeReviewIndex === 2 ? "carousel-dot-active" : ""}`}
-                  onClick={() => scrollToReview(2)}
-                  aria-label="Go to review 3"
-                  aria-current={activeReviewIndex === 2 ? "true" : "false"}
-                ></button>
+              {/* Review 2: Vapor95 */}
+              <div className="card rounded-xl p-8 flex flex-col">
+                <div className="flex gap-1 mb-4">
+                  <i className="fas fa-star text-yellow-400"></i>
+                  <i className="fas fa-star text-yellow-400"></i>
+                  <i className="fas fa-star text-yellow-400"></i>
+                  <i className="fas fa-star text-yellow-400"></i>
+                  <i className="fas fa-star text-yellow-400"></i>
+                </div>
+                <p className="text-gray-300 mb-6 text-base flex-grow">
+                  "Since launching with Agency AI we've seen an almost 200% increase in ROI"
+                </p>
+                <div className="flex items-center">
+                  <img
+                    src="/vapor-95-logo-static.png"
+                    alt="Vapor95"
+                    className="h-7 w-auto mr-4 object-contain flex-shrink-0"
+                  />
+                  <div>
+                    <h4 className="font-bold">Vapor95</h4>
+                    <p className="text-sm text-gray-400">vapor95.com</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Review 3: Epic Hoodie */}
+              <div className="card rounded-xl p-8 flex flex-col">
+                <div className="flex gap-1 mb-4">
+                  <i className="fas fa-star text-yellow-400"></i>
+                  <i className="fas fa-star text-yellow-400"></i>
+                  <i className="fas fa-star text-yellow-400"></i>
+                  <i className="fas fa-star text-yellow-400"></i>
+                  <i className="fas fa-star text-yellow-400"></i>
+                </div>
+                <p className="text-gray-300 mb-6 text-base flex-grow">
+                  "Great marketing app, improved our Meta ROAS and saves our marketing team a ton time"
+                </p>
+                <div className="flex items-center">
+                  <img
+                    src="/epic-hoodie-logo.svg"
+                    alt="Epic Hoodie"
+                    className="h-7 w-auto mr-4 object-contain flex-shrink-0"
+                  />
+                  <div>
+                    <h4 className="font-bold">Epic Hoodie</h4>
+                    <p className="text-sm text-gray-400">epichoodie.com</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
