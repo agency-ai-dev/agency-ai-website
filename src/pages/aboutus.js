@@ -34,7 +34,7 @@ const ContactUsPage = () => {
             <div className="card p-8 flex flex-col items-center text-center">
               <img src={anthony} alt="Anthony" className="founder-img mb-6" />
               <h3 className="text-2xl font-bold highlight-purple mb-1">
-                Anthony
+                Anthony Ulanovsky
               </h3>
               <p className="text-lg mb-4 opacity-80">CEO, Founder</p>
               <p className="opacity-90 text-left">
@@ -51,7 +51,7 @@ const ContactUsPage = () => {
 
             <div className="card p-8 flex flex-col items-center text-center">
               <img src={joe} alt="Joe" className="founder-img mb-6" />
-              <h3 className="text-2xl font-bold highlight-purple mb-1">Joe</h3>
+              <h3 className="text-2xl font-bold highlight-purple mb-1">Joe Lannen</h3>
               <p className="text-lg mb-4 opacity-80">
                 Chief Software Architect, Technical Advisor
               </p>
