@@ -12,5 +12,3 @@ Review - Since launching with Agency AI we’ve seen an almost 200% increase in 
 
 Website: epichoodie.com
 Review - Great marketing app, improved our Meta ROAS and saves our marketing team a ton time
-
-we do not have a logo for epic hoodie, but we do have logos for vapor95 and lolahemp. they're file names indicate their respective logos in our static folder
