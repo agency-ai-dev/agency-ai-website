@@ -629,7 +629,7 @@ const IndexPage = () => {
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
               {/* Review 1: Lola Hemp */}
-              <div className="card rounded-xl p-8 flex flex-col">
+              <div className="card rounded-xl p-8 flex flex-col items-center lg:items-start text-center lg:text-left">
                 <div className="flex gap-1 mb-4">
                   <i className="fas fa-star text-yellow-400"></i>
                   <i className="fas fa-star text-yellow-400"></i>
@@ -640,7 +640,7 @@ const IndexPage = () => {
                 <p className="text-gray-300 mb-6 text-base flex-grow">
                   "Agency AI has outperformed both our internal ad efforts and every agency we've ever worked with"
                 </p>
-                <div className="flex items-center">
+                <div className="flex items-center justify-center lg:justify-start">
                   <img
                     src="/lola-logo.webp"
                     alt="Lola Hemp"
@@ -654,7 +654,7 @@ const IndexPage = () => {
               </div>
 
               {/* Review 2: Vapor95 */}
-              <div className="card rounded-xl p-8 flex flex-col">
+              <div className="card rounded-xl p-8 flex flex-col items-center lg:items-start text-center lg:text-left">
                 <div className="flex gap-1 mb-4">
                   <i className="fas fa-star text-yellow-400"></i>
                   <i className="fas fa-star text-yellow-400"></i>
@@ -665,7 +665,7 @@ const IndexPage = () => {
                 <p className="text-gray-300 mb-6 text-base flex-grow">
                   "Since launching with Agency AI we've seen an almost 200% increase in ROI"
                 </p>
-                <div className="flex items-center">
+                <div className="flex items-center justify-center lg:justify-start">
                   <img
                     src="/vapor-95-logo-static.png"
                     alt="Vapor95"
@@ -679,7 +679,7 @@ const IndexPage = () => {
               </div>
 
               {/* Review 3: Epic Hoodie */}
-              <div className="card rounded-xl p-8 flex flex-col">
+              <div className="card rounded-xl p-8 flex flex-col items-center lg:items-start text-center lg:text-left">
                 <div className="flex gap-1 mb-4">
                   <i className="fas fa-star text-yellow-400"></i>
                   <i className="fas fa-star text-yellow-400"></i>
@@ -690,7 +690,7 @@ const IndexPage = () => {
                 <p className="text-gray-300 mb-6 text-base flex-grow">
                   "Great marketing app, improved our Meta ROAS and saves our marketing team a ton time"
                 </p>
-                <div className="flex items-center">
+                <div className="flex items-center justify-center lg:justify-start">
                   <img
                     src="/epic-hoodie-logo.svg"
                     alt="Epic Hoodie"
