@@ -485,7 +485,7 @@ const IndexPage = () => {
           </div>
         </section>
 
-        {/* <section id="benefits" className="py-20 px-6 bg-gradient-dark">
+        {/* <section id="benefits" className="py-20 px-6">
           <div className="max-w-7xl mx-auto">
             <div className="text-center">
               <h2 className="text-4xl font-bold mb-4">
@@ -615,7 +615,7 @@ const IndexPage = () => {
             </section> */}
 
         {/* Review Section */}
-        <section className="py-20 px-6 bg-gradient-dark">
+        <section className="py-20 px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold mb-4">
