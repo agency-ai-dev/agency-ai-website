@@ -629,7 +629,7 @@ const IndexPage = () => {
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
               {/* Review 1: Lola Hemp */}
-              <div className="card rounded-xl p-8 flex flex-col items-center lg:items-start text-center lg:text-left">
+              <div className="card rounded-xl p-8 flex flex-col items-center lg:items-start text-center lg:text-left pt-16">
                 <div className="flex gap-1 mb-4">
                   <i className="fas fa-star text-yellow-400"></i>
                   <i className="fas fa-star text-yellow-400"></i>
@@ -654,7 +654,7 @@ const IndexPage = () => {
               </div>
 
               {/* Review 2: Vapor95 */}
-              <div className="card rounded-xl p-8 flex flex-col items-center lg:items-start text-center lg:text-left">
+              <div className="card rounded-xl p-8 flex flex-col items-center lg:items-start text-center lg:text-left pt-16">
                 <div className="flex gap-1 mb-4">
                   <i className="fas fa-star text-yellow-400"></i>
                   <i className="fas fa-star text-yellow-400"></i>
@@ -679,7 +679,7 @@ const IndexPage = () => {
               </div>
 
               {/* Review 3: Epic Hoodie */}
-              <div className="card rounded-xl p-8 flex flex-col items-center lg:items-start text-center lg:text-left">
+              <div className="card rounded-xl p-8 flex flex-col items-center lg:items-start text-center lg:text-left pt-16">
                 <div className="flex gap-1 mb-4">
                   <i className="fas fa-star text-yellow-400"></i>
                   <i className="fas fa-star text-yellow-400"></i>
