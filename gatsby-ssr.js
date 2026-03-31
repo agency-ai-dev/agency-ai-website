@@ -12,6 +12,11 @@ const React = require("react")
 exports.onRenderBody = ({ setHtmlAttributes, setHeadComponents }) => {
   setHtmlAttributes({ lang: `en` })
   setHeadComponents([
+    React.createElement("meta", {
+      key: "google-site-verification",
+      name: "google-site-verification",
+      content: "wucdoDZbYwZx5xn_8157y7_kdFBm8MvY-NLpYIRUAaE",
+    }),
     React.createElement("script", {
       key: "analytics",
       defer: true,
