@@ -46,6 +46,10 @@ function Seo({ description, title, image, children }) {
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={metaDescription} />
       {ogImage && <meta name="twitter:image" content={`${siteUrl}${ogImage}`} />}
+      <meta
+        name="google-site-verification"
+        content="wucdoDZbYwZx5xn_8157y7_kdFBm8MvY-NLpYIRUAaE"
+      />
       {children}
     </>
   )
